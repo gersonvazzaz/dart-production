@@ -1,0 +1,22 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Node (sito-v2)
+sito-v2/
+
+# Claude
+.claude/
+
+# Old WordPress files
+templates/
+css/
+copy/
+assets/
+docs/
+js/
+preview/
