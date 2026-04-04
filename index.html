@@ -245,6 +245,7 @@
 
     /* ============ PROJECTS ============ */
     .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .projects-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
     .project-card {
       border-radius: 20px; overflow: hidden; position: relative;
       cursor: pointer; aspect-ratio: 16/10;
@@ -590,7 +591,7 @@
     @media (max-width: 1024px) {
       .services-grid, .values-grid, .process-grid { grid-template-columns: 1fr; }
       .about-row, .partner-grid, .detail-row, .detail-row.reverse,
-      .contact-grid, .projects-grid { grid-template-columns: 1fr; }
+      .contact-grid, .projects-grid, .projects-grid-3 { grid-template-columns: 1fr; }
       .team-grid { grid-template-columns: 1fr; }
       .detail-row.reverse { direction: ltr; }
       .gallery-grid { grid-template-columns: 1fr; }
@@ -1041,7 +1042,7 @@
   <!-- Grid: white -->
   <section class="section bg-white">
     <div class="container">
-      <div class="projects-grid">
+      <div class="projects-grid-3">
         <div class="project-card reveal reveal-delay-1" onclick="openProject('Nome Progetto','Stampa')">
           <div class="project-thumb">Foto progetto</div>
           <div class="project-overlay"><h3>Nome Progetto</h3><span>Stampa</span></div>
@@ -1065,6 +1066,42 @@
         <div class="project-card reveal reveal-delay-2" onclick="openProject('Nome Progetto','Allestimento')">
           <div class="project-thumb">Foto progetto</div>
           <div class="project-overlay"><h3>Nome Progetto</h3><span>Allestimento</span></div>
+        </div>
+        <div class="project-card reveal reveal-delay-1" onclick="openProject('Nome Progetto','Grafica')">
+          <div class="project-thumb">Foto progetto</div>
+          <div class="project-overlay"><h3>Nome Progetto</h3><span>Grafica</span></div>
+        </div>
+        <div class="project-card reveal reveal-delay-2" onclick="openProject('Nome Progetto','Personalizzazione')">
+          <div class="project-thumb">Foto progetto</div>
+          <div class="project-overlay"><h3>Nome Progetto</h3><span>Personalizzazione</span></div>
+        </div>
+        <div class="project-card reveal reveal-delay-3" onclick="openProject('Nome Progetto','Stampa')">
+          <div class="project-thumb">Foto progetto</div>
+          <div class="project-overlay"><h3>Nome Progetto</h3><span>Stampa</span></div>
+        </div>
+        <div class="project-card reveal reveal-delay-1" onclick="openProject('Nome Progetto','Allestimento')">
+          <div class="project-thumb">Foto progetto</div>
+          <div class="project-overlay"><h3>Nome Progetto</h3><span>Allestimento</span></div>
+        </div>
+        <div class="project-card reveal reveal-delay-2" onclick="openProject('Nome Progetto','Grafica')">
+          <div class="project-thumb">Foto progetto</div>
+          <div class="project-overlay"><h3>Nome Progetto</h3><span>Grafica</span></div>
+        </div>
+        <div class="project-card reveal reveal-delay-3" onclick="openProject('Nome Progetto','Personalizzazione')">
+          <div class="project-thumb">Foto progetto</div>
+          <div class="project-overlay"><h3>Nome Progetto</h3><span>Personalizzazione</span></div>
+        </div>
+        <div class="project-card reveal reveal-delay-1" onclick="openProject('Nome Progetto','Stampa')">
+          <div class="project-thumb">Foto progetto</div>
+          <div class="project-overlay"><h3>Nome Progetto</h3><span>Stampa</span></div>
+        </div>
+        <div class="project-card reveal reveal-delay-2" onclick="openProject('Nome Progetto','Allestimento')">
+          <div class="project-thumb">Foto progetto</div>
+          <div class="project-overlay"><h3>Nome Progetto</h3><span>Allestimento</span></div>
+        </div>
+        <div class="project-card reveal reveal-delay-3" onclick="openProject('Nome Progetto','Grafica')">
+          <div class="project-thumb">Foto progetto</div>
+          <div class="project-overlay"><h3>Nome Progetto</h3><span>Grafica</span></div>
         </div>
       </div>
     </div>
