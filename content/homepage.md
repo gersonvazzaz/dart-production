@@ -1,6 +1,6 @@
 ---
 hero:
-  tag: Semper aperti a nuovi progetti
+  tag: Sempre aperti a nuovi progetti
   titleLine1: DART
   titleLine2: PRODUCTION
   subtitle: Studio creativo e laboratorio di produzione. Idea, progetta, crea.
