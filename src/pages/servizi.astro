@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { frontmatter as servizi } from '../../content/servizi.md';
+
+const bgClass = (bg: string) => bg === 'dark' ? 'bg-dark' : bg === 'light' ? 'bg-light' : 'bg-white';
+---
+<Layout page="servizi" title="Servizi — Dart Production">
+
+  <section class="hero-inner">
+    <span class="eyebrow">{servizi.hero.eyebrow}</span>
+    <h1 class="headline-xl">{servizi.hero.title}</h1>
+    <p class="body-lg" style="max-width:560px; text-align:center; margin-top:16px;">{servizi.hero.subtitle}</p>
+  </section>
+
+  {servizi.items.map((s: any) => (
+    <section class={`section ${bgClass(s.bg)}`}>
+      <div class="container">
+        <div class={`detail-row ${s.reverse ? 'reverse' : ''} reveal`}>
+          <div>
+            <span class="eyebrow">{s.eyebrow}</span>
+            <h2 class="headline-md">{s.title}</h2>
+            <p class="body-lg" style="margin-top:16px;">{s.description}</p>
+            <ul class="detail-list">
+              {s.list.map((item: any) => <li>{item.title}</li>)}
+            </ul>
+          </div>
+          <div class="detail-img">{s.image ? <img src={s.image} alt={s.title} /> : s.imagePlaceholder}</div>
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <section class="cta-block">
+    <div class="container reveal">
+      <span class="eyebrow" style="color:var(--primary);">{servizi.cta.eyebrow}</span>
+      <h2 class="headline-lg">{servizi.cta.titleLine1}<br>{servizi.cta.titleLine2}</h2>
+      <p class="body-lg" style="max-width:500px; margin:0 auto 40px;">{servizi.cta.text}</p>
+      <a href="/contatti" class="btn btn-primary btn-arrow">{servizi.cta.button}</a>
+    </div>
+  </section>
+
+</Layout>

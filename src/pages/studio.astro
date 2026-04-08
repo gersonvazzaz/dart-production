@@ -1,0 +1,98 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { frontmatter as studio } from '../../content/studio.md';
+---
+<Layout page="studio" title="Studio — Dart Production">
+
+  <section class="hero-inner">
+    <span class="eyebrow">{studio.hero.eyebrow}</span>
+    <h1 class="headline-xl">{studio.hero.title}</h1>
+    <p class="body-lg" style="max-width:600px; text-align:center; margin-top:16px;">{studio.hero.subtitle}</p>
+  </section>
+
+  <section class="section bg-white">
+    <div class="container">
+      <div class="about-row">
+        <div class="reveal">
+          <span class="eyebrow">{studio.story.eyebrow}</span>
+          <h2 class="headline-md">{studio.story.titleLine1}<br>{studio.story.titleLine2}</h2>
+          <p class="body-lg" style="margin-top:20px;">{studio.story.paragraph1}</p>
+          <p class="body-md" style="margin-top:16px;">{studio.story.paragraph2}</p>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <div class="gallery-item large">{studio.story.image ? <img src={studio.story.image} alt={studio.story.titleLine1} /> : studio.story.imagePlaceholder}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-light">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:64px;" class="reveal">
+        <span class="eyebrow">{studio.team.eyebrow}</span>
+        <h2 class="headline-md">{studio.team.title}</h2>
+      </div>
+      <div class="team-grid" style="max-width: 700px; margin: 0 auto;">
+        {studio.team.members.map((m: any, i: number) => (
+          <div class={`team-card reveal reveal-delay-${i+1}`}>
+            <div class="team-photo">{m.image ? <img src={m.image} alt={m.name} /> : m.imagePlaceholder}</div>
+            <div class="team-info"><h3>{m.name}</h3><span>{m.role}</span></div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-dark">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:64px;" class="reveal">
+        <span class="eyebrow">{studio.lab.eyebrow}</span>
+        <h2 class="headline-md">{studio.lab.title}</h2>
+        <p class="body-lg" style="max-width:700px; margin:20px auto 0;">{studio.lab.description}</p>
+      </div>
+      <div class="gallery-grid reveal">
+        {studio.lab.galleryItems.map((g: any, i: number) => (
+          <div class={i === 0 ? 'gallery-item tall' : 'gallery-item'}>
+            {g.image ? <img src={g.image} alt={g.title} /> : g.title}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-white">
+    <div class="container">
+      <div class="partner-grid">
+        <div class="reveal">
+          <span class="eyebrow">{studio.showroom.eyebrow}</span>
+          <h2 class="headline-md" style="margin-bottom:20px;">{studio.showroom.title}</h2>
+          <p class="body-lg">{studio.showroom.paragraph1}</p>
+          <p class="body-md" style="margin-top:16px; color:var(--dark-2); font-weight:500;">{studio.showroom.paragraph2}</p>
+          <div style="margin-top:32px;">
+            <a href="/contatti" class="btn btn-primary btn-arrow">{studio.showroom.button}</a>
+          </div>
+        </div>
+        <div class="partner-img reveal reveal-delay-2">{studio.showroom.image ? <img src={studio.showroom.image} alt={studio.showroom.title} /> : studio.showroom.imagePlaceholder}</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-light">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:64px;" class="reveal">
+        <span class="eyebrow">{studio.values.eyebrow}</span>
+        <h2 class="headline-md">{studio.values.title}</h2>
+      </div>
+      <div class="values-grid">
+        {studio.values.items.map((v: any, i: number) => (
+          <div class={`value-card reveal reveal-delay-${i+1}`}>
+            <div class="value-icon">{v.icon}</div>
+            <h3>{v.title}</h3>
+            <p>{v.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+</Layout>

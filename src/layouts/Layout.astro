@@ -1,0 +1,112 @@
+---
+import '../styles/global.css';
+import { frontmatter as contatti } from '../../content/contatti.md';
+
+interface Props {
+  page: 'home' | 'studio' | 'servizi' | 'progetti' | 'contatti';
+  title?: string;
+}
+const { page, title = 'Dart Production' } = Astro.props;
+
+const navItems = [
+  { key: 'home', label: contatti.nav.home, href: '/' },
+  { key: 'studio', label: contatti.nav.studio, href: '/studio' },
+  { key: 'servizi', label: contatti.nav.servizi, href: '/servizi' },
+  { key: 'progetti', label: contatti.nav.progetti, href: '/progetti' },
+  { key: 'contatti', label: contatti.nav.contatti, href: '/contatti' },
+];
+---
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<button class="hamburger" id="hamburger">
+  <span></span><span></span><span></span>
+</button>
+
+<div class="mobile-menu" id="mobileMenu">
+  {navItems.map(n => <a href={n.href}>{n.label}</a>)}
+</div>
+
+<div class="page-nav">
+  {navItems.map(n => (
+    <a class={`page-nav-btn${page === n.key ? ' active' : ''}`} href={n.href}>{n.label}</a>
+  ))}
+</div>
+
+<div class="page active">
+  <slot />
+</div>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand">{contatti.footer.brand}</div>
+      <p class="footer-brand-desc">{contatti.footer.description}</p>
+    </div>
+    <div>
+      <h4>{contatti.footer.pagesTitle}</h4>
+      <ul class="footer-links">
+        {navItems.map(n => <li><a href={n.href}>{n.label}</a></li>)}
+      </ul>
+    </div>
+    <div>
+      <h4>{contatti.footer.servicesTitle}</h4>
+      <ul class="footer-links">
+        {contatti.footer.servicesLinks.map((s: any) => <li><a href="/servizi">{s.title}</a></li>)}
+      </ul>
+    </div>
+    <div>
+      <h4>{contatti.footer.contactsTitle}</h4>
+      <ul class="footer-links">
+        <li><a href={`mailto:${contatti.info.email.value}`}>Email</a></li>
+        {contatti.info.phone.values.map((v: string) => <li><a href={`tel:${v.replace(/\s/g, '')}`}>{v}</a></li>)}
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>{contatti.footer.copyright}</p>
+    <p>{contatti.footer.vat}</p>
+  </div>
+</footer>
+
+<script is:inline>
+function toggleMenu() {
+  const h = document.getElementById('hamburger');
+  const m = document.getElementById('mobileMenu');
+  h.classList.toggle('open');
+  if (m.style.display === 'flex') {
+    m.classList.remove('open');
+    setTimeout(() => { m.style.display = 'none'; }, 400);
+    document.body.style.overflow = '';
+  } else {
+    m.style.display = 'flex';
+    requestAnimationFrame(() => m.classList.add('open'));
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function observeAll() {
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal:not(.visible)').forEach(el => obs.observe(el));
+}
+observeAll();
+
+document.getElementById('hamburger').addEventListener('click', toggleMenu);
+document.querySelectorAll('#mobileMenu a').forEach(a => {
+  a.addEventListener('click', () => { if (document.getElementById('mobileMenu').style.display === 'flex') toggleMenu(); });
+});
+</script>
+
+</body>
+</html>

@@ -1,57 +1,16 @@
 ---
-import '../styles/global.css';
+import Layout from '../layouts/Layout.astro';
 import { frontmatter as home } from '../../content/homepage.md';
-import { frontmatter as studio } from '../../content/studio.md';
-import { frontmatter as servizi } from '../../content/servizi.md';
-import { frontmatter as progetti } from '../../content/progetti.md';
-import { frontmatter as contatti } from '../../content/contatti.md';
-
-const bgClass = (bg: string) => bg === 'dark' ? 'bg-dark' : bg === 'light' ? 'bg-light' : 'bg-white';
-const imgOrText = (item: any, fallback?: string) => item?.image || item?.imagePlaceholder || fallback || '';
 ---
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dart Production</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-</head>
-<body>
-
-<!-- HAMBURGER (mobile only) -->
-<button class="hamburger" id="hamburger">
-  <span></span><span></span><span></span>
-</button>
-
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#" data-page="home">{contatti.nav.home}</a>
-  <a href="#" data-page="studio">{contatti.nav.studio}</a>
-  <a href="#" data-page="servizi">{contatti.nav.servizi}</a>
-  <a href="#" data-page="progetti">{contatti.nav.progetti}</a>
-  <a href="#" data-page="contatti">{contatti.nav.contatti}</a>
-</div>
-
-<!-- BOTTOM NAV (desktop only) -->
-<div class="page-nav">
-  <button class="page-nav-btn active" data-page="home">{contatti.nav.home}</button>
-  <button class="page-nav-btn" data-page="studio">{contatti.nav.studio}</button>
-  <button class="page-nav-btn" data-page="servizi">{contatti.nav.servizi}</button>
-  <button class="page-nav-btn" data-page="progetti">{contatti.nav.progetti}</button>
-  <button class="page-nav-btn" data-page="contatti">{contatti.nav.contatti}</button>
-</div>
-
-<!-- ======================== HOME ======================== -->
-<div class="page active" id="page-home">
+<Layout page="home">
 
   <section class="hero">
     <div class="hero-tag"><span class="dot"></span> {home.hero.tag}</div>
     <h1>{home.hero.titleLine1}<br><span class="accent">{home.hero.titleLine2}</span></h1>
     <p class="hero-sub">{home.hero.subtitle}</p>
     <div class="hero-btns">
-      <a href="#" class="btn btn-primary btn-arrow" data-page="servizi">{home.hero.btn1}</a>
-      <a href="#" class="btn btn-outline-light" data-page="progetti">{home.hero.btn2}</a>
+      <a href="/servizi" class="btn btn-primary btn-arrow">{home.hero.btn1}</a>
+      <a href="/progetti" class="btn btn-outline-light">{home.hero.btn2}</a>
     </div>
     <div class="hero-scroll"><span>Scroll</span><div class="scroll-line"></div></div>
   </section>
@@ -90,7 +49,7 @@ const imgOrText = (item: any, fallback?: string) => item?.image || item?.imagePl
             <div class="service-icon">{card.icon}</div>
             <h3>{card.title}</h3>
             <p>{card.description}</p>
-            <a href="#" class="link" data-page="servizi">Scopri di più →</a>
+            <a href="/servizi" class="link">Scopri di più →</a>
           </div>
         ))}
       </div>
@@ -100,7 +59,7 @@ const imgOrText = (item: any, fallback?: string) => item?.image || item?.imagePl
           <div class="service-icon" style="margin:0 auto 24px;">{home.services.cardWide.icon}</div>
           <h3>{home.services.cardWide.title}</h3>
           <p style="max-width:500px; margin:0 auto 24px;">{home.services.cardWide.description}</p>
-          <a href="#" class="link" data-page="servizi">Scopri di più →</a>
+          <a href="/servizi" class="link">Scopri di più →</a>
         </div>
       </div>
     </div>
@@ -113,18 +72,18 @@ const imgOrText = (item: any, fallback?: string) => item?.image || item?.imagePl
           <span class="eyebrow">{home.projectsHighlight.eyebrow}</span>
           <h2 class="headline-lg">{home.projectsHighlight.title}</h2>
         </div>
-        <a href="#" class="btn btn-outline-light" data-page="progetti" style="flex-shrink:0;">{home.projectsHighlight.buttonLabel} →</a>
+        <a href="/progetti" class="btn btn-outline-light" style="flex-shrink:0;">{home.projectsHighlight.buttonLabel} →</a>
       </div>
       <div class="projects-grid">
-        <div class="project-card project-featured reveal" data-project={JSON.stringify({ ...home.projectsHighlight.featured, clientText: '', workText: '', galleryItems: [] })}>
+        <a href="/progetti" class="project-card project-featured reveal">
           <div class="project-thumb">{home.projectsHighlight.featured.image ? <img src={home.projectsHighlight.featured.image} alt={home.projectsHighlight.featured.title} /> : home.projectsHighlight.featured.imagePlaceholder}</div>
           <div class="project-overlay"><h3>{home.projectsHighlight.featured.title}</h3><span>{home.projectsHighlight.featured.category}</span></div>
-        </div>
+        </a>
         {home.projectsHighlight.items.map((p: any, i: number) => (
-          <div class={`project-card reveal reveal-delay-${i+1}`} data-project={JSON.stringify({ ...p, clientText: '', workText: '', galleryItems: [] })}>
+          <a href="/progetti" class={`project-card reveal reveal-delay-${i+1}`}>
             <div class="project-thumb">{p.image ? <img src={p.image} alt={p.title} /> : p.imagePlaceholder}</div>
             <div class="project-overlay"><h3>{p.title}</h3><span>{p.category}</span></div>
-          </div>
+          </a>
         ))}
       </div>
     </div>
@@ -177,390 +136,8 @@ const imgOrText = (item: any, fallback?: string) => item?.image || item?.imagePl
       <span class="eyebrow" style="color:var(--primary);">{home.cta.eyebrow}</span>
       <h2 class="headline-lg">{home.cta.titleLine1}<br>{home.cta.titleLine2}</h2>
       <p class="body-lg" style="max-width:500px; margin:0 auto 40px;">{home.cta.text}</p>
-      <a href="#" class="btn btn-primary btn-arrow" data-page="contatti">{home.cta.button}</a>
+      <a href="/contatti" class="btn btn-primary btn-arrow">{home.cta.button}</a>
     </div>
   </section>
 
-</div>
-
-<!-- ======================== STUDIO ======================== -->
-<div class="page" id="page-studio">
-  <section class="hero-inner">
-    <span class="eyebrow">{studio.hero.eyebrow}</span>
-    <h1 class="headline-xl">{studio.hero.title}</h1>
-    <p class="body-lg" style="max-width:600px; text-align:center; margin-top:16px;">{studio.hero.subtitle}</p>
-  </section>
-
-  <section class="section bg-white">
-    <div class="container">
-      <div class="about-row">
-        <div class="reveal">
-          <span class="eyebrow">{studio.story.eyebrow}</span>
-          <h2 class="headline-md">{studio.story.titleLine1}<br>{studio.story.titleLine2}</h2>
-          <p class="body-lg" style="margin-top:20px;">{studio.story.paragraph1}</p>
-          <p class="body-md" style="margin-top:16px;">{studio.story.paragraph2}</p>
-        </div>
-        <div class="reveal reveal-delay-2">
-          <div class="gallery-item large">{studio.story.image ? <img src={studio.story.image} alt={studio.story.titleLine1} /> : studio.story.imagePlaceholder}</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section bg-light">
-    <div class="container">
-      <div style="text-align:center; margin-bottom:64px;" class="reveal">
-        <span class="eyebrow">{studio.team.eyebrow}</span>
-        <h2 class="headline-md">{studio.team.title}</h2>
-      </div>
-      <div class="team-grid" style="max-width: 700px; margin: 0 auto;">
-        {studio.team.members.map((m: any, i: number) => (
-          <div class={`team-card reveal reveal-delay-${i+1}`}>
-            <div class="team-photo">{m.image ? <img src={m.image} alt={m.name} /> : m.imagePlaceholder}</div>
-            <div class="team-info"><h3>{m.name}</h3><span>{m.role}</span></div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="section bg-dark">
-    <div class="container">
-      <div style="text-align:center; margin-bottom:64px;" class="reveal">
-        <span class="eyebrow">{studio.lab.eyebrow}</span>
-        <h2 class="headline-md">{studio.lab.title}</h2>
-        <p class="body-lg" style="max-width:700px; margin:20px auto 0;">{studio.lab.description}</p>
-      </div>
-      <div class="gallery-grid reveal">
-        {studio.lab.galleryItems.map((g: any, i: number) => (
-          <div class={i === 0 ? 'gallery-item tall' : 'gallery-item'}>
-            {g.image ? <img src={g.image} alt={g.title} /> : g.title}
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="section bg-white">
-    <div class="container">
-      <div class="partner-grid">
-        <div class="reveal">
-          <span class="eyebrow">{studio.showroom.eyebrow}</span>
-          <h2 class="headline-md" style="margin-bottom:20px;">{studio.showroom.title}</h2>
-          <p class="body-lg">{studio.showroom.paragraph1}</p>
-          <p class="body-md" style="margin-top:16px; color:var(--dark-2); font-weight:500;">{studio.showroom.paragraph2}</p>
-          <div style="margin-top:32px;">
-            <a href="#" class="btn btn-primary btn-arrow" data-page="contatti">{studio.showroom.button}</a>
-          </div>
-        </div>
-        <div class="partner-img reveal reveal-delay-2">{studio.showroom.image ? <img src={studio.showroom.image} alt={studio.showroom.title} /> : studio.showroom.imagePlaceholder}</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section bg-light">
-    <div class="container">
-      <div style="text-align:center; margin-bottom:64px;" class="reveal">
-        <span class="eyebrow">{studio.values.eyebrow}</span>
-        <h2 class="headline-md">{studio.values.title}</h2>
-      </div>
-      <div class="values-grid">
-        {studio.values.items.map((v: any, i: number) => (
-          <div class={`value-card reveal reveal-delay-${i+1}`}>
-            <div class="value-icon">{v.icon}</div>
-            <h3>{v.title}</h3>
-            <p>{v.description}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ======================== SERVIZI ======================== -->
-<div class="page" id="page-servizi">
-  <section class="hero-inner">
-    <span class="eyebrow">{servizi.hero.eyebrow}</span>
-    <h1 class="headline-xl">{servizi.hero.title}</h1>
-    <p class="body-lg" style="max-width:560px; text-align:center; margin-top:16px;">{servizi.hero.subtitle}</p>
-  </section>
-
-  {servizi.items.map((s: any) => (
-    <section class={`section ${bgClass(s.bg)}`}>
-      <div class="container">
-        <div class={`detail-row ${s.reverse ? 'reverse' : ''} reveal`}>
-          <div>
-            <span class="eyebrow">{s.eyebrow}</span>
-            <h2 class="headline-md">{s.title}</h2>
-            <p class="body-lg" style="margin-top:16px;">{s.description}</p>
-            <ul class="detail-list">
-              {s.list.map((item: any) => <li>{item.title}</li>)}
-            </ul>
-          </div>
-          <div class="detail-img">{s.image ? <img src={s.image} alt={s.title} /> : s.imagePlaceholder}</div>
-        </div>
-      </div>
-    </section>
-  ))}
-
-  <section class="cta-block">
-    <div class="container reveal">
-      <span class="eyebrow" style="color:var(--primary);">{servizi.cta.eyebrow}</span>
-      <h2 class="headline-lg">{servizi.cta.titleLine1}<br>{servizi.cta.titleLine2}</h2>
-      <p class="body-lg" style="max-width:500px; margin:0 auto 40px;">{servizi.cta.text}</p>
-      <a href="#" class="btn btn-primary btn-arrow" data-page="contatti">{servizi.cta.button}</a>
-    </div>
-  </section>
-</div>
-
-<!-- ======================== PROGETTI ======================== -->
-<div class="page" id="page-progetti">
-  <section class="hero-inner">
-    <span class="eyebrow">{progetti.hero.eyebrow}</span>
-    <h1 class="headline-xl">{progetti.hero.title}</h1>
-    <p class="body-lg" style="max-width:500px; text-align:center; margin-top:16px;">{progetti.hero.subtitle}</p>
-  </section>
-
-  <section class="section bg-white">
-    <div class="container">
-      <div class="projects-grid-3">
-        {progetti.items.map((p: any, i: number) => (
-          <div class={`project-card reveal reveal-delay-${(i % 3) + 1}`} data-project={JSON.stringify(p)}>
-            <div class="project-thumb">{p.image ? <img src={p.image} alt={p.title} /> : p.imagePlaceholder}</div>
-            <div class="project-overlay"><h3>{p.title}</h3><span>{p.category}</span></div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="cta-block">
-    <div class="container reveal">
-      <h2 class="headline-md">{progetti.cta.title}</h2>
-      <p class="body-lg" style="max-width:500px; margin:0 auto 40px;">{progetti.cta.text}</p>
-      <a href="#" class="btn btn-primary btn-arrow" data-page="contatti">{progetti.cta.button}</a>
-    </div>
-  </section>
-</div>
-
-<!-- ======================== CONTATTI ======================== -->
-<div class="page" id="page-contatti">
-  <section class="hero-inner">
-    <span class="eyebrow">{contatti.hero.eyebrow}</span>
-    <h1 class="headline-xl">{contatti.hero.title}</h1>
-    <p class="body-lg" style="max-width:500px; text-align:center; margin-top:16px;">{contatti.hero.subtitle}</p>
-  </section>
-
-  <section class="section bg-white">
-    <div class="container">
-      <div class="contact-grid reveal">
-        <div>
-          <div class="info-group">
-            <h4>{contatti.info.email.label}</h4>
-            <p><a href={`mailto:${contatti.info.email.value}`}>{contatti.info.email.value}</a></p>
-          </div>
-          <div class="info-group">
-            <h4>{contatti.info.phone.label}</h4>
-            <p set:html={contatti.info.phone.values.join('<br>')}></p>
-          </div>
-          <div class="info-group">
-            <h4>{contatti.info.business.label}</h4>
-            <p>{contatti.info.business.line1}<br>{contatti.info.business.line2}</p>
-          </div>
-        </div>
-        <div class="contact-actions">
-          <a href="mailto:dartproduction.to@gmail.com" class="btn btn-primary btn-arrow">Scrivici una email</a>
-          <a href="https://wa.me/3793392762" target="_blank" rel="noopener" class="btn btn-outline-dark">Scrivici su WhatsApp</a>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- PROJECT MODAL -->
-<div class="modal-overlay" id="projectModal">
-  <div class="modal">
-    <button class="modal-close" id="modalClose">✕</button>
-    <div class="modal-hero" id="modalHero">Foto progetto 16:9</div>
-    <div class="modal-body">
-      <h2 class="modal-title" id="modalTitle">Nome Progetto</h2>
-      <p class="modal-category" id="modalCategory">Stampa</p>
-
-      <div class="modal-section" id="modalClientSection">
-        <h3>{progetti.modalLabels.clientTitle}</h3>
-        <p id="modalClientText"></p>
-      </div>
-
-      <div class="modal-section" id="modalWorkSection">
-        <h3>{progetti.modalLabels.workTitle}</h3>
-        <p id="modalWorkText"></p>
-      </div>
-
-      <h3 class="modal-gallery-title" id="modalGalleryTitle">{progetti.modalLabels.galleryTitle}</h3>
-      <div class="modal-gallery" id="modalGallery"></div>
-    </div>
-  </div>
-</div>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-top">
-    <div>
-      <div class="footer-brand">{contatti.footer.brand}</div>
-      <p class="footer-brand-desc">{contatti.footer.description}</p>
-    </div>
-    <div>
-      <h4>{contatti.footer.pagesTitle}</h4>
-      <ul class="footer-links">
-        <li><a href="#" data-page="home">{contatti.nav.home}</a></li>
-        <li><a href="#" data-page="studio">{contatti.nav.studio}</a></li>
-        <li><a href="#" data-page="servizi">{contatti.nav.servizi}</a></li>
-        <li><a href="#" data-page="progetti">{contatti.nav.progetti}</a></li>
-        <li><a href="#" data-page="contatti">{contatti.nav.contatti}</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>{contatti.footer.servicesTitle}</h4>
-      <ul class="footer-links">
-        {contatti.footer.servicesLinks.map((s: any) => <li><a href="#">{s.title}</a></li>)}
-      </ul>
-    </div>
-    <div>
-      <h4>{contatti.footer.contactsTitle}</h4>
-      <ul class="footer-links">
-        <li><a href={`mailto:${contatti.info.email.value}`}>Email</a></li>
-        {contatti.info.phone.values.map((v: string) => <li><a href={`tel:${v.replace(/\s/g, '')}`}>{v}</a></li>)}
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>{contatti.footer.copyright}</p>
-    <p>{contatti.footer.vat}</p>
-  </div>
-</footer>
-
-<script is:inline>
-function showPage(name) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.getElementById('page-' + name).classList.add('active');
-  document.querySelectorAll('.page-nav-btn').forEach(b => {
-    b.classList.toggle('active', b.dataset.page === name);
-  });
-  window.scrollTo({ top: 0, behavior: 'instant' });
-  setTimeout(observeAll, 50);
-}
-
-function toggleMenu() {
-  const h = document.getElementById('hamburger');
-  const m = document.getElementById('mobileMenu');
-  h.classList.toggle('open');
-  if (m.style.display === 'flex') {
-    m.classList.remove('open');
-    setTimeout(() => { m.style.display = 'none'; }, 400);
-    document.body.style.overflow = '';
-  } else {
-    m.style.display = 'flex';
-    requestAnimationFrame(() => m.classList.add('open'));
-    document.body.style.overflow = 'hidden';
-  }
-}
-
-function observeAll() {
-  const obs = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
-    });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.reveal:not(.visible)').forEach(el => obs.observe(el));
-}
-observeAll();
-
-function openProject(data) {
-  document.getElementById('modalTitle').textContent = data.title || '';
-  document.getElementById('modalCategory').textContent = data.category || '';
-  var hero = document.getElementById('modalHero');
-  if (data.image) {
-    hero.innerHTML = '<img src="' + data.image + '" alt="' + (data.title || '') + '" style="width:100%;height:100%;object-fit:cover;">';
-  } else {
-    hero.textContent = data.imagePlaceholder || '';
-  }
-
-  var clientText = data.clientText || '';
-  var workText = data.workText || '';
-  var gallery = Array.isArray(data.galleryItems) ? data.galleryItems : [];
-
-  var clientSection = document.getElementById('modalClientSection');
-  document.getElementById('modalClientText').textContent = clientText;
-  clientSection.style.display = clientText ? '' : 'none';
-
-  var workSection = document.getElementById('modalWorkSection');
-  document.getElementById('modalWorkText').textContent = workText;
-  workSection.style.display = workText ? '' : 'none';
-
-  var galleryEl = document.getElementById('modalGallery');
-  var galleryTitle = document.getElementById('modalGalleryTitle');
-  galleryEl.innerHTML = '';
-  if (gallery.length) {
-    gallery.forEach(function(g) {
-      var div = document.createElement('div');
-      div.className = 'modal-gallery-item';
-      if (g && g.image) {
-        var img = document.createElement('img');
-        img.src = g.image;
-        img.alt = g.title || '';
-        img.style.width = '100%';
-        img.style.height = '100%';
-        img.style.objectFit = 'cover';
-        div.appendChild(img);
-      } else {
-        div.textContent = (g && g.title) ? g.title : (g || '');
-      }
-      galleryEl.appendChild(div);
-    });
-    galleryEl.style.display = '';
-    galleryTitle.style.display = '';
-  } else {
-    galleryEl.style.display = 'none';
-    galleryTitle.style.display = 'none';
-  }
-
-  document.getElementById('projectModal').classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-function closeProject() {
-  document.getElementById('projectModal').classList.remove('open');
-  document.body.style.overflow = '';
-}
-
-// Bind navigation links
-document.querySelectorAll('[data-page]').forEach(el => {
-  el.addEventListener('click', (e) => {
-    e.preventDefault();
-    showPage(el.dataset.page);
-    const m = document.getElementById('mobileMenu');
-    if (m && m.style.display === 'flex') toggleMenu();
-  });
-});
-
-// Bind hamburger
-document.getElementById('hamburger').addEventListener('click', toggleMenu);
-
-// Bind project cards
-document.querySelectorAll('[data-project]').forEach(el => {
-  el.addEventListener('click', () => {
-    try { openProject(JSON.parse(el.dataset.project)); } catch(e) {}
-  });
-});
-
-// Bind modal close
-document.getElementById('modalClose').addEventListener('click', closeProject);
-document.getElementById('projectModal').addEventListener('click', (e) => {
-  if (e.target.id === 'projectModal') closeProject();
-});
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') closeProject();
-});
-</script>
-
-</body>
-</html>
+</Layout>

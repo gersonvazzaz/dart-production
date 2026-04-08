@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { frontmatter as contatti } from '../../content/contatti.md';
+---
+<Layout page="contatti" title="Contatti — Dart Production">
+
+  <section class="hero-inner">
+    <span class="eyebrow">{contatti.hero.eyebrow}</span>
+    <h1 class="headline-xl">{contatti.hero.title}</h1>
+    <p class="body-lg" style="max-width:500px; text-align:center; margin-top:16px;">{contatti.hero.subtitle}</p>
+  </section>
+
+  <section class="section bg-white">
+    <div class="container">
+      <div class="contact-grid reveal">
+        <div>
+          <div class="info-group">
+            <h4>{contatti.info.email.label}</h4>
+            <p><a href={`mailto:${contatti.info.email.value}`}>{contatti.info.email.value}</a></p>
+          </div>
+          <div class="info-group">
+            <h4>{contatti.info.phone.label}</h4>
+            <p set:html={contatti.info.phone.values.join('<br>')}></p>
+          </div>
+          <div class="info-group">
+            <h4>{contatti.info.business.label}</h4>
+            <p>{contatti.info.business.line1}<br>{contatti.info.business.line2}</p>
+          </div>
+        </div>
+        <div class="contact-actions">
+          <a href="mailto:dartproduction.to@gmail.com" class="btn btn-primary btn-arrow">Scrivici una email</a>
+          <a href="https://wa.me/3793392762" target="_blank" rel="noopener" class="btn btn-outline-dark">Scrivici su WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
