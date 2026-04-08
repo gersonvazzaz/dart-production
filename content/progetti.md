@@ -1,153 +1,157 @@
 ---
 hero:
-  eyebrow: "Portfolio"
-  title: "Progetti"
-  subtitle: "Una selezione dei lavori realizzati nel nostro laboratorio."
+  eyebrow: Portfolio
+  title: Progetti
+  subtitle: Una selezione dei lavori realizzati nel nostro laboratorio.
 modalLabels:
-  clientTitle: "Cosa voleva il cliente"
-  workTitle: "Cosa abbiamo fatto"
-  galleryTitle: "Gallery"
+  clientTitle: Cosa voleva il cliente
+  workTitle: Cosa abbiamo fatto
+  galleryTitle: Gallery
 items:
-  - title: "Progetto 1"
-    category: "Stampa"
-    imagePlaceholder: "Foto progetto 1"
-    clientText: "Descrizione di cosa voleva il cliente per il Progetto 1."
-    workText: "Descrizione di cosa abbiamo realizzato per il Progetto 1."
+  - title: Progetto 1
+    category: Stampa
+    imagePlaceholder: Foto progetto 1
+    clientText: Descrizione di cosa voleva il cliente per il Progetto 1.
+    workText: Descrizione di cosa abbiamo realizzato per il Progetto 1.
     galleryItems:
-      - title: "Foto 1"
-      - title: "Foto 2"
-      - title: "Foto 3"
-      - title: "Foto 4"
-      - title: "Foto 5"
-      - title: "Foto 6"
-  - title: "Progetto 2"
-    category: "Allestimento"
-    imagePlaceholder: "Foto progetto 2"
-    clientText: "Descrizione di cosa voleva il cliente per il Progetto 2."
-    workText: "Descrizione di cosa abbiamo realizzato per il Progetto 2."
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+      - title: Foto 4
+      - title: Foto 5
+      - title: Foto 6
+  - title: Progetto 2
+    category: Allestimento
+    imagePlaceholder: Foto progetto 2
+    clientText: Descrizione di cosa voleva il cliente per il Progetto 2.
+    workText: Descrizione di cosa abbiamo realizzato per il Progetto 2.
     galleryItems:
-      - title: "Foto 1"
-      - title: "Foto 2"
-      - title: "Foto 3"
-  - title: "Progetto 3"
-    category: "Grafica"
-    imagePlaceholder: "Foto progetto 3"
-    clientText: "Descrizione di cosa voleva il cliente per il Progetto 3."
-    workText: "Descrizione di cosa abbiamo realizzato per il Progetto 3."
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+  - title: Progetto 3
+    category: Grafica
+    imagePlaceholder: Foto progetto 3
+    clientText: Descrizione di cosa voleva il cliente per il Progetto 3.
+    workText: Descrizione di cosa abbiamo realizzato per il Progetto 3.
     galleryItems:
-      - title: "Foto 1"
-      - title: "Foto 2"
-      - title: "Foto 3"
-  - title: "Progetto 4"
-    category: "Personalizzazione"
-    imagePlaceholder: "Foto progetto 4"
-    clientText: "Descrizione di cosa voleva il cliente per il Progetto 4."
-    workText: "Descrizione di cosa abbiamo realizzato per il Progetto 4."
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+  - title: Progetto 4
+    category: Personalizzazione
+    imagePlaceholder: Foto progetto 4
+    clientText: Descrizione di cosa voleva il cliente per il Progetto 4.
+    workText: Descrizione di cosa abbiamo realizzato per il Progetto 4.
     galleryItems:
-      - title: "Foto 1"
-      - title: "Foto 2"
-      - title: "Foto 3"
-  - title: "Progetto 5"
-    category: "Stampa"
-    imagePlaceholder: "Foto progetto 5"
-    clientText: "Descrizione di cosa voleva il cliente per il Progetto 5."
-    workText: "Descrizione di cosa abbiamo realizzato per il Progetto 5."
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+  - title: Progetto 5
+    category: Stampa
+    imagePlaceholder: Foto progetto 5
+    clientText: Descrizione di cosa voleva il cliente per il Progetto 5.
+    workText: Descrizione di cosa abbiamo realizzato per il Progetto 5.
     galleryItems:
-      - title: "Foto 1"
-      - title: "Foto 2"
-      - title: "Foto 3"
-  - title: "Progetto 6"
-    category: "Allestimento"
-    imagePlaceholder: "Foto progetto 6"
-    clientText: "Descrizione di cosa voleva il cliente per il Progetto 6."
-    workText: "Descrizione di cosa abbiamo realizzato per il Progetto 6."
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+  - title: Progetto 6
+    category: Allestimento
+    imagePlaceholder: Foto progetto 6
+    clientText: Descrizione di cosa voleva il cliente per il Progetto 6.
+    workText: Descrizione di cosa abbiamo realizzato per il Progetto 6.
     galleryItems:
-      - title: "Foto 1"
-      - title: "Foto 2"
-      - title: "Foto 3"
-  - title: "Progetto 7"
-    category: "Grafica"
-    imagePlaceholder: "Foto progetto 7"
-    clientText: "Descrizione di cosa voleva il cliente per il Progetto 7."
-    workText: "Descrizione di cosa abbiamo realizzato per il Progetto 7."
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+  - title: Progetto 7
+    category: Grafica
+    imagePlaceholder: Foto progetto 7
+    clientText: Descrizione di cosa voleva il cliente per il Progetto 7.
+    workText: Descrizione di cosa abbiamo realizzato per il Progetto 7.
     galleryItems:
-      - title: "Foto 1"
-      - title: "Foto 2"
-      - title: "Foto 3"
-  - title: "Progetto 8"
-    category: "Personalizzazione"
-    imagePlaceholder: "Foto progetto 8"
-    clientText: "Descrizione di cosa voleva il cliente per il Progetto 8."
-    workText: "Descrizione di cosa abbiamo realizzato per il Progetto 8."
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+  - title: Progetto 8
+    category: Personalizzazione
+    imagePlaceholder: Foto progetto 8
+    clientText: Descrizione di cosa voleva il cliente per il Progetto 8.
+    workText: Descrizione di cosa abbiamo realizzato per il Progetto 8.
     galleryItems:
-      - title: "Foto 1"
-      - title: "Foto 2"
-      - title: "Foto 3"
-  - title: "Progetto 9"
-    category: "Stampa"
-    imagePlaceholder: "Foto progetto 9"
-    clientText: "Descrizione di cosa voleva il cliente per il Progetto 9."
-    workText: "Descrizione di cosa abbiamo realizzato per il Progetto 9."
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+  - title: Progetto 9
+    category: Stampa
+    imagePlaceholder: Foto progetto 9
+    clientText: Descrizione di cosa voleva il cliente per il Progetto 9.
+    workText: Descrizione di cosa abbiamo realizzato per il Progetto 9.
     galleryItems:
-      - title: "Foto 1"
-      - title: "Foto 2"
-      - title: "Foto 3"
-  - title: "Progetto 10"
-    category: "Allestimento"
-    imagePlaceholder: "Foto progetto 10"
-    clientText: "Descrizione di cosa voleva il cliente per il Progetto 10."
-    workText: "Descrizione di cosa abbiamo realizzato per il Progetto 10."
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+  - title: Progetto 10
+    category: Allestimento
+    imagePlaceholder: Foto progetto 10
+    clientText: Descrizione di cosa voleva il cliente per il Progetto 10.
+    workText: Descrizione di cosa abbiamo realizzato per il Progetto 10.
     galleryItems:
-      - title: "Foto 1"
-      - title: "Foto 2"
-      - title: "Foto 3"
-  - title: "Progetto 11"
-    category: "Grafica"
-    imagePlaceholder: "Foto progetto 11"
-    clientText: "Descrizione di cosa voleva il cliente per il Progetto 11."
-    workText: "Descrizione di cosa abbiamo realizzato per il Progetto 11."
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+  - title: Progetto 11
+    category: Grafica
+    imagePlaceholder: Foto progetto 11
+    clientText: Descrizione di cosa voleva il cliente per il Progetto 11.
+    workText: Descrizione di cosa abbiamo realizzato per il Progetto 11.
     galleryItems:
-      - title: "Foto 1"
-      - title: "Foto 2"
-      - title: "Foto 3"
-  - title: "Progetto 12"
-    category: "Personalizzazione"
-    imagePlaceholder: "Foto progetto 12"
-    clientText: "Descrizione di cosa voleva il cliente per il Progetto 12."
-    workText: "Descrizione di cosa abbiamo realizzato per il Progetto 12."
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+  - title: Progetto 12
+    category: Personalizzazione
+    imagePlaceholder: Foto progetto 12
+    clientText: Descrizione di cosa voleva il cliente per il Progetto 12.
+    workText: Descrizione di cosa abbiamo realizzato per il Progetto 12.
     galleryItems:
-      - title: "Foto 1"
-      - title: "Foto 2"
-      - title: "Foto 3"
-  - title: "Progetto 13"
-    category: "Stampa"
-    imagePlaceholder: "Foto progetto 13"
-    clientText: "Descrizione di cosa voleva il cliente per il Progetto 13."
-    workText: "Descrizione di cosa abbiamo realizzato per il Progetto 13."
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+  - title: Progetto 13
+    category: Stampa
+    imagePlaceholder: Foto progetto 13
+    clientText: Descrizione di cosa voleva il cliente per il Progetto 13.
+    workText: Descrizione di cosa abbiamo realizzato per il Progetto 13.
     galleryItems:
-      - title: "Foto 1"
-      - title: "Foto 2"
-      - title: "Foto 3"
-  - title: "Progetto 14"
-    category: "Allestimento"
-    imagePlaceholder: "Foto progetto 14"
-    clientText: "Descrizione di cosa voleva il cliente per il Progetto 14."
-    workText: "Descrizione di cosa abbiamo realizzato per il Progetto 14."
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+  - title: Progetto 14
+    category: Allestimento
+    imagePlaceholder: Foto progetto 14
+    clientText: Descrizione di cosa voleva il cliente per il Progetto 14.
+    workText: Descrizione di cosa abbiamo realizzato per il Progetto 14.
     galleryItems:
-      - title: "Foto 1"
-      - title: "Foto 2"
-      - title: "Foto 3"
-  - title: "Progetto 15"
-    category: "Grafica"
-    imagePlaceholder: "Foto progetto 15"
-    clientText: "Descrizione di cosa voleva il cliente per il Progetto 15."
-    workText: "Descrizione di cosa abbiamo realizzato per il Progetto 15."
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+  - title: Progetto 15
+    category: Grafica
+    imagePlaceholder: Foto progetto 15
+    clientText: Descrizione di cosa voleva il cliente per il Progetto 15.
+    workText: Descrizione di cosa abbiamo realizzato per il Progetto 15.
     galleryItems:
-      - title: "Foto 1"
-      - title: "Foto 2"
-      - title: "Foto 3"
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+      - title: Foto 4
+      - title: Foto 5
+      - title: Foto 6
 cta:
-  title: "Non trovi quello che cerchi?"
-  text: "Ogni progetto è diverso. Raccontaci la tua idea e troviamo insieme la soluzione migliore."
-  button: "Contattaci"
+  title: Non trovi quello che cerchi?
+  text: Ogni progetto è diverso. Raccontaci la tua idea e troviamo insieme la
+    soluzione migliore.
+  button: Contattaci
 ---
