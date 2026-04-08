@@ -115,12 +115,12 @@ const bgClass = (bg: string) => bg === 'dark' ? 'bg-dark' : bg === 'light' ? 'bg
         <a href="#" class="btn btn-outline-light" data-page="progetti" style="flex-shrink:0;">{home.projectsHighlight.buttonLabel} →</a>
       </div>
       <div class="projects-grid">
-        <div class="project-card project-featured reveal" data-project-title={home.projectsHighlight.featured.title} data-project-category={home.projectsHighlight.featured.category}>
+        <div class="project-card project-featured reveal" data-project={JSON.stringify({ title: home.projectsHighlight.featured.title, category: home.projectsHighlight.featured.category, imagePlaceholder: home.projectsHighlight.featured.imagePlaceholder, clientText: '', workText: '', galleryItems: [] })}>
           <div class="project-thumb">{home.projectsHighlight.featured.imagePlaceholder}</div>
           <div class="project-overlay"><h3>{home.projectsHighlight.featured.title}</h3><span>{home.projectsHighlight.featured.category}</span></div>
         </div>
         {home.projectsHighlight.items.map((p: any, i: number) => (
-          <div class={`project-card reveal reveal-delay-${i+1}`} data-project-title={p.title} data-project-category={p.category}>
+          <div class={`project-card reveal reveal-delay-${i+1}`} data-project={JSON.stringify({ title: p.title, category: p.category, imagePlaceholder: p.imagePlaceholder, clientText: '', workText: '', galleryItems: [] })}>
             <div class="project-thumb">{p.imagePlaceholder}</div>
             <div class="project-overlay"><h3>{p.title}</h3><span>{p.category}</span></div>
           </div>
@@ -322,7 +322,7 @@ const bgClass = (bg: string) => bg === 'dark' ? 'bg-dark' : bg === 'light' ? 'bg
     <div class="container">
       <div class="projects-grid-3">
         {progetti.items.map((p: any, i: number) => (
-          <div class={`project-card reveal reveal-delay-${(i % 3) + 1}`} data-project-title={p.title} data-project-category={p.category}>
+          <div class={`project-card reveal reveal-delay-${(i % 3) + 1}`} data-project={JSON.stringify(p)}>
             <div class="project-thumb">{p.imagePlaceholder}</div>
             <div class="project-overlay"><h3>{p.title}</h3><span>{p.category}</span></div>
           </div>
@@ -387,20 +387,18 @@ const bgClass = (bg: string) => bg === 'dark' ? 'bg-dark' : bg === 'light' ? 'bg
       <h2 class="modal-title" id="modalTitle">Nome Progetto</h2>
       <p class="modal-category" id="modalCategory">Stampa</p>
 
-      <div class="modal-section">
-        <h3>{progetti.modal.clientSection.title}</h3>
-        <p>{progetti.modal.clientSection.text}</p>
+      <div class="modal-section" id="modalClientSection">
+        <h3>{progetti.modalLabels.clientTitle}</h3>
+        <p id="modalClientText"></p>
       </div>
 
-      <div class="modal-section">
-        <h3>{progetti.modal.workSection.title}</h3>
-        <p>{progetti.modal.workSection.text}</p>
+      <div class="modal-section" id="modalWorkSection">
+        <h3>{progetti.modalLabels.workTitle}</h3>
+        <p id="modalWorkText"></p>
       </div>
 
-      <h3 class="modal-gallery-title">{progetti.modal.galleryTitle}</h3>
-      <div class="modal-gallery">
-        {progetti.modal.galleryItems.map((g: string) => <div class="modal-gallery-item">{g}</div>)}
-      </div>
+      <h3 class="modal-gallery-title" id="modalGalleryTitle">{progetti.modalLabels.galleryTitle}</h3>
+      <div class="modal-gallery" id="modalGallery"></div>
     </div>
   </div>
 </div>
@@ -478,9 +476,40 @@ function observeAll() {
 }
 observeAll();
 
-function openProject(title, category) {
-  document.getElementById('modalTitle').textContent = title;
-  document.getElementById('modalCategory').textContent = category;
+function openProject(data) {
+  document.getElementById('modalTitle').textContent = data.title || '';
+  document.getElementById('modalCategory').textContent = data.category || '';
+  document.getElementById('modalHero').textContent = data.imagePlaceholder || '';
+
+  var clientText = data.clientText || '';
+  var workText = data.workText || '';
+  var gallery = Array.isArray(data.galleryItems) ? data.galleryItems : [];
+
+  var clientSection = document.getElementById('modalClientSection');
+  document.getElementById('modalClientText').textContent = clientText;
+  clientSection.style.display = clientText ? '' : 'none';
+
+  var workSection = document.getElementById('modalWorkSection');
+  document.getElementById('modalWorkText').textContent = workText;
+  workSection.style.display = workText ? '' : 'none';
+
+  var galleryEl = document.getElementById('modalGallery');
+  var galleryTitle = document.getElementById('modalGalleryTitle');
+  galleryEl.innerHTML = '';
+  if (gallery.length) {
+    gallery.forEach(function(g) {
+      var div = document.createElement('div');
+      div.className = 'modal-gallery-item';
+      div.textContent = g;
+      galleryEl.appendChild(div);
+    });
+    galleryEl.style.display = '';
+    galleryTitle.style.display = '';
+  } else {
+    galleryEl.style.display = 'none';
+    galleryTitle.style.display = 'none';
+  }
+
   document.getElementById('projectModal').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
@@ -503,9 +532,9 @@ document.querySelectorAll('[data-page]').forEach(el => {
 document.getElementById('hamburger').addEventListener('click', toggleMenu);
 
 // Bind project cards
-document.querySelectorAll('[data-project-title]').forEach(el => {
+document.querySelectorAll('[data-project]').forEach(el => {
   el.addEventListener('click', () => {
-    openProject(el.dataset.projectTitle, el.dataset.projectCategory);
+    try { openProject(JSON.parse(el.dataset.project)); } catch(e) {}
   });
 });
 

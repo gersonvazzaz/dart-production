@@ -244,6 +244,13 @@ collections:
               - { label: "Eyebrow", name: "eyebrow", widget: "string" }
               - { label: "Titolo", name: "title", widget: "string" }
               - { label: "Sottotitolo", name: "subtitle", widget: "text" }
+          - label: "Etichette modal"
+            name: "modalLabels"
+            widget: "object"
+            fields:
+              - { label: "Titolo sezione cliente", name: "clientTitle", widget: "string" }
+              - { label: "Titolo sezione lavoro", name: "workTitle", widget: "string" }
+              - { label: "Titolo gallery", name: "galleryTitle", widget: "string" }
           - label: "Lista progetti"
             name: "items"
             widget: "list"
@@ -251,23 +258,8 @@ collections:
               - { label: "Titolo", name: "title", widget: "string" }
               - { label: "Categoria", name: "category", widget: "select", options: ["Stampa", "Allestimento", "Grafica", "Personalizzazione"] }
               - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string" }
-          - label: "Modal singolo progetto"
-            name: "modal"
-            widget: "object"
-            fields:
-              - label: "Sezione cliente"
-                name: "clientSection"
-                widget: "object"
-                fields:
-                  - { label: "Titolo", name: "title", widget: "string" }
-                  - { label: "Testo", name: "text", widget: "text" }
-              - label: "Sezione lavoro"
-                name: "workSection"
-                widget: "object"
-                fields:
-                  - { label: "Titolo", name: "title", widget: "string" }
-                  - { label: "Testo", name: "text", widget: "text" }
-              - { label: "Titolo gallery", name: "galleryTitle", widget: "string" }
+              - { label: "Cosa voleva il cliente", name: "clientText", widget: "text" }
+              - { label: "Cosa abbiamo fatto", name: "workText", widget: "text" }
               - label: "Voci gallery"
                 name: "galleryItems"
                 widget: "list"
