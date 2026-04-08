@@ -368,13 +368,9 @@ const imgOrText = (item: any, fallback?: string) => item?.image || item?.imagePl
             <p>{contatti.info.business.line1}<br>{contatti.info.business.line2}</p>
           </div>
         </div>
-        <div class="form-card">
-          <h2 class="headline-sm">{contatti.form.title}</h2>
-          <input type="text" class="form-field" placeholder={contatti.form.namePlaceholder}>
-          <input type="email" class="form-field" placeholder={contatti.form.emailPlaceholder}>
-          <textarea class="form-field" placeholder={contatti.form.messagePlaceholder}></textarea>
-          <button class="form-submit">{contatti.form.submit}</button>
-          <p class="form-note">{contatti.form.note}</p>
+        <div class="contact-actions">
+          <a href="mailto:dartproduction.to@gmail.com" class="btn btn-primary btn-arrow">Scrivici una email</a>
+          <a href="https://wa.me/3793392762" target="_blank" rel="noopener" class="btn btn-outline-dark">Scrivici su WhatsApp</a>
         </div>
       </div>
     </div>
