@@ -6,13 +6,18 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Node (sito-v2)
+# Astro
+node_modules/
+dist/
+.astro/
+
+# Env
+.env
+.env.local
+
+# Other folders
 sito-v2/
-
-# Claude
 .claude/
-
-# Old WordPress files
 templates/
 css/
 copy/
