@@ -25,9 +25,9 @@ lab:
   title: "Il laboratorio"
   description: "Uno spazio attrezzato dove le idee diventano prodotti. Macchinari per serigrafia, DTF, ricamo e incisione laser."
   galleryItems:
-    - "Panoramica lab"
-    - "Dettaglio macchinari"
-    - "Lavorazione"
+    - title: "Panoramica lab"
+    - title: "Dettaglio macchinari"
+    - title: "Lavorazione"
 showroom:
   eyebrow: "Showroom"
   title: "Lo showroom"

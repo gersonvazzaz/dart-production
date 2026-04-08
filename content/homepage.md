@@ -9,14 +9,14 @@ hero:
   btn1: Scopri i servizi
   btn2: Vedi i progetti
 marquee:
-  - Stampa
-  - Allestimento
-  - Grafica
-  - Personalizzazione
-  - Ricamo
-  - Incisione Laser
-  - Stampa 3D
-  - Merchandise
+  - title: Stampa
+  - title: Allestimento
+  - title: Grafica
+  - title: Personalizzazione
+  - title: Ricamo
+  - title: Incisione Laser
+  - title: Stampa 3D
+  - title: Merchandise
 about:
   eyebrow: Chi siamo
   titleLine1: Un'anima creativa.
@@ -83,12 +83,12 @@ process:
 clients:
   eyebrow: Si sono affidati a noi
   logos:
-    - Cliente 1
-    - Cliente 2
-    - Cliente 3
-    - Cliente 4
-    - Cliente 5
-    - Cliente 6
+    - title: Cliente 1
+    - title: Cliente 2
+    - title: Cliente 3
+    - title: Cliente 4
+    - title: Cliente 5
+    - title: Cliente 6
 partner:
   badge: Official Dealer
   title: Stanley/Stella

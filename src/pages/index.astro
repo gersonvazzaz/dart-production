@@ -7,6 +7,7 @@ import { frontmatter as progetti } from '../../content/progetti.md';
 import { frontmatter as contatti } from '../../content/contatti.md';
 
 const bgClass = (bg: string) => bg === 'dark' ? 'bg-dark' : bg === 'light' ? 'bg-light' : 'bg-white';
+const imgOrText = (item: any, fallback?: string) => item?.image || item?.imagePlaceholder || fallback || '';
 ---
 <!DOCTYPE html>
 <html lang="it">
@@ -57,7 +58,7 @@ const bgClass = (bg: string) => bg === 'dark' ? 'bg-dark' : bg === 'light' ? 'bg
 
   <div class="marquee-wrap">
     <div class="marquee">
-      {[...home.marquee, ...home.marquee].map((m: string) => <span>{m}</span>)}
+      {[...home.marquee, ...home.marquee].map((m: any) => <span>{m.title}</span>)}
     </div>
   </div>
 
@@ -71,7 +72,7 @@ const bgClass = (bg: string) => bg === 'dark' ? 'bg-dark' : bg === 'light' ? 'bg
           <p class="body-md" style="margin-top:16px;">{home.about.paragraph2}</p>
         </div>
         <div class="reveal reveal-delay-2">
-          <div class="gallery-item large">{home.about.imagePlaceholder}</div>
+          <div class="gallery-item large">{home.about.image ? <img src={home.about.image} alt={home.about.titleLine1} /> : home.about.imagePlaceholder}</div>
         </div>
       </div>
     </div>
@@ -115,13 +116,13 @@ const bgClass = (bg: string) => bg === 'dark' ? 'bg-dark' : bg === 'light' ? 'bg
         <a href="#" class="btn btn-outline-light" data-page="progetti" style="flex-shrink:0;">{home.projectsHighlight.buttonLabel} →</a>
       </div>
       <div class="projects-grid">
-        <div class="project-card project-featured reveal" data-project={JSON.stringify({ title: home.projectsHighlight.featured.title, category: home.projectsHighlight.featured.category, imagePlaceholder: home.projectsHighlight.featured.imagePlaceholder, clientText: '', workText: '', galleryItems: [] })}>
-          <div class="project-thumb">{home.projectsHighlight.featured.imagePlaceholder}</div>
+        <div class="project-card project-featured reveal" data-project={JSON.stringify({ ...home.projectsHighlight.featured, clientText: '', workText: '', galleryItems: [] })}>
+          <div class="project-thumb">{home.projectsHighlight.featured.image ? <img src={home.projectsHighlight.featured.image} alt={home.projectsHighlight.featured.title} /> : home.projectsHighlight.featured.imagePlaceholder}</div>
           <div class="project-overlay"><h3>{home.projectsHighlight.featured.title}</h3><span>{home.projectsHighlight.featured.category}</span></div>
         </div>
         {home.projectsHighlight.items.map((p: any, i: number) => (
-          <div class={`project-card reveal reveal-delay-${i+1}`} data-project={JSON.stringify({ title: p.title, category: p.category, imagePlaceholder: p.imagePlaceholder, clientText: '', workText: '', galleryItems: [] })}>
-            <div class="project-thumb">{p.imagePlaceholder}</div>
+          <div class={`project-card reveal reveal-delay-${i+1}`} data-project={JSON.stringify({ ...p, clientText: '', workText: '', galleryItems: [] })}>
+            <div class="project-thumb">{p.image ? <img src={p.image} alt={p.title} /> : p.imagePlaceholder}</div>
             <div class="project-overlay"><h3>{p.title}</h3><span>{p.category}</span></div>
           </div>
         ))}
@@ -152,7 +153,7 @@ const bgClass = (bg: string) => bg === 'dark' ? 'bg-dark' : bg === 'light' ? 'bg
       <span class="eyebrow">{home.clients.eyebrow}</span>
       <div style="height:32px"></div>
       <div class="clients-grid">
-        {home.clients.logos.map((logo: string) => <div class="client-logo">{logo}</div>)}
+        {home.clients.logos.map((logo: any) => <div class="client-logo">{logo.image ? <img src={logo.image} alt={logo.title} /> : logo.title}</div>)}
       </div>
     </div>
   </section>
@@ -166,7 +167,7 @@ const bgClass = (bg: string) => bg === 'dark' ? 'bg-dark' : bg === 'light' ? 'bg
           <p class="body-lg">{home.partner.paragraph1}</p>
           <p class="body-md" style="margin-top:16px;">{home.partner.paragraph2}</p>
         </div>
-        <div class="partner-img reveal reveal-delay-2">{home.partner.imagePlaceholder}</div>
+        <div class="partner-img reveal reveal-delay-2">{home.partner.image ? <img src={home.partner.image} alt={home.partner.title} /> : home.partner.imagePlaceholder}</div>
       </div>
     </div>
   </section>
@@ -200,7 +201,7 @@ const bgClass = (bg: string) => bg === 'dark' ? 'bg-dark' : bg === 'light' ? 'bg
           <p class="body-md" style="margin-top:16px;">{studio.story.paragraph2}</p>
         </div>
         <div class="reveal reveal-delay-2">
-          <div class="gallery-item large">{studio.story.imagePlaceholder}</div>
+          <div class="gallery-item large">{studio.story.image ? <img src={studio.story.image} alt={studio.story.titleLine1} /> : studio.story.imagePlaceholder}</div>
         </div>
       </div>
     </div>
@@ -215,7 +216,7 @@ const bgClass = (bg: string) => bg === 'dark' ? 'bg-dark' : bg === 'light' ? 'bg
       <div class="team-grid" style="max-width: 700px; margin: 0 auto;">
         {studio.team.members.map((m: any, i: number) => (
           <div class={`team-card reveal reveal-delay-${i+1}`}>
-            <div class="team-photo">{m.imagePlaceholder}</div>
+            <div class="team-photo">{m.image ? <img src={m.image} alt={m.name} /> : m.imagePlaceholder}</div>
             <div class="team-info"><h3>{m.name}</h3><span>{m.role}</span></div>
           </div>
         ))}
@@ -231,9 +232,11 @@ const bgClass = (bg: string) => bg === 'dark' ? 'bg-dark' : bg === 'light' ? 'bg
         <p class="body-lg" style="max-width:700px; margin:20px auto 0;">{studio.lab.description}</p>
       </div>
       <div class="gallery-grid reveal">
-        <div class="gallery-item tall">{studio.lab.galleryItems[0]}</div>
-        <div class="gallery-item">{studio.lab.galleryItems[1]}</div>
-        <div class="gallery-item">{studio.lab.galleryItems[2]}</div>
+        {studio.lab.galleryItems.map((g: any, i: number) => (
+          <div class={i === 0 ? 'gallery-item tall' : 'gallery-item'}>
+            {g.image ? <img src={g.image} alt={g.title} /> : g.title}
+          </div>
+        ))}
       </div>
     </div>
   </section>
@@ -250,7 +253,7 @@ const bgClass = (bg: string) => bg === 'dark' ? 'bg-dark' : bg === 'light' ? 'bg
             <a href="#" class="btn btn-primary btn-arrow" data-page="contatti">{studio.showroom.button}</a>
           </div>
         </div>
-        <div class="partner-img reveal reveal-delay-2">{studio.showroom.imagePlaceholder}</div>
+        <div class="partner-img reveal reveal-delay-2">{studio.showroom.image ? <img src={studio.showroom.image} alt={studio.showroom.title} /> : studio.showroom.imagePlaceholder}</div>
       </div>
     </div>
   </section>
@@ -291,10 +294,10 @@ const bgClass = (bg: string) => bg === 'dark' ? 'bg-dark' : bg === 'light' ? 'bg
             <h2 class="headline-md">{s.title}</h2>
             <p class="body-lg" style="margin-top:16px;">{s.description}</p>
             <ul class="detail-list">
-              {s.list.map((item: string) => <li>{item}</li>)}
+              {s.list.map((item: any) => <li>{item.title}</li>)}
             </ul>
           </div>
-          <div class="detail-img">{s.imagePlaceholder}</div>
+          <div class="detail-img">{s.image ? <img src={s.image} alt={s.title} /> : s.imagePlaceholder}</div>
         </div>
       </div>
     </section>
@@ -323,7 +326,7 @@ const bgClass = (bg: string) => bg === 'dark' ? 'bg-dark' : bg === 'light' ? 'bg
       <div class="projects-grid-3">
         {progetti.items.map((p: any, i: number) => (
           <div class={`project-card reveal reveal-delay-${(i % 3) + 1}`} data-project={JSON.stringify(p)}>
-            <div class="project-thumb">{p.imagePlaceholder}</div>
+            <div class="project-thumb">{p.image ? <img src={p.image} alt={p.title} /> : p.imagePlaceholder}</div>
             <div class="project-overlay"><h3>{p.title}</h3><span>{p.category}</span></div>
           </div>
         ))}
@@ -423,7 +426,7 @@ const bgClass = (bg: string) => bg === 'dark' ? 'bg-dark' : bg === 'light' ? 'bg
     <div>
       <h4>{contatti.footer.servicesTitle}</h4>
       <ul class="footer-links">
-        {contatti.footer.servicesLinks.map((s: string) => <li><a href="#">{s}</a></li>)}
+        {contatti.footer.servicesLinks.map((s: any) => <li><a href="#">{s.title}</a></li>)}
       </ul>
     </div>
     <div>
@@ -479,7 +482,12 @@ observeAll();
 function openProject(data) {
   document.getElementById('modalTitle').textContent = data.title || '';
   document.getElementById('modalCategory').textContent = data.category || '';
-  document.getElementById('modalHero').textContent = data.imagePlaceholder || '';
+  var hero = document.getElementById('modalHero');
+  if (data.image) {
+    hero.innerHTML = '<img src="' + data.image + '" alt="' + (data.title || '') + '" style="width:100%;height:100%;object-fit:cover;">';
+  } else {
+    hero.textContent = data.imagePlaceholder || '';
+  }
 
   var clientText = data.clientText || '';
   var workText = data.workText || '';
@@ -500,7 +508,17 @@ function openProject(data) {
     gallery.forEach(function(g) {
       var div = document.createElement('div');
       div.className = 'modal-gallery-item';
-      div.textContent = g;
+      if (g && g.image) {
+        var img = document.createElement('img');
+        img.src = g.image;
+        img.alt = g.title || '';
+        img.style.width = '100%';
+        img.style.height = '100%';
+        img.style.objectFit = 'cover';
+        div.appendChild(img);
+      } else {
+        div.textContent = (g && g.title) ? g.title : (g || '');
+      }
       galleryEl.appendChild(div);
     });
     galleryEl.style.display = '';

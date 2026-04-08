@@ -8,10 +8,10 @@ items:
     title: "Stampa"
     description: "Realizziamo abbigliamento personalizzato per ogni occasione. Dal capo singolo alle grandi tirature, con tecniche professionali."
     list:
-      - "Serigrafia"
-      - "DTF (Direct to Film)"
-      - "Stampa digitale"
-      - "Abbigliamento personalizzato"
+      - title: "Serigrafia"
+      - title: "DTF (Direct to Film)"
+      - title: "Stampa digitale"
+      - title: "Abbigliamento personalizzato"
     imagePlaceholder: "Foto stampa"
     bg: "white"
     reverse: false
@@ -19,10 +19,10 @@ items:
     title: "Allestimento"
     description: "Offriamo attività di personalizzazione e soluzioni innovative per attrarre un pubblico sempre più ampio."
     list:
-      - "Allestimenti per fiere"
-      - "Personalizzazione showroom"
-      - "Decorazione eventi"
-      - "Soluzioni espositive"
+      - title: "Allestimenti per fiere"
+      - title: "Personalizzazione showroom"
+      - title: "Decorazione eventi"
+      - title: "Soluzioni espositive"
     imagePlaceholder: "Foto allestimento"
     bg: "light"
     reverse: true
@@ -30,10 +30,10 @@ items:
     title: "Grafica"
     description: "Progettiamo marchi, loghi e illustrazioni personalizzate. Identità visiva completa per il tuo brand."
     list:
-      - "Loghi e brand identity"
-      - "Illustrazioni personalizzate"
-      - "Progettazione grafica"
-      - "Grafiche per stampa"
+      - title: "Loghi e brand identity"
+      - title: "Illustrazioni personalizzate"
+      - title: "Progettazione grafica"
+      - title: "Grafiche per stampa"
     imagePlaceholder: "Foto processo creativo"
     bg: "white"
     reverse: false
@@ -41,10 +41,10 @@ items:
     title: "Personalizzazione"
     description: "Utilizziamo tecniche innovative per creare prodotti unici e su misura per ogni esigenza."
     list:
-      - "Ricamo"
-      - "Incisione laser"
-      - "Stampa 3D"
-      - "Prodotti custom"
+      - title: "Ricamo"
+      - title: "Incisione laser"
+      - title: "Stampa 3D"
+      - title: "Prodotti custom"
     imagePlaceholder: "Foto personalizzazione"
     bg: "dark"
     reverse: true

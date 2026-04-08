@@ -33,7 +33,10 @@ collections:
           - label: "Marquee (testo scorrevole)"
             name: "marquee"
             widget: "list"
-            field: { label: "Voce", name: "voce", widget: "string" }
+            fields:
+              - { label: "Titolo", name: "title", widget: "string" }
+              - { label: "Descrizione", name: "description", widget: "string", required: false }
+              - { label: "Immagine", name: "image", widget: "image", required: false }
           - label: "Chi siamo"
             name: "about"
             widget: "object"
@@ -43,7 +46,6 @@ collections:
               - { label: "Titolo riga 2", name: "titleLine2", widget: "string" }
               - { label: "Paragrafo 1", name: "paragraph1", widget: "text" }
               - { label: "Paragrafo 2", name: "paragraph2", widget: "text" }
-              - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string" }
               - { label: "Immagine", name: "image", widget: "image", required: false }
           - label: "Servizi"
             name: "services"
@@ -78,7 +80,6 @@ collections:
                 fields:
                   - { label: "Titolo", name: "title", widget: "string" }
                   - { label: "Categoria", name: "category", widget: "string" }
-                  - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string" }
                   - { label: "Immagine", name: "image", widget: "image", required: false }
               - label: "Altri progetti"
                 name: "items"
@@ -86,7 +87,6 @@ collections:
                 fields:
                   - { label: "Titolo", name: "title", widget: "string" }
                   - { label: "Categoria", name: "category", widget: "string" }
-                  - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string" }
                   - { label: "Immagine", name: "image", widget: "image", required: false }
           - label: "Metodo"
             name: "process"
@@ -109,7 +109,10 @@ collections:
               - label: "Loghi"
                 name: "logos"
                 widget: "list"
-                field: { label: "Nome cliente", name: "nome", widget: "string" }
+                fields:
+                  - { label: "Titolo", name: "title", widget: "string" }
+                  - { label: "Descrizione", name: "description", widget: "string", required: false }
+                  - { label: "Immagine", name: "image", widget: "image", required: false }
           - label: "Partner Stanley/Stella"
             name: "partner"
             widget: "object"
@@ -118,7 +121,6 @@ collections:
               - { label: "Titolo", name: "title", widget: "string" }
               - { label: "Paragrafo 1", name: "paragraph1", widget: "text" }
               - { label: "Paragrafo 2", name: "paragraph2", widget: "text" }
-              - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string" }
               - { label: "Immagine", name: "image", widget: "image", required: false }
           - label: "CTA finale"
             name: "cta"
@@ -151,7 +153,6 @@ collections:
               - { label: "Titolo riga 2", name: "titleLine2", widget: "string" }
               - { label: "Paragrafo 1", name: "paragraph1", widget: "text" }
               - { label: "Paragrafo 2", name: "paragraph2", widget: "text" }
-              - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string" }
               - { label: "Immagine", name: "image", widget: "image", required: false }
           - label: "Team"
             name: "team"
@@ -165,7 +166,6 @@ collections:
                 fields:
                   - { label: "Nome", name: "name", widget: "string" }
                   - { label: "Ruolo", name: "role", widget: "string" }
-                  - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string" }
                   - { label: "Immagine", name: "image", widget: "image", required: false }
           - label: "Laboratorio"
             name: "lab"
@@ -174,10 +174,13 @@ collections:
               - { label: "Eyebrow", name: "eyebrow", widget: "string" }
               - { label: "Titolo", name: "title", widget: "string" }
               - { label: "Descrizione", name: "description", widget: "text" }
-              - label: "Gallery (3 voci)"
+              - label: "Gallery"
                 name: "galleryItems"
                 widget: "list"
-                field: { label: "Voce", name: "voce", widget: "string" }
+                fields:
+                  - { label: "Titolo", name: "title", widget: "string" }
+                  - { label: "Descrizione", name: "description", widget: "string", required: false }
+                  - { label: "Immagine", name: "image", widget: "image", required: false }
           - label: "Showroom"
             name: "showroom"
             widget: "object"
@@ -187,7 +190,6 @@ collections:
               - { label: "Paragrafo 1", name: "paragraph1", widget: "text" }
               - { label: "Paragrafo 2", name: "paragraph2", widget: "text" }
               - { label: "Bottone", name: "button", widget: "string" }
-              - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string" }
               - { label: "Immagine", name: "image", widget: "image", required: false }
           - label: "Valori"
             name: "values"
@@ -225,8 +227,10 @@ collections:
               - label: "Lista voci"
                 name: "list"
                 widget: "list"
-                field: { label: "Voce", name: "voce", widget: "string" }
-              - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string" }
+                fields:
+                  - { label: "Titolo", name: "title", widget: "string" }
+                  - { label: "Descrizione", name: "description", widget: "string", required: false }
+                  - { label: "Immagine", name: "image", widget: "image", required: false }
               - { label: "Immagine", name: "image", widget: "image", required: false }
               - { label: "Sfondo", name: "bg", widget: "select", options: ["white", "light", "dark"] }
               - { label: "Layout invertito", name: "reverse", widget: "boolean", default: false }
@@ -265,14 +269,16 @@ collections:
             fields:
               - { label: "Titolo", name: "title", widget: "string" }
               - { label: "Categoria", name: "category", widget: "select", options: ["Stampa", "Allestimento", "Grafica", "Personalizzazione"] }
-              - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string" }
               - { label: "Immagine", name: "image", widget: "image", required: false }
               - { label: "Cosa voleva il cliente", name: "clientText", widget: "text" }
               - { label: "Cosa abbiamo fatto", name: "workText", widget: "text" }
               - label: "Voci gallery"
                 name: "galleryItems"
                 widget: "list"
-                field: { label: "Voce", name: "voce", widget: "string" }
+                fields:
+                  - { label: "Titolo", name: "title", widget: "string" }
+                  - { label: "Descrizione", name: "description", widget: "string", required: false }
+                  - { label: "Immagine", name: "image", widget: "image", required: false }
           - label: "CTA finale"
             name: "cta"
             widget: "object"
@@ -340,7 +346,10 @@ collections:
               - label: "Link servizi"
                 name: "servicesLinks"
                 widget: "list"
-                field: { label: "Voce", name: "voce", widget: "string" }
+                fields:
+                  - { label: "Titolo", name: "title", widget: "string" }
+                  - { label: "Descrizione", name: "description", widget: "string", required: false }
+                  - { label: "Immagine", name: "image", widget: "image", required: false }
               - { label: "Titolo sezione Contatti", name: "contactsTitle", widget: "string" }
               - { label: "Copyright", name: "copyright", widget: "string" }
               - { label: "P.IVA footer", name: "vat", widget: "string" }
