@@ -44,6 +44,7 @@ collections:
               - { label: "Paragrafo 1", name: "paragraph1", widget: "text" }
               - { label: "Paragrafo 2", name: "paragraph2", widget: "text" }
               - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string" }
+              - { label: "Immagine", name: "image", widget: "image", required: false }
           - label: "Servizi"
             name: "services"
             widget: "object"
@@ -78,6 +79,7 @@ collections:
                   - { label: "Titolo", name: "title", widget: "string" }
                   - { label: "Categoria", name: "category", widget: "string" }
                   - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string" }
+                  - { label: "Immagine", name: "image", widget: "image", required: false }
               - label: "Altri progetti"
                 name: "items"
                 widget: "list"
@@ -85,6 +87,7 @@ collections:
                   - { label: "Titolo", name: "title", widget: "string" }
                   - { label: "Categoria", name: "category", widget: "string" }
                   - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string" }
+                  - { label: "Immagine", name: "image", widget: "image", required: false }
           - label: "Metodo"
             name: "process"
             widget: "object"
@@ -116,6 +119,7 @@ collections:
               - { label: "Paragrafo 1", name: "paragraph1", widget: "text" }
               - { label: "Paragrafo 2", name: "paragraph2", widget: "text" }
               - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string" }
+              - { label: "Immagine", name: "image", widget: "image", required: false }
           - label: "CTA finale"
             name: "cta"
             widget: "object"
@@ -148,6 +152,7 @@ collections:
               - { label: "Paragrafo 1", name: "paragraph1", widget: "text" }
               - { label: "Paragrafo 2", name: "paragraph2", widget: "text" }
               - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string" }
+              - { label: "Immagine", name: "image", widget: "image", required: false }
           - label: "Team"
             name: "team"
             widget: "object"
@@ -161,6 +166,7 @@ collections:
                   - { label: "Nome", name: "name", widget: "string" }
                   - { label: "Ruolo", name: "role", widget: "string" }
                   - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string" }
+                  - { label: "Immagine", name: "image", widget: "image", required: false }
           - label: "Laboratorio"
             name: "lab"
             widget: "object"
@@ -182,6 +188,7 @@ collections:
               - { label: "Paragrafo 2", name: "paragraph2", widget: "text" }
               - { label: "Bottone", name: "button", widget: "string" }
               - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string" }
+              - { label: "Immagine", name: "image", widget: "image", required: false }
           - label: "Valori"
             name: "values"
             widget: "object"
@@ -220,6 +227,7 @@ collections:
                 widget: "list"
                 field: { label: "Voce", name: "voce", widget: "string" }
               - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string" }
+              - { label: "Immagine", name: "image", widget: "image", required: false }
               - { label: "Sfondo", name: "bg", widget: "select", options: ["white", "light", "dark"] }
               - { label: "Layout invertito", name: "reverse", widget: "boolean", default: false }
           - label: "CTA finale"
@@ -258,6 +266,7 @@ collections:
               - { label: "Titolo", name: "title", widget: "string" }
               - { label: "Categoria", name: "category", widget: "select", options: ["Stampa", "Allestimento", "Grafica", "Personalizzazione"] }
               - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string" }
+              - { label: "Immagine", name: "image", widget: "image", required: false }
               - { label: "Cosa voleva il cliente", name: "clientText", widget: "text" }
               - { label: "Cosa abbiamo fatto", name: "workText", widget: "text" }
               - label: "Voci gallery"
