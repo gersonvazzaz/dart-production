@@ -4,6 +4,7 @@ hero:
   titleLine1: DART
   titleLine2: PRODUCTION
   subtitle: >
+    
     Diamo forma alle idee attraverso produzione creativa e stampa.
 
     Abbigliamento, merchandising e soluzioni su misura per realtà che vogliono distinguersi.
@@ -78,16 +79,14 @@ process:
   steps:
     - num: "01"
       title: Idea
-      description: Esposizione dell'idea grafica, artistica o creativa. Ascoltiamo e
-        definiamo insieme la direzione del progetto.
+      description: Esposizione dell’idea e definizione della direzione del progetto.
     - num: "02"
-      title: Progettazione
-      description: Studio e pianificazione del prodotto. Scegliamo materiali, tecniche
-        e dettagli per il miglior risultato.
+      title: Sviluppo
+      description: |
+        Definiamo struttura, stile e realizzazione del progetto.
     - num: "03"
-      title: Realizzazione
-      description: Realizzazione del progetto nel nostro laboratorio. Produzione,
-        controllo qualità e consegna del prodotto finito.
+      title: Produzione
+      description: Seguiamo la produzione fino al risultato finale.
 clients:
   eyebrow: Si sono affidati a noi
   logos:
@@ -100,17 +99,17 @@ clients:
 partner:
   badge: Official Dealer
   title: Stanley/Stella
-  paragraph1: Dal 2019 siamo rivenditori ufficiali Stanley/Stella. Collezioni di
-    abbigliamento responsabile, pensate per chi vuole qualità senza rinunciare
-    all'etica.
-  paragraph2: Prodotti che siamo fieri di lavorare e che i nostri clienti sono
-    fieri di indossare.
+  paragraph1: >
+    Dal 2019 siamo rivenditori ufficiali Stanley/Stella.
+
+    Collezioni di abbigliamento sostenibile pensate per unire qualità e attenzione alla produzione.
+  paragraph2: Prodotti utilizzati nei nostri lavori.
   imagePlaceholder: Foto Stanley/Stella
 cta:
   eyebrow: Hai un'idea?
   titleLine1: Hai un progetto
   titleLine2: in mente?
-  text: Raccontacelo. Che sia una t-shirt, un allestimento o un'intera linea di
-    prodotti, possiamo realizzarlo insieme.
+  text: |
+    Raccontacelo. Possiamo realizzarlo insieme.
   button: Contattaci
 ---
