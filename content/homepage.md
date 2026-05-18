@@ -1,6 +1,6 @@
 ---
 hero:
-  tag: IDEA; PORGETTA , CREA
+  tag: IDEA, PORGETTA , CREA
   titleLine1: DART
   titleLine2: PRODUCTION
   subtitle: Studio creativo e laboratorio di produzione. Idea, progetta, crea.
