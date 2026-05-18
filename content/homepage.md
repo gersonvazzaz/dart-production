@@ -1,6 +1,6 @@
 ---
 hero:
-  tag: IDEA, PORGETTA , CREA
+  tag: Laboratorio di produzione creativa
   titleLine1: DART
   titleLine2: PRODUCTION
   subtitle: >
