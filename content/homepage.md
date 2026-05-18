@@ -3,9 +3,13 @@ hero:
   tag: IDEA, PORGETTA , CREA
   titleLine1: DART
   titleLine2: PRODUCTION
-  subtitle: Studio creativo e laboratorio di produzione. Idea, progetta, crea.
-    Abbigliamento personalizzato, allestimenti, grafica e lavorazioni custom per
-    brand, eventi e artisti.
+  subtitle: >
+    
+    Diamo forma alle idee attraverso produzione creativa e stampa.
+
+    Abbigliamento, merchandising e soluzioni su misura per realtà che vogliono distinguersi.
+
+    Serigrafia, ricamo, DTF, 3D e murales.
   btn1: Scopri i servizi
   btn2: Vedi i progetti
 marquee:
