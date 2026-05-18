@@ -23,14 +23,15 @@ marquee:
   - title: Merchandise
 about:
   eyebrow: Chi siamo
-  titleLine1: Un'anima creativa.
-  titleLine2: Un cuore produttivo.
-  paragraph1: Dart Production nasce dall'incontro tra progettazione grafica e
-    produzione artigianale. Dal concept al prodotto finito, ogni fase passa
-    dalle nostre mani.
-  paragraph2: Realizziamo abbigliamento personalizzato, allestimenti, grafica e
-    prodotti custom utilizzando tecniche innovative come il ricamo, l'incisione
-    laser e la stampa 3D.
+  titleLine1: Dal concept al prodotto finito.
+  titleLine2: Seguiamo tutto il processo creativo e produttivo.
+  paragraph1: >-
+    Dart Production è uno studio creativo e laboratorio di produzione con base a
+    Torino.
+
+    Sviluppiamo e realizziamo abbigliamento personalizzato, merchandising, grafica e produzioni su misura.
+  paragraph2: Utilizziamo tecniche come serigrafia, ricamo, DTF, incisione laser e
+    stampa 3D per trasformare le idee in oggetti concreti.
   imagePlaceholder: Foto studio / laboratorio
 services:
   eyebrow: Cosa facciamo
