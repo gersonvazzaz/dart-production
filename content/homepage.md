@@ -4,7 +4,6 @@ hero:
   titleLine1: DART
   titleLine2: PRODUCTION
   subtitle: >
-    
     Diamo forma alle idee attraverso produzione creativa e stampa.
 
     Abbigliamento, merchandising e soluzioni su misura per realtà che vogliono distinguersi.
