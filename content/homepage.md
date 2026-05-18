@@ -39,21 +39,25 @@ services:
   cards:
     - icon: ✦
       title: Stampa
-      description: Realizziamo abbigliamento personalizzato per ogni occasione. Dal
-        capo singolo alle grandi tirature.
+      description: >
+        
+        Realizziamo abbigliamento e merchandising personalizzato per ogni esigenza, dalle piccole produzioni alle grandi forniture.
     - icon: ◈
       title: Allestimento
-      description: Personalizzazione e soluzioni innovative per attrarre un pubblico
-        sempre più ampio. Fiere, eventi, showroom.
+      description: >
+        
+        Soluzioni creative per fiere, eventi e showroom. Personalizziamo spazi e ambienti in base alle esigenze.
     - icon: ◉
       title: Grafica
-      description: Progettiamo marchi, loghi e illustrazioni personalizzate. Identità
-        visiva completa per il tuo brand.
+      description: >
+        
+        Progettiamo loghi e grafiche su misura. Diamo forma all’identità visiva del tuo progetto.
   cardWide:
     icon: ⬡
     title: Personalizzazione
-    description: Utilizziamo tecniche innovative come il ricamo, l'incisione laser e
-      la stampa 3D per creare prodotti unici.
+    description: >
+      
+      Utilizziamo diverse tecniche come ricamo, incisione laser e stampa 3D per dare forma a prodotti unici.
 projectsHighlight:
   eyebrow: Portfolio
   title: Progetti selezionati
