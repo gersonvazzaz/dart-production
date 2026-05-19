@@ -1,9 +1,9 @@
 ---
 hero:
   eyebrow: Servizi
-  title: Cosa facciamo? Niente
+  title: Cosa facciamo
   subtitle: Dalla progettazione alla produzione. Tutto quello che serve per dare
-    vita al tuo progetto.
+    vita al tuo progetto. paralciaiai
 items:
   - eyebrow: "01"
     title: Stampa
