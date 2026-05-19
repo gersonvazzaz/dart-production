@@ -98,6 +98,8 @@ clients:
     - title: Cliente 4
     - title: Cliente 5
     - title: Cliente 6
+    - title: cliente 7
+    - title: cliente 8
 partner:
   badge: Official Dealer
   title: Stanley/Stella
