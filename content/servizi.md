@@ -53,6 +53,12 @@ items:
     imagePlaceholder: Foto personalizzazione
     bg: dark
     reverse: true
+  - reverse: false
+    eyebrow: "05"
+    title: Eventi
+    description: |
+      Stampa live agli eventi 
+    bg: dark
 cta:
   eyebrow: Consulenza
   titleLine1: Quale tecnica è
