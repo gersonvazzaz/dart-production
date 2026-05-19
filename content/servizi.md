@@ -1,57 +1,63 @@
 ---
 hero:
-  eyebrow: "Servizi"
-  title: "Cosa facciamo"
-  subtitle: "Dalla progettazione alla produzione. Tutto quello che serve per dare vita al tuo progetto."
+  eyebrow: Servizi
+  title: Cosa facciamo? Niente
+  subtitle: Dalla progettazione alla produzione. Tutto quello che serve per dare
+    vita al tuo progetto.
 items:
   - eyebrow: "01"
-    title: "Stampa"
-    description: "Realizziamo abbigliamento personalizzato per ogni occasione. Dal capo singolo alle grandi tirature, con tecniche professionali."
+    title: Stampa
+    description: Realizziamo abbigliamento personalizzato per ogni occasione. Dal
+      capo singolo alle grandi tirature, con tecniche professionali.
     list:
-      - title: "Serigrafia"
-      - title: "DTF (Direct to Film)"
-      - title: "Stampa digitale"
-      - title: "Abbigliamento personalizzato"
-    imagePlaceholder: "Foto stampa"
-    bg: "white"
+      - title: Serigrafia
+      - title: DTF (Direct to Film)
+      - title: Stampa digitale
+      - title: Abbigliamento personalizzato
+    imagePlaceholder: Foto stampa
+    bg: white
     reverse: false
   - eyebrow: "02"
-    title: "Allestimento"
-    description: "Offriamo attività di personalizzazione e soluzioni innovative per attrarre un pubblico sempre più ampio."
+    title: Allestimento
+    description: Offriamo attività di personalizzazione e soluzioni innovative per
+      attrarre un pubblico sempre più ampio.
     list:
-      - title: "Allestimenti per fiere"
-      - title: "Personalizzazione showroom"
-      - title: "Decorazione eventi"
-      - title: "Soluzioni espositive"
-    imagePlaceholder: "Foto allestimento"
-    bg: "light"
+      - title: Allestimenti per fiere
+      - title: Personalizzazione showroom
+      - title: Decorazione eventi
+      - title: Soluzioni espositive
+    imagePlaceholder: Foto allestimento
+    bg: light
     reverse: true
   - eyebrow: "03"
-    title: "Grafica"
-    description: "Progettiamo marchi, loghi e illustrazioni personalizzate. Identità visiva completa per il tuo brand."
+    title: Grafica
+    description: Progettiamo marchi, loghi e illustrazioni personalizzate. Identità
+      visiva completa per il tuo brand.
     list:
-      - title: "Loghi e brand identity"
-      - title: "Illustrazioni personalizzate"
-      - title: "Progettazione grafica"
-      - title: "Grafiche per stampa"
-    imagePlaceholder: "Foto processo creativo"
-    bg: "white"
+      - title: Loghi e brand identity
+      - title: Illustrazioni personalizzate
+      - title: Progettazione grafica
+      - title: Grafiche per stampa
+    imagePlaceholder: Foto processo creativo
+    bg: white
     reverse: false
   - eyebrow: "04"
-    title: "Personalizzazione"
-    description: "Utilizziamo tecniche innovative per creare prodotti unici e su misura per ogni esigenza."
+    title: Personalizzazione
+    description: Utilizziamo tecniche innovative per creare prodotti unici e su
+      misura per ogni esigenza.
     list:
-      - title: "Ricamo"
-      - title: "Incisione laser"
-      - title: "Stampa 3D"
-      - title: "Prodotti custom"
-    imagePlaceholder: "Foto personalizzazione"
-    bg: "dark"
+      - title: Ricamo
+      - title: Incisione laser
+      - title: Stampa 3D
+      - title: Prodotti custom
+    imagePlaceholder: Foto personalizzazione
+    bg: dark
     reverse: true
 cta:
-  eyebrow: "Consulenza"
-  titleLine1: "Quale tecnica è"
-  titleLine2: "più adatta a te?"
-  text: "Contattaci per una consulenza gratuita. Ti aiutiamo a scegliere materiali, tecniche e soluzioni su misura."
-  button: "Richiedi un preventivo"
+  eyebrow: Consulenza
+  titleLine1: Quale tecnica è
+  titleLine2: più adatta a te?
+  text: Contattaci per una consulenza gratuita. Ti aiutiamo a scegliere materiali,
+    tecniche e soluzioni su misura.
+  button: Richiedi un preventivo
 ---
