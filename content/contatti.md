@@ -9,8 +9,7 @@ info:
     value: dartproduction.to@gmail.com
   phone:
     label: Telefono
-    values:
-      - +39 3793392762
+    values: []
   business:
     label: Dati aziendali
     line1: "P.IVA: IT12754230013"
