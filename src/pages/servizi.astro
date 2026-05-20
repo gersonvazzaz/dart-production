@@ -20,9 +20,11 @@ const bgClass = (bg: string) => bg === 'dark' ? 'bg-dark' : bg === 'light' ? 'bg
             <span class="eyebrow">{s.eyebrow}</span>
             <h2 class="headline-md">{s.title}</h2>
             <p class="body-lg" style="margin-top:16px;">{s.description}</p>
-            <ul class="detail-list">
-              {s.list.map((item: any) => <li>{item.title}</li>)}
-            </ul>
+            {s.list && s.list.length > 0 && (
+              <ul class="detail-list">
+                {s.list.map((item: any) => <li>{item.title}</li>)}
+              </ul>
+            )}
           </div>
           <div class="detail-img">{s.image ? <img src={s.image} alt={s.title} /> : s.imagePlaceholder}</div>
         </div>
