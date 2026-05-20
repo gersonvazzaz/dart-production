@@ -1,4 +1,5 @@
 ---
+# last-updated: 2026-05-20
 hero:
   tag: Laboratorio di produzione creativa
   titleLine1: DART
