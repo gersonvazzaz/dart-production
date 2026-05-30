@@ -244,8 +244,37 @@ collections:
               - { label: "Testo", name: "text", widget: "text" }
               - { label: "Bottone", name: "button", widget: "string" }
 
+      - name: "progetti-hub"
+        label: "Pagina Progetti (Hub)"
+        file: "content/progetti-hub.md"
+        format: "yaml-frontmatter"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Titolo", name: "title", widget: "string" }
+              - { label: "Sottotitolo", name: "subtitle", widget: "text" }
+          - label: "Sezioni"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "Numero (eyebrow)", name: "eyebrow", widget: "string" }
+              - { label: "Titolo", name: "title", widget: "string" }
+              - { label: "Descrizione", name: "description", widget: "text" }
+              - { label: "Immagine", name: "image", widget: "image", required: false }
+              - { label: "Testo bottone", name: "buttonLabel", widget: "string" }
+          - label: "CTA finale"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Titolo", name: "title", widget: "string" }
+              - { label: "Testo", name: "text", widget: "text" }
+              - { label: "Bottone", name: "button", widget: "string" }
+
       - name: "progetti"
-        label: "Progetti"
+        label: "Lista Progetti"
         file: "content/progetti.md"
         format: "yaml-frontmatter"
         fields:

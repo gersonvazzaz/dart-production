@@ -1,70 +1,36 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { frontmatter as hub } from '../../content/progetti-hub.md';
 
-const sections = [
-  {
-    eyebrow: '01',
-    title: 'Stampa',
-    description: 'Realizziamo abbigliamento personalizzato per ogni occasione. Dal capo singolo alle grandi tirature, con tecniche professionali.',
-    imagePlaceholder: 'Foto stampa',
-    href: '/progetti/stampa',
-    buttonLabel: 'Scopri i nostri lavori di Stampa',
-    bg: 'white',
-    reverse: false,
-  },
-  {
-    eyebrow: '02',
-    title: 'Allestimento',
-    description: 'Offriamo attività di personalizzazione e soluzioni innovative per attrarre un pubblico sempre più ampio.',
-    imagePlaceholder: 'Foto allestimento',
-    href: '/progetti/allestimento',
-    buttonLabel: 'Scopri i nostri lavori di Allestimento',
-    bg: 'light',
-    reverse: true,
-  },
-  {
-    eyebrow: '03',
-    title: 'Personalizzazione',
-    description: 'Utilizziamo tecniche innovative per creare prodotti unici e su misura per ogni esigenza.',
-    imagePlaceholder: 'Foto personalizzazione',
-    href: '/progetti/personalizzazione',
-    buttonLabel: 'Scopri i nostri lavori di Personalizzazione',
-    bg: 'white',
-    reverse: false,
-  },
-  {
-    eyebrow: '04',
-    title: 'Eventi',
-    description: 'Stampa live agli eventi.',
-    imagePlaceholder: 'Foto eventi',
-    href: '/progetti/eventi',
-    buttonLabel: 'Scopri i nostri lavori di Eventi',
-    bg: 'light',
-    reverse: true,
-  },
-];
+const slugMap: Record<string, string> = {
+  'Stampa': '/progetti/stampa',
+  'Allestimento': '/progetti/allestimento',
+  'Personalizzazione': '/progetti/personalizzazione',
+  'Eventi': '/progetti/eventi',
+};
 
-const bgClass = (bg: string) => bg === 'light' ? 'bg-light' : 'bg-white';
+const bgClasses = ['bg-white', 'bg-light', 'bg-white', 'bg-light'];
+const reverses = [false, true, false, true];
 ---
 <Layout page="progetti" title="Progetti — Dart Production">
 
   <section class="hero-inner">
-    <span class="eyebrow">Portfolio</span>
-    <h1 class="headline-xl">I nostri lavori</h1>
-    <p class="body-lg" style="max-width:560px; text-align:center; margin-top:16px;">Scopri i progetti realizzati nel nostro laboratorio, suddivisi per area di competenza.</p>
+    <span class="eyebrow">{hub.hero.eyebrow}</span>
+    <h1 class="headline-xl">{hub.hero.title}</h1>
+    <p class="body-lg" style="max-width:560px; text-align:center; margin-top:16px;">{hub.hero.subtitle}</p>
   </section>
 
-  {sections.map((s) => (
-    <section class={`section ${bgClass(s.bg)}`}>
+  {hub.sections.map((s: any, i: number) => (
+    <section class={`section ${bgClasses[i] || 'bg-white'}`}>
       <div class="container">
-        <div class={`detail-row ${s.reverse ? 'reverse' : ''} reveal`}>
+        <div class={`detail-row ${reverses[i] ? 'reverse' : ''} reveal`}>
           <div>
             <span class="eyebrow">{s.eyebrow}</span>
             <h2 class="headline-md">{s.title}</h2>
             <p class="body-lg" style="margin-top:16px; margin-bottom:32px;">{s.description}</p>
-            <a href={s.href} class="btn btn-primary btn-arrow">{s.buttonLabel}</a>
+            <a href={slugMap[s.title] || '/progetti'} class="btn btn-primary btn-arrow">{s.buttonLabel}</a>
           </div>
-          <div class="detail-img">{s.imagePlaceholder}</div>
+          <div class="detail-img">{s.image ? <img src={s.image} alt={s.title} /> : s.imagePlaceholder}</div>
         </div>
       </div>
     </section>
@@ -72,9 +38,9 @@ const bgClass = (bg: string) => bg === 'light' ? 'bg-light' : 'bg-white';
 
   <section class="cta-block">
     <div class="container reveal">
-      <h2 class="headline-md">Non trovi quello che cerchi?</h2>
-      <p class="body-lg" style="max-width:500px; margin:0 auto 40px;">Ogni progetto è diverso. Raccontaci la tua idea e troviamo insieme la soluzione migliore.</p>
-      <a href="/contatti" class="btn btn-primary btn-arrow">Contattaci</a>
+      <h2 class="headline-md">{hub.cta.title}</h2>
+      <p class="body-lg" style="max-width:500px; margin:0 auto 40px;">{hub.cta.text}</p>
+      <a href="/contatti" class="btn btn-primary btn-arrow">{hub.cta.button}</a>
     </div>
   </section>
 
