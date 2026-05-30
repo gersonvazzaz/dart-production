@@ -268,7 +268,7 @@ collections:
             widget: "list"
             fields:
               - { label: "Titolo", name: "title", widget: "string" }
-              - { label: "Categoria", name: "category", widget: "select", options: ["Stampa", "Allestimento", "Grafica", "Personalizzazione"] }
+              - { label: "Categoria", name: "category", widget: "select", options: ["Stampa", "Allestimento", "Grafica", "Personalizzazione", "Eventi"] }
               - { label: "Immagine", name: "image", widget: "image", required: false }
               - { label: "Cosa voleva il cliente", name: "clientText", widget: "text" }
               - { label: "Cosa abbiamo fatto", name: "workText", widget: "text" }
