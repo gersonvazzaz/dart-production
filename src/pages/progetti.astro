@@ -1,130 +1,81 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { frontmatter as progetti } from '../../content/progetti.md';
+
+const sections = [
+  {
+    eyebrow: '01',
+    title: 'Stampa',
+    description: 'Realizziamo abbigliamento personalizzato per ogni occasione. Dal capo singolo alle grandi tirature, con tecniche professionali.',
+    imagePlaceholder: 'Foto stampa',
+    href: '/progetti/stampa',
+    buttonLabel: 'Scopri i nostri lavori di Stampa',
+    bg: 'white',
+    reverse: false,
+  },
+  {
+    eyebrow: '02',
+    title: 'Allestimento',
+    description: 'Offriamo attività di personalizzazione e soluzioni innovative per attrarre un pubblico sempre più ampio.',
+    imagePlaceholder: 'Foto allestimento',
+    href: '/progetti/allestimento',
+    buttonLabel: 'Scopri i nostri lavori di Allestimento',
+    bg: 'light',
+    reverse: true,
+  },
+  {
+    eyebrow: '03',
+    title: 'Personalizzazione',
+    description: 'Utilizziamo tecniche innovative per creare prodotti unici e su misura per ogni esigenza.',
+    imagePlaceholder: 'Foto personalizzazione',
+    href: '/progetti/personalizzazione',
+    buttonLabel: 'Scopri i nostri lavori di Personalizzazione',
+    bg: 'white',
+    reverse: false,
+  },
+  {
+    eyebrow: '04',
+    title: 'Eventi',
+    description: 'Stampa live agli eventi.',
+    imagePlaceholder: 'Foto eventi',
+    href: '/progetti/eventi',
+    buttonLabel: 'Scopri i nostri lavori di Eventi',
+    bg: 'light',
+    reverse: true,
+  },
+];
+
+const bgClass = (bg: string) => bg === 'light' ? 'bg-light' : 'bg-white';
 ---
 <Layout page="progetti" title="Progetti — Dart Production">
 
   <section class="hero-inner">
-    <span class="eyebrow">{progetti.hero.eyebrow}</span>
-    <h1 class="headline-xl">{progetti.hero.title}</h1>
-    <p class="body-lg" style="max-width:500px; text-align:center; margin-top:16px;">{progetti.hero.subtitle}</p>
+    <span class="eyebrow">Portfolio</span>
+    <h1 class="headline-xl">I nostri lavori</h1>
+    <p class="body-lg" style="max-width:560px; text-align:center; margin-top:16px;">Scopri i progetti realizzati nel nostro laboratorio, suddivisi per area di competenza.</p>
   </section>
 
-  <section class="section bg-white">
-    <div class="container">
-      <div class="projects-grid-3">
-        {progetti.items.map((p: any, i: number) => (
-          <div class={`project-card reveal reveal-delay-${(i % 3) + 1}`} data-project={JSON.stringify(p)}>
-            <div class="project-thumb">{p.image ? <img src={p.image} alt={p.title} /> : p.imagePlaceholder}</div>
-            <div class="project-overlay"><h3>{p.title}</h3><span>{p.category}</span></div>
+  {sections.map((s) => (
+    <section class={`section ${bgClass(s.bg)}`}>
+      <div class="container">
+        <div class={`detail-row ${s.reverse ? 'reverse' : ''} reveal`}>
+          <div>
+            <span class="eyebrow">{s.eyebrow}</span>
+            <h2 class="headline-md">{s.title}</h2>
+            <p class="body-lg" style="margin-top:16px; margin-bottom:32px;">{s.description}</p>
+            <a href={s.href} class="btn btn-primary btn-arrow">{s.buttonLabel}</a>
           </div>
-        ))}
+          <div class="detail-img">{s.imagePlaceholder}</div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  ))}
 
   <section class="cta-block">
     <div class="container reveal">
-      <h2 class="headline-md">{progetti.cta.title}</h2>
-      <p class="body-lg" style="max-width:500px; margin:0 auto 40px;">{progetti.cta.text}</p>
-      <a href="/contatti" class="btn btn-primary btn-arrow">{progetti.cta.button}</a>
+      <h2 class="headline-md">Non trovi quello che cerchi?</h2>
+      <p class="body-lg" style="max-width:500px; margin:0 auto 40px;">Ogni progetto è diverso. Raccontaci la tua idea e troviamo insieme la soluzione migliore.</p>
+      <a href="/contatti" class="btn btn-primary btn-arrow">Contattaci</a>
     </div>
   </section>
 
-  <div class="modal-overlay" id="projectModal">
-    <div class="modal">
-      <button class="modal-close" id="modalClose">✕</button>
-      <div class="modal-hero" id="modalHero">Foto progetto 16:9</div>
-      <div class="modal-body">
-        <h2 class="modal-title" id="modalTitle">Nome Progetto</h2>
-        <p class="modal-category" id="modalCategory">Stampa</p>
-
-        <div class="modal-section" id="modalClientSection">
-          <h3>{progetti.modalLabels.clientTitle}</h3>
-          <p id="modalClientText"></p>
-        </div>
-
-        <div class="modal-section" id="modalWorkSection">
-          <h3>{progetti.modalLabels.workTitle}</h3>
-          <p id="modalWorkText"></p>
-        </div>
-
-        <h3 class="modal-gallery-title" id="modalGalleryTitle">{progetti.modalLabels.galleryTitle}</h3>
-        <div class="modal-gallery" id="modalGallery"></div>
-      </div>
-    </div>
-  </div>
-
 </Layout>
-
-<script is:inline>
-function openProject(data) {
-  document.getElementById('modalTitle').textContent = data.title || '';
-  document.getElementById('modalCategory').textContent = data.category || '';
-  var hero = document.getElementById('modalHero');
-  if (data.image) {
-    hero.innerHTML = '<img src="' + data.image + '" alt="' + (data.title || '') + '" style="width:100%;height:100%;object-fit:cover;">';
-  } else {
-    hero.textContent = data.imagePlaceholder || '';
-  }
-
-  var clientText = data.clientText || '';
-  var workText = data.workText || '';
-  var gallery = Array.isArray(data.galleryItems) ? data.galleryItems : [];
-
-  var clientSection = document.getElementById('modalClientSection');
-  document.getElementById('modalClientText').textContent = clientText;
-  clientSection.style.display = clientText ? '' : 'none';
-
-  var workSection = document.getElementById('modalWorkSection');
-  document.getElementById('modalWorkText').textContent = workText;
-  workSection.style.display = workText ? '' : 'none';
-
-  var galleryEl = document.getElementById('modalGallery');
-  var galleryTitle = document.getElementById('modalGalleryTitle');
-  galleryEl.innerHTML = '';
-  if (gallery.length) {
-    gallery.forEach(function(g) {
-      var div = document.createElement('div');
-      div.className = 'modal-gallery-item';
-      if (g && g.image) {
-        var img = document.createElement('img');
-        img.src = g.image;
-        img.alt = g.title || '';
-        img.style.width = '100%';
-        img.style.height = '100%';
-        img.style.objectFit = 'cover';
-        div.appendChild(img);
-      } else {
-        div.textContent = (g && g.title) ? g.title : (g || '');
-      }
-      galleryEl.appendChild(div);
-    });
-    galleryEl.style.display = '';
-    galleryTitle.style.display = '';
-  } else {
-    galleryEl.style.display = 'none';
-    galleryTitle.style.display = 'none';
-  }
-
-  document.getElementById('projectModal').classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-function closeProject() {
-  document.getElementById('projectModal').classList.remove('open');
-  document.body.style.overflow = '';
-}
-
-document.querySelectorAll('[data-project]').forEach(el => {
-  el.addEventListener('click', () => {
-    try { openProject(JSON.parse(el.dataset.project)); } catch(e) {}
-  });
-});
-document.getElementById('modalClose').addEventListener('click', closeProject);
-document.getElementById('projectModal').addEventListener('click', (e) => {
-  if (e.target.id === 'projectModal') closeProject();
-});
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') closeProject();
-});
-</script>
