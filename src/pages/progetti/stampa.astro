@@ -1,0 +1,108 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { frontmatter as progetti } from '../../../content/progetti.md';
+
+const items = progetti.items.filter((p: any) => p.category === 'Stampa');
+---
+<Layout page="progetti" title="Progetti Stampa — Dart Production">
+
+  <section class="hero-inner">
+    <span class="eyebrow">Portfolio — Stampa</span>
+    <h1 class="headline-xl">Stampa</h1>
+    <p class="body-lg" style="max-width:500px; text-align:center; margin-top:16px;">I lavori realizzati nel nostro laboratorio di stampa.</p>
+  </section>
+
+  <section class="section bg-white">
+    <div class="container">
+      <div class="projects-grid-3">
+        {items.map((p: any, i: number) => (
+          <div class={`project-card reveal reveal-delay-${(i % 3) + 1}`} data-project={JSON.stringify(p)}>
+            <div class="project-thumb">{p.image ? <img src={p.image} alt={p.title} /> : p.imagePlaceholder}</div>
+            <div class="project-overlay"><h3>{p.title}</h3><span>{p.category}</span></div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-block">
+    <div class="container reveal">
+      <h2 class="headline-md">{progetti.cta.title}</h2>
+      <p class="body-lg" style="max-width:500px; margin:0 auto 40px;">{progetti.cta.text}</p>
+      <a href="/contatti" class="btn btn-primary btn-arrow">{progetti.cta.button}</a>
+    </div>
+  </section>
+
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-hero" id="modalHero">Foto progetto 16:9</div>
+      <div class="modal-body">
+        <h2 class="modal-title" id="modalTitle">Nome Progetto</h2>
+        <p class="modal-category" id="modalCategory">Stampa</p>
+        <div class="modal-section" id="modalClientSection">
+          <h3>{progetti.modalLabels.clientTitle}</h3>
+          <p id="modalClientText"></p>
+        </div>
+        <div class="modal-section" id="modalWorkSection">
+          <h3>{progetti.modalLabels.workTitle}</h3>
+          <p id="modalWorkText"></p>
+        </div>
+        <h3 class="modal-gallery-title" id="modalGalleryTitle">{progetti.modalLabels.galleryTitle}</h3>
+        <div class="modal-gallery" id="modalGallery"></div>
+      </div>
+    </div>
+  </div>
+
+</Layout>
+
+<script is:inline>
+function openProject(data) {
+  document.getElementById('modalTitle').textContent = data.title || '';
+  document.getElementById('modalCategory').textContent = data.category || '';
+  var hero = document.getElementById('modalHero');
+  if (data.image) {
+    hero.innerHTML = '<img src="' + data.image + '" alt="' + (data.title || '') + '" style="width:100%;height:100%;object-fit:cover;">';
+  } else {
+    hero.textContent = data.imagePlaceholder || '';
+  }
+  var clientText = data.clientText || '';
+  var workText = data.workText || '';
+  var gallery = Array.isArray(data.galleryItems) ? data.galleryItems : [];
+  var clientSection = document.getElementById('modalClientSection');
+  document.getElementById('modalClientText').textContent = clientText;
+  clientSection.style.display = clientText ? '' : 'none';
+  var workSection = document.getElementById('modalWorkSection');
+  document.getElementById('modalWorkText').textContent = workText;
+  workSection.style.display = workText ? '' : 'none';
+  var galleryEl = document.getElementById('modalGallery');
+  var galleryTitle = document.getElementById('modalGalleryTitle');
+  galleryEl.innerHTML = '';
+  if (gallery.length) {
+    gallery.forEach(function(g) {
+      var div = document.createElement('div');
+      div.className = 'modal-gallery-item';
+      if (g && g.image) {
+        var img = document.createElement('img');
+        img.src = g.image; img.alt = g.title || '';
+        img.style.width = '100%'; img.style.height = '100%'; img.style.objectFit = 'cover';
+        div.appendChild(img);
+      } else { div.textContent = (g && g.title) ? g.title : (g || ''); }
+      galleryEl.appendChild(div);
+    });
+    galleryEl.style.display = ''; galleryTitle.style.display = '';
+  } else { galleryEl.style.display = 'none'; galleryTitle.style.display = 'none'; }
+  document.getElementById('projectModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeProject() {
+  document.getElementById('projectModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.querySelectorAll('[data-project]').forEach(el => {
+  el.addEventListener('click', () => { try { openProject(JSON.parse(el.dataset.project)); } catch(e) {} });
+});
+document.getElementById('modalClose').addEventListener('click', closeProject);
+document.getElementById('projectModal').addEventListener('click', (e) => { if (e.target.id === 'projectModal') closeProject(); });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeProject(); });
+</script>

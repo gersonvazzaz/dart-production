@@ -51,14 +51,14 @@ items:
       - title: Stampa 3D
       - title: Prodotti custom
     imagePlaceholder: Foto personalizzazione
-    bg: dark
+    bg: light
     reverse: true
   - reverse: false
     eyebrow: "05"
     title: Eventi
     description: |
       Stampa live agli eventi 
-    bg: dark
+    bg: white
 cta:
   eyebrow: Consulenza
   titleLine1: Quale tecnica è
