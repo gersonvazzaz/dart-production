@@ -193,11 +193,15 @@ items:
       - title: Foto 1
       - title: Foto 2
       - title: Foto 3
-  - title: Progetto 14
+  - title: Stampè - Applicazione Vetrofanie
     category: Allestimento
     imagePlaceholder: Foto progetto 14
-    clientText: Descrizione di cosa voleva il cliente per il Progetto 14.
-    workText: Descrizione di cosa abbiamo realizzato per il Progetto 14.
+    clientText: >-
+      Stampé voleva rendere il proprio spazio riconoscibile, attraverso
+      un'identità
+       visiva capace di raccontarne identità e visione.
+    workText: Progettazione e realizzazione delle vetrofanie, integrando grafica e
+      architettura per valorizzare il nuovo hub sociale e culturale.
     galleryItems:
       - title: Foto 1
       - title: Foto 2
