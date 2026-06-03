@@ -1,5 +1,5 @@
 ---
-categoryLabel: Grafica
+categoryLabel: Eventi
 modalLabels:
   clientTitle: Cosa voleva il cliente
   workTitle: Cosa abbiamo fatto

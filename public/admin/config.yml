@@ -323,6 +323,37 @@ collections:
   - name: "progetti"
     label: "Progetti"
     files:
+      - name: "progetti-panoramica"
+        label: "Pagina principale"
+        file: "content/progetti.md"
+        format: "yaml-frontmatter"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Titolo", name: "title", widget: "string" }
+              - { label: "Sottotitolo", name: "subtitle", widget: "text" }
+          - label: "Sezioni categorie"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "Numero", name: "eyebrow", widget: "string" }
+              - { label: "Titolo", name: "title", widget: "string" }
+              - { label: "Descrizione", name: "description", widget: "text" }
+              - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string", required: false }
+              - { label: "Etichetta bottone", name: "buttonLabel", widget: "string" }
+              - { label: "Link pagina", name: "href", widget: "hidden" }
+          - label: "CTA finale"
+            name: "cta"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Titolo", name: "title", widget: "string" }
+              - { label: "Testo", name: "text", widget: "text" }
+              - { label: "Bottone", name: "button", widget: "string" }
+
       - name: "progetti-stampa"
         label: "Stampa"
         file: "content/progetti-stampa.md"
@@ -440,12 +471,12 @@ collections:
               - { label: "Testo", name: "text", widget: "text" }
               - { label: "Bottone", name: "button", widget: "string" }
 
-      - name: "progetti-grafica"
-        label: "Grafica & Eventi"
-        file: "content/progetti-grafica.md"
+      - name: "progetti-eventi"
+        label: "Eventi"
+        file: "content/progetti-eventi.md"
         format: "yaml-frontmatter"
         fields:
-          - { label: "Categoria", name: "categoryLabel", widget: "hidden", default: "Grafica" }
+          - { label: "Categoria", name: "categoryLabel", widget: "hidden", default: "Eventi" }
           - label: "Etichette modal"
             name: "modalLabels"
             widget: "object"
