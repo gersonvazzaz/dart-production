@@ -342,6 +342,7 @@ collections:
               - { label: "Numero", name: "eyebrow", widget: "string" }
               - { label: "Titolo", name: "title", widget: "string" }
               - { label: "Descrizione", name: "description", widget: "text" }
+              - { label: "Immagine", name: "image", widget: "image", required: false }
               - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string", required: false }
               - { label: "Etichetta bottone", name: "buttonLabel", widget: "string" }
               - { label: "Link pagina", name: "href", widget: "hidden" }
