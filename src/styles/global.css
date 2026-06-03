@@ -388,11 +388,12 @@ img { max-width: 100%; display: block; }
 .detail-row.reverse { direction: rtl; }
 .detail-row.reverse > * { direction: ltr; }
 .detail-img {
-  border-radius: 20px; height: 500px;
+  border-radius: 20px; height: 500px; overflow: hidden;
   background: linear-gradient(135deg, var(--dark-2), var(--primary-dark));
   display: flex; align-items: center; justify-content: center;
   color: var(--gray); font-size: 13px;
 }
+.detail-img img { width: 100%; height: 100%; object-fit: cover; }
 .detail-list { list-style: none; margin-top: 24px; }
 .detail-list li {
   padding: 14px 0; border-bottom: 1px solid rgba(0,0,0,0.08);

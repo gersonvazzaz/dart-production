@@ -23,7 +23,7 @@ const bgClass = (i: number) => (i % 2 === 1 ? 'bg-light' : 'bg-white');
             <p class="body-lg" style="margin-top:16px; margin-bottom:32px;">{s.description}</p>
             <a href={s.href} class="btn btn-primary btn-arrow">{s.buttonLabel}</a>
           </div>
-          <div class="detail-img">{s.imagePlaceholder}</div>
+          <div class="detail-img">{s.image ? <img src={s.image} alt={s.title} /> : s.imagePlaceholder}</div>
         </div>
       </div>
     </section>
