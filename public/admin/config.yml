@@ -244,49 +244,6 @@ collections:
               - { label: "Testo", name: "text", widget: "text" }
               - { label: "Bottone", name: "button", widget: "string" }
 
-      - name: "progetti"
-        label: "Progetti"
-        file: "content/progetti.md"
-        format: "yaml-frontmatter"
-        fields:
-          - label: "Hero"
-            name: "hero"
-            widget: "object"
-            fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Titolo", name: "title", widget: "string" }
-              - { label: "Sottotitolo", name: "subtitle", widget: "text" }
-          - label: "Etichette modal"
-            name: "modalLabels"
-            widget: "object"
-            fields:
-              - { label: "Titolo sezione cliente", name: "clientTitle", widget: "string" }
-              - { label: "Titolo sezione lavoro", name: "workTitle", widget: "string" }
-              - { label: "Titolo gallery", name: "galleryTitle", widget: "string" }
-          - label: "Lista progetti"
-            name: "items"
-            widget: "list"
-            fields:
-              - { label: "Titolo", name: "title", widget: "string" }
-              - { label: "Categoria", name: "category", widget: "select", options: ["Stampa", "Allestimento", "Grafica", "Personalizzazione"] }
-              - { label: "Immagine", name: "image", widget: "image", required: false }
-              - { label: "Cosa voleva il cliente", name: "clientText", widget: "text" }
-              - { label: "Cosa abbiamo fatto", name: "workText", widget: "text" }
-              - label: "Voci gallery"
-                name: "galleryItems"
-                widget: "list"
-                fields:
-                  - { label: "Titolo", name: "title", widget: "string" }
-                  - { label: "Descrizione", name: "description", widget: "string", required: false }
-                  - { label: "Immagine", name: "image", widget: "image", required: false }
-          - label: "CTA finale"
-            name: "cta"
-            widget: "object"
-            fields:
-              - { label: "Titolo", name: "title", widget: "string" }
-              - { label: "Testo", name: "text", widget: "text" }
-              - { label: "Bottone", name: "button", widget: "string" }
-
       - name: "contatti"
         label: "Contatti"
         file: "content/contatti.md"
@@ -362,3 +319,162 @@ collections:
               - { label: "Servizi", name: "servizi", widget: "string" }
               - { label: "Progetti", name: "progetti", widget: "string" }
               - { label: "Contatti", name: "contatti", widget: "string" }
+
+  - name: "progetti"
+    label: "Progetti"
+    files:
+      - name: "progetti-stampa"
+        label: "Stampa"
+        file: "content/progetti-stampa.md"
+        format: "yaml-frontmatter"
+        fields:
+          - { label: "Categoria", name: "categoryLabel", widget: "hidden", default: "Stampa" }
+          - label: "Etichette modal"
+            name: "modalLabels"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Titolo sezione cliente", name: "clientTitle", widget: "string" }
+              - { label: "Titolo sezione lavoro", name: "workTitle", widget: "string" }
+              - { label: "Titolo gallery", name: "galleryTitle", widget: "string" }
+          - label: "Lista progetti"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Titolo", name: "title", widget: "string" }
+              - { label: "Immagine", name: "image", widget: "image", required: false }
+              - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string", required: false }
+              - { label: "Cosa voleva il cliente", name: "clientText", widget: "text" }
+              - { label: "Cosa abbiamo fatto", name: "workText", widget: "text" }
+              - label: "Voci gallery"
+                name: "galleryItems"
+                widget: "list"
+                fields:
+                  - { label: "Titolo", name: "title", widget: "string" }
+                  - { label: "Descrizione", name: "description", widget: "string", required: false }
+                  - { label: "Immagine", name: "image", widget: "image", required: false }
+          - label: "CTA finale"
+            name: "cta"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Titolo", name: "title", widget: "string" }
+              - { label: "Testo", name: "text", widget: "text" }
+              - { label: "Bottone", name: "button", widget: "string" }
+
+      - name: "progetti-allestimento"
+        label: "Allestimento"
+        file: "content/progetti-allestimento.md"
+        format: "yaml-frontmatter"
+        fields:
+          - { label: "Categoria", name: "categoryLabel", widget: "hidden", default: "Allestimento" }
+          - label: "Etichette modal"
+            name: "modalLabels"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Titolo sezione cliente", name: "clientTitle", widget: "string" }
+              - { label: "Titolo sezione lavoro", name: "workTitle", widget: "string" }
+              - { label: "Titolo gallery", name: "galleryTitle", widget: "string" }
+          - label: "Lista progetti"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Titolo", name: "title", widget: "string" }
+              - { label: "Immagine", name: "image", widget: "image", required: false }
+              - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string", required: false }
+              - { label: "Cosa voleva il cliente", name: "clientText", widget: "text" }
+              - { label: "Cosa abbiamo fatto", name: "workText", widget: "text" }
+              - label: "Voci gallery"
+                name: "galleryItems"
+                widget: "list"
+                fields:
+                  - { label: "Titolo", name: "title", widget: "string" }
+                  - { label: "Descrizione", name: "description", widget: "string", required: false }
+                  - { label: "Immagine", name: "image", widget: "image", required: false }
+          - label: "CTA finale"
+            name: "cta"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Titolo", name: "title", widget: "string" }
+              - { label: "Testo", name: "text", widget: "text" }
+              - { label: "Bottone", name: "button", widget: "string" }
+
+      - name: "progetti-personalizzazione"
+        label: "Personalizzazione"
+        file: "content/progetti-personalizzazione.md"
+        format: "yaml-frontmatter"
+        fields:
+          - { label: "Categoria", name: "categoryLabel", widget: "hidden", default: "Personalizzazione" }
+          - label: "Etichette modal"
+            name: "modalLabels"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Titolo sezione cliente", name: "clientTitle", widget: "string" }
+              - { label: "Titolo sezione lavoro", name: "workTitle", widget: "string" }
+              - { label: "Titolo gallery", name: "galleryTitle", widget: "string" }
+          - label: "Lista progetti"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Titolo", name: "title", widget: "string" }
+              - { label: "Immagine", name: "image", widget: "image", required: false }
+              - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string", required: false }
+              - { label: "Cosa voleva il cliente", name: "clientText", widget: "text" }
+              - { label: "Cosa abbiamo fatto", name: "workText", widget: "text" }
+              - label: "Voci gallery"
+                name: "galleryItems"
+                widget: "list"
+                fields:
+                  - { label: "Titolo", name: "title", widget: "string" }
+                  - { label: "Descrizione", name: "description", widget: "string", required: false }
+                  - { label: "Immagine", name: "image", widget: "image", required: false }
+          - label: "CTA finale"
+            name: "cta"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Titolo", name: "title", widget: "string" }
+              - { label: "Testo", name: "text", widget: "text" }
+              - { label: "Bottone", name: "button", widget: "string" }
+
+      - name: "progetti-grafica"
+        label: "Grafica & Eventi"
+        file: "content/progetti-grafica.md"
+        format: "yaml-frontmatter"
+        fields:
+          - { label: "Categoria", name: "categoryLabel", widget: "hidden", default: "Grafica" }
+          - label: "Etichette modal"
+            name: "modalLabels"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Titolo sezione cliente", name: "clientTitle", widget: "string" }
+              - { label: "Titolo sezione lavoro", name: "workTitle", widget: "string" }
+              - { label: "Titolo gallery", name: "galleryTitle", widget: "string" }
+          - label: "Lista progetti"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Titolo", name: "title", widget: "string" }
+              - { label: "Immagine", name: "image", widget: "image", required: false }
+              - { label: "Placeholder immagine", name: "imagePlaceholder", widget: "string", required: false }
+              - { label: "Cosa voleva il cliente", name: "clientText", widget: "text" }
+              - { label: "Cosa abbiamo fatto", name: "workText", widget: "text" }
+              - label: "Voci gallery"
+                name: "galleryItems"
+                widget: "list"
+                fields:
+                  - { label: "Titolo", name: "title", widget: "string" }
+                  - { label: "Descrizione", name: "description", widget: "string", required: false }
+                  - { label: "Immagine", name: "image", widget: "image", required: false }
+          - label: "CTA finale"
+            name: "cta"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Titolo", name: "title", widget: "string" }
+              - { label: "Testo", name: "text", widget: "text" }
+              - { label: "Bottone", name: "button", widget: "string" }

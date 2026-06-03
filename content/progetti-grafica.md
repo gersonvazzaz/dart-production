@@ -1,0 +1,80 @@
+---
+categoryLabel: Grafica
+modalLabels:
+  clientTitle: Cosa voleva il cliente
+  workTitle: Cosa abbiamo fatto
+  galleryTitle: Gallery
+items:
+  - title: ANTESCH - Live Printing Event
+    imagePlaceholder: Foto progetto 1
+    clientText: Il brand ANTESCH voleva creare un'esperienza coinvolgente durante il
+      pop up da Magno a Torino, valorizzando il processo creativo attraverso una
+      sessione di live printing aperta al pubblico.
+    workText: Abbiamo progettato e realizzato un setup di stampa live durante
+      l'evento, personalizzando i capi in tempo reale e trasformando la stampa
+      in un'esperienza interattiva e visiva per i visitatori.
+    galleryItems:
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+      - title: Foto 4
+      - title: Foto 5
+      - title: Foto 6
+  - title: Brich - Live Printing Tote Bag
+    imagePlaceholder: Foto progetto 5
+    clientText: Brich ci ha contattati per realizzare una sessione di live printing
+      in occasione del suo sesto anniversario, all'interno di un evento che
+      coinvolgeva diverse realtà presso l'Agrigelateria Stampè.
+    workText: Abbiamo sviluppato la grafica dedicata all'anniversario e curato la
+      stampa live delle tote bag durante l'evento, trasformando la celebrazione
+      in un'attivazione partecipativa e condivisa con il pubblico e i partner
+      coinvolti.
+    galleryItems:
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+  - title: Club Silencio - Live Printing Event
+    imagePlaceholder: Foto progetto 8
+    clientText: >
+      In occasione dell'evento organizzato da Club Silencio presso l'Aero Club
+      di Collegno, dedicato all'esposizione di aerei storici e a voli
+      acrobatici, il cliente richiedeva la realizzazione di materiali grafici
+      personalizzati per la promozione e l'identità visiva dell'evento.
+    workText: Abbiamo progettato una grafica ad hoc per l'evento e realizzato la
+      stampa in serigrafia dei materiali richiesti.
+    galleryItems:
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+  - title: "Simple Agency - Live Printing Event "
+    imagePlaceholder: Foto progetto 12
+    clientText: Il cliente richiedeva la realizzazione di un'attività di stampa live
+      durante l'evento, coinvolgendo il pubblico attraverso la personalizzazione
+      in tempo reale di t-shirt e borse in tela. L'iniziativa era finalizzata a
+      sostenere una campagna di sensibilizzazione benefica.
+    workText: Abbiamo organizzato e gestito la serigrafia live in collaborazione con
+      Simpol Agency, realizzando sul momento la personalizzazione di t-shirt e
+      shopper in tela per Fondazione Ricerca Molinette. L'attività è stata parte
+      della campagna "Un baffo per la ricerca", contribuendo alla raccolta fondi
+      interamente devoluta alla causa.
+    galleryItems:
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+  - title: Progetto 15
+    imagePlaceholder: Foto progetto 15
+    clientText: Descrizione di cosa voleva il cliente per il Progetto 15.
+    workText: Descrizione di cosa abbiamo realizzato per il Progetto 15.
+    galleryItems:
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+      - title: Foto 4
+      - title: Foto 5
+      - title: Foto 6
+cta:
+  title: Non trovi quello che cerchi?
+  text: Ogni progetto è diverso. Raccontaci la tua idea e troviamo insieme la
+    soluzione migliore.
+  button: Contattaci
+---

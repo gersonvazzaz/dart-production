@@ -1,8 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { frontmatter as progetti } from '../../../content/progetti.md';
+import { frontmatter as data } from '../../../content/progetti-grafica.md';
 
-const items = progetti.items.filter((p: any) => p.category === 'Eventi');
+const category = data.categoryLabel;
+const items = data.items.map((p: any) => ({ ...p, category }));
 ---
 <Layout page="progetti" title="Progetti Eventi — Dart Production">
 
@@ -33,9 +34,9 @@ const items = progetti.items.filter((p: any) => p.category === 'Eventi');
 
   <section class="cta-block">
     <div class="container reveal">
-      <h2 class="headline-md">{progetti.cta.title}</h2>
-      <p class="body-lg" style="max-width:500px; margin:0 auto 40px;">{progetti.cta.text}</p>
-      <a href="/contatti" class="btn btn-primary btn-arrow">{progetti.cta.button}</a>
+      <h2 class="headline-md">{data.cta.title}</h2>
+      <p class="body-lg" style="max-width:500px; margin:0 auto 40px;">{data.cta.text}</p>
+      <a href="/contatti" class="btn btn-primary btn-arrow">{data.cta.button}</a>
     </div>
   </section>
 
@@ -47,14 +48,14 @@ const items = progetti.items.filter((p: any) => p.category === 'Eventi');
         <h2 class="modal-title" id="modalTitle">Nome Progetto</h2>
         <p class="modal-category" id="modalCategory">Eventi</p>
         <div class="modal-section" id="modalClientSection">
-          <h3>{progetti.modalLabels.clientTitle}</h3>
+          <h3>{data.modalLabels.clientTitle}</h3>
           <p id="modalClientText"></p>
         </div>
         <div class="modal-section" id="modalWorkSection">
-          <h3>{progetti.modalLabels.workTitle}</h3>
+          <h3>{data.modalLabels.workTitle}</h3>
           <p id="modalWorkText"></p>
         </div>
-        <h3 class="modal-gallery-title" id="modalGalleryTitle">{progetti.modalLabels.galleryTitle}</h3>
+        <h3 class="modal-gallery-title" id="modalGalleryTitle">{data.modalLabels.galleryTitle}</h3>
         <div class="modal-gallery" id="modalGallery"></div>
       </div>
     </div>
