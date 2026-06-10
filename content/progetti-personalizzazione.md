@@ -66,6 +66,7 @@ items:
         title: Kappa Authentic 4
       - image: /uploads/5.jpg
         title: Kappa Authentic 5
+    image: /uploads/foto-orizzontali-sito.jpg
 cta:
   title: Non trovi quello che cerchi?
   text: Ogni progetto è diverso. Raccontaci la tua idea e troviamo insieme la
