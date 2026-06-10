@@ -46,7 +46,7 @@ items:
       - title: Foto 1
       - title: Foto 2
       - title: Foto 3
-  - title: "Simple Agency - Live Printing Event "
+  - title: "Simpol Agency - Live Printing Event "
     imagePlaceholder: Foto progetto 12
     clientText: Il cliente richiedeva la realizzazione di un'attività di stampa live
       durante l'evento, coinvolgendo il pubblico attraverso la personalizzazione
