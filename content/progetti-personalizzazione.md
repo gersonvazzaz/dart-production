@@ -56,15 +56,15 @@ items:
       - title: Foto 3
   - title: Robe di Kappa - Authentic SS25
     galleryItems:
-      - image: ""
+      - image: https://drive.google.com/file/d/1rpeHe4iBHzPrL6mUf3ccKXk_n3suMpZk/view?usp=drive_link
         title: Kappa Authentic 1
-      - image: ""
+      - image: https://drive.google.com/file/d/1sblxBe0CP7Vk7D1v62ap1AuhWPQO7lqT/view?usp=drive_link
         title: Kappa Authentic 2
-      - image: ""
+      - image: https://drive.google.com/file/d/1fMjjEC33LtNVa18wKBudhoYJD4_haT9N/view?usp=drive_link
         title: Kappa Authentic 3
-      - image: ""
+      - image: https://drive.google.com/file/d/1_g2_toU6cp25svwFZ4vGZgNXinzKBWr2/view?usp=drive_link
         title: Kappa Authentic 4
-      - image: ""
+      - image: https://drive.google.com/file/d/1FB0lLzIoozAzvNA5wNhqN8VvhXn47qjY/view?usp=drive_link
         title: Kappa Authentic 5
 cta:
   title: Non trovi quello che cerchi?
