@@ -5,7 +5,7 @@ modalLabels:
   workTitle: Cosa abbiamo fatto
   galleryTitle: Gallery
 items:
-  - title: Kappa Box - Robe di Kappa collection
+  - title: Kappa - Box Robe di Kappa collection
     imagePlaceholder: Foto progetto 2
     clientText: >
       Kappa voleva realizzare delle box personalizzate dedicate al lancio di una
