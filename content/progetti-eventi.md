@@ -61,10 +61,14 @@ items:
       - title: Foto 1
       - title: Foto 2
       - title: Foto 3
-  - title: Progetto 15
-    imagePlaceholder: Foto progetto 15
-    clientText: Descrizione di cosa voleva il cliente per il Progetto 15.
-    workText: Descrizione di cosa abbiamo realizzato per il Progetto 15.
+  - title: 8NOLIEU - Live Printing Event
+    imagePlaceholder: 8NOLIEU - Live Printing Event
+    clientText: Per l'evento Tellurica, 8nolieu aveva la necessità di offrire
+      un'esperienza interattiva e personalizzata ai partecipanti attraverso la
+      stampa live di tote bag durante l'evento.
+    workText: Ci siamo occupati dell'intera attività di stampa live, personalizzando
+      le tote bag in tempo reale all'interno della galleria d'arte contemporanea
+      di Via Santa Teresa.
     galleryItems:
       - title: Foto 1
       - title: Foto 2
