@@ -63,7 +63,7 @@ items:
       - title: Foto 3
   - title: 8NOLIEU - Live Printing Event
     imagePlaceholder: 8NOLIEU - Live Printing Event
-    clientText: Per l'evento Tellurica, 8nolieu aveva la necessità di offrire
+    clientText: Per l'evento TELLURICA, 8nolieu aveva la necessità di offrire
       un'esperienza interattiva e personalizzata ai partecipanti attraverso la
       stampa live di tote bag durante l'evento.
     workText: Ci siamo occupati dell'intera attività di stampa live, personalizzando
