@@ -64,7 +64,7 @@ items:
         title: Kappa Authentic 3
       - image: https://drive.google.com/file/d/1_g2_toU6cp25svwFZ4vGZgNXinzKBWr2/view?usp=drive_link
         title: Kappa Authentic 4
-      - image: https://drive.google.com/file/d/1FB0lLzIoozAzvNA5wNhqN8VvhXn47qjY/view?usp=drive_link
+      - image: /uploads/5.jpg
         title: Kappa Authentic 5
 cta:
   title: Non trovi quello che cerchi?
