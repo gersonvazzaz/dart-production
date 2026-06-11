@@ -15,11 +15,17 @@ items:
       in un'esperienza interattiva e visiva per i visitatori.
     galleryItems:
       - title: Foto 1
+        image: https://drive.google.com/file/d/1n0hZHhWzfqmg7aatWmvaA27FcH8FltNr/view?usp=sharing
       - title: Foto 2
+        image: https://drive.google.com/file/d/1ulaErJQ3k8I7odt5Py1GedN_8Kx2fonl/view?usp=sharing
       - title: Foto 3
+        image: https://drive.google.com/file/d/1ulaErJQ3k8I7odt5Py1GedN_8Kx2fonl/view?usp=sharing
       - title: Foto 4
+        image: https://drive.google.com/file/d/1a0zx-6T3BdlrfvVWiSBTwa9BG6SYh8XQ/view?usp=sharing
       - title: Foto 5
+        image: https://drive.google.com/file/d/1Dw51Cw4xs_1MTulMtf3JcjOAEkzP5FvB/view?usp=sharing
       - title: Foto 6
+        image: https://drive.google.com/file/d/1acVVQRECLJpCKtxRuDNDK_x_5jkE2USW/view?usp=sharing
   - title: Brich - Live Printing Tote Bag
     imagePlaceholder: Foto progetto 5
     clientText: Brich ci ha contattati per realizzare una sessione di live printing
