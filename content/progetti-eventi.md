@@ -62,8 +62,18 @@ items:
       stampa in serigrafia dei materiali richiesti.
     galleryItems:
       - title: Foto 1
+        image: /uploads/club-silencio.jpg
       - title: Foto 2
+        image: /uploads/club-silencio-2-.jpg
       - title: Foto 3
+        image: /uploads/club-silencio-5-.jpg
+      - title: Foto 4
+        image: /uploads/club-silencio-4-.jpg
+      - title: Foto 5
+        image: /uploads/club-silencio-3-.jpg
+      - title: Foto 6
+        image: /uploads/club-silencio-6-.jpg
+    image: /uploads/club-silencio-orizz.jpg
   - title: Simpol Agency - Live Printing Event 2022
     imagePlaceholder: Foto progetto 12
     clientText: Il cliente richiedeva la realizzazione di un'attività di stampa live
