@@ -1,0 +1,62 @@
+name: Ottimizza immagini
+
+# Si attiva da solo ogni volta che vengono caricate/modificate foto in
+# public/uploads (cioè ogni volta che un cliente aggiunge una foto dal CMS).
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'public/uploads/**'
+
+# Serve per poter ricommittare le immagini ottimizzate nel repository.
+permissions:
+  contents: write
+
+# Evita che due esecuzioni si pestino i piedi se si caricano più foto insieme.
+concurrency:
+  group: optimize-images
+  cancel-in-progress: false
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Scarica il codice
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Prepara Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Installa le dipendenze
+        run: npm ci
+
+      - name: Ottimizza le immagini
+        run: npm run optimize:images
+
+      - name: Salva le immagini ottimizzate
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain public/uploads)" ]; then
+            git add public/uploads
+            git commit -m "Ottimizza automaticamente le immagini caricate"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Nessuna immagine da ottimizzare."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Il commit qui sopra è fatto con il token di GitHub Actions: di proposito
+      # NON fa ripartire né questo workflow (niente loop infinito) né il deploy.
+      # Quindi, se abbiamo cambiato qualcosa, triggeriamo noi il deploy su Vercel
+      # per pubblicare le immagini ottimizzate.
+      - name: Triggera il deploy su Vercel
+        if: steps.commit.outputs.changed == 'true'
+        run: curl -X POST "${{ secrets.VERCEL_DEPLOY_HOOK_URL }}"
