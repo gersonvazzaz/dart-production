@@ -38,8 +38,19 @@ items:
       coinvolti.
     galleryItems:
       - title: Foto 1
+        image: /uploads/brich-evento.jpg
       - title: Foto 2
+        image: /uploads/brich-evento-2-.jpg
       - title: Foto 3
+        image: /uploads/brich-evento-4-.jpg
+      - title: Foto 4
+        image: /uploads/brich-evento-3-.jpg
+      - title: Foto 5
+        image: /uploads/brich-evento-5-.jpg
+      - title: Foto 6
+        description: ""
+        image: /uploads/brich-evento-6-.jpg
+    image: /uploads/brich-oriz.jpg
   - title: Club Silencio - Live Printing Event
     imagePlaceholder: Foto progetto 8
     clientText: >
