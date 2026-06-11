@@ -16,7 +16,7 @@ items:
       l'estetica del brand e del drop.
     galleryItems:
       - title: Foto 1
-        image: /uploads/kappa-pullover-2-.jpg
+        image: /uploads/svv.jpg
       - title: Foto 2
         image: /uploads/kappa-pullover-4-.jpg
       - title: Foto 3
