@@ -16,8 +16,19 @@ items:
       l'estetica del brand e del drop.
     galleryItems:
       - title: Foto 1
+        image: /uploads/kappa-pullover-2-.jpg
       - title: Foto 2
+        image: /uploads/kappa-pullover-4-.jpg
       - title: Foto 3
+        image: /uploads/kappa-pullover-5-.jpg
+      - title: Foto 4
+        image: /uploads/kappa-pullover.jpg
+      - title: Foto 5
+        image: /uploads/kappa-pullover-3-.jpg
+      - title: Foto 6
+        description: ""
+        image: /uploads/kappa-pullover-6-.jpg
+    image: /uploads/kappa-robbe.jpg
   - title: Fresh Cut - Merchandising e Gadget
     imagePlaceholder: Foto progetto 6
     clientText: Fresh Cut aveva la necessità di sviluppare merchandising coordinato,
