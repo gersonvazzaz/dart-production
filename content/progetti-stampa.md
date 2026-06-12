@@ -50,12 +50,18 @@ items:
   - title: "  Après-ski Montiluna - Produzione Merchandising"
     galleryItems:
       - title: Foto 1
-        image: https://drive.google.com/file/d/1Y6WA7Hppw69lAwsUO9UETNNSBfX2fkyk/view?usp=sharing
+        image: /uploads/montiluna.jpg
       - title: "Foto 2 "
-        image: https://drive.google.com/file/d/1jTMTZNduxUFlbACG9HR8lKXe54f4_gZC/view?usp=sharing
+        image: /uploads/montiluna-5-.jpg
       - title: Foto 3
-        image: https://drive.google.com/file/d/1okrb8pd57R_Oon0-fr6UJ7GUl7PqVIJz/view?usp=sharing
-    image: https://drive.google.com/file/d/1sKUySzGwoORADdHN5zTzxHvZPY4iYhiZ/view?usp=sharing
+        image: /uploads/montiluna-3-.jpg
+      - title: Foto 4
+        image: /uploads/montiluna-6-.jpg
+      - title: Foto 5
+        image: /uploads/montiluna-2-.jpg
+      - title: Foto 6
+        image: /uploads/montiluna-4-.jpg
+    image: /uploads/orizz-monti.jpg
 cta:
   title: Non trovi quello che cerchi?
   text: Ogni progetto è diverso. Raccontaci la tua idea e troviamo insieme la
