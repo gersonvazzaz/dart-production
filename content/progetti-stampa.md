@@ -47,6 +47,15 @@ items:
       - title: Foto 1
       - title: Foto 2
       - title: Foto 3
+  - title: "  Après-ski Montiluna - Produzione Merchandising"
+    galleryItems:
+      - title: Foto 1
+        image: https://drive.google.com/file/d/1Y6WA7Hppw69lAwsUO9UETNNSBfX2fkyk/view?usp=sharing
+      - title: "Foto 2 "
+        image: https://drive.google.com/file/d/1jTMTZNduxUFlbACG9HR8lKXe54f4_gZC/view?usp=sharing
+      - title: Foto 3
+        image: https://drive.google.com/file/d/1okrb8pd57R_Oon0-fr6UJ7GUl7PqVIJz/view?usp=sharing
+    image: https://drive.google.com/file/d/1sKUySzGwoORADdHN5zTzxHvZPY4iYhiZ/view?usp=sharing
 cta:
   title: Non trovi quello che cerchi?
   text: Ogni progetto è diverso. Raccontaci la tua idea e troviamo insieme la
