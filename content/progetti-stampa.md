@@ -62,6 +62,13 @@ items:
       - title: Foto 6
         image: /uploads/montiluna-4-.jpg
     image: /uploads/orizz-monti.jpg
+    clientText: >
+      Montiluna, il primo après-ski ai piedi dei Monti della Luna, voleva
+      sviluppare un merchandising dedicato capace di rappresentare l’identità
+      del progetto e rafforzare il senso di appartenenza alla community.
+    workText: Produzione di felpe personalizzate per il merchandising del brand,
+      curando stampa e dettagli per tradurre l’estetica e l’atmosfera di
+      Montiluna in un capo da indossare dentro e fuori dall’evento.
 cta:
   title: Non trovi quello che cerchi?
   text: Ogni progetto è diverso. Raccontaci la tua idea e troviamo insieme la
