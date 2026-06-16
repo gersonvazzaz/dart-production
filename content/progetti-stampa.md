@@ -18,7 +18,7 @@ items:
       - title: Foto 1
       - title: Foto 2
       - title: Foto 3
-    image: /uploads/foto-mad.jpg
+    image: /uploads/ù.jpg
   - title: "React - Merchandising "
     imagePlaceholder: Foto progetto 7
     clientText: >-
