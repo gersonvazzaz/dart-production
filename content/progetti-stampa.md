@@ -16,8 +16,17 @@ items:
       dei vari drop.
     galleryItems:
       - title: Foto 1
+        image: /uploads/mad.jpg
       - title: Foto 2
+        image: /uploads/mad-2-.jpg
       - title: Foto 3
+        image: /uploads/mad-3-.jpg
+      - title: foto 4
+        image: /uploads/mad-4-.jpg
+      - title: foto 5
+        image: /uploads/mad-5-.jpg
+      - title: foto 6
+        image: /uploads/mad-6-.jpg
   - title: "React - Merchandising "
     imagePlaceholder: Foto progetto 7
     clientText: >-
