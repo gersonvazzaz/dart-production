@@ -50,18 +50,18 @@ items:
   - title: "  Après-ski Montiluna - Produzione Merchandising"
     galleryItems:
       - title: Foto 1
-        image: /uploads/montiluna.jpg
+        image: ""
       - title: "Foto 2 "
-        image: /uploads/montiluna-5-.jpg
+        image: ""
       - title: Foto 3
-        image: /uploads/montiluna-3-.jpg
+        image: ""
       - title: Foto 4
-        image: /uploads/montiluna-6-.jpg
+        image: ""
       - title: Foto 5
-        image: /uploads/montiluna-2-.jpg
+        image: ""
       - title: Foto 6
-        image: /uploads/montiluna-4-.jpg
-    image: /uploads/orizz-monti.jpg
+        image: ""
+    image: ""
     clientText: >
       Montiluna, il primo après-ski ai piedi dei Monti della Luna, voleva
       sviluppare un merchandising dedicato capace di rappresentare l’identità
