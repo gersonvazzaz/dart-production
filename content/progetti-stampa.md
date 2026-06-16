@@ -16,17 +16,9 @@ items:
       dei vari drop.
     galleryItems:
       - title: Foto 1
-        image: /uploads/mad.jpg
       - title: Foto 2
-        image: /uploads/mad-2-.jpg
       - title: Foto 3
-        image: /uploads/mad-3-.jpg
-      - title: foto 4
-        image: /uploads/mad-4-.jpg
-      - title: foto 5
-        image: /uploads/mad-5-.jpg
-      - title: foto 6
-        image: /uploads/mad-6-.jpg
+    image: /uploads/foto-mad.jpg
   - title: "React - Merchandising "
     imagePlaceholder: Foto progetto 7
     clientText: >-
@@ -40,17 +32,9 @@ items:
       del collettivo e rendere più unita la community durante l'evento. "
     galleryItems:
       - title: Foto 1
-        image: /uploads/react-merch.jpg
       - title: Foto 2
-        image: /uploads/react-merch-2-.jpg
       - title: Foto 3
-        image: /uploads/react-merch-3-.jpg
-      - title: foto 4
-        image: /uploads/react-merch-4-.jpg
-      - title: foto 5
-        image: /uploads/react-merch-5-.jpg
-      - title: foto 6
-        image: /uploads/react-merch-6-.jpg
+    image: /uploads/react.jpg
   - title: Urbani pasticceria - Stampa e Ricamo
     imagePlaceholder: Foto progetto 9
     clientText: In vista della nuova apertura, il cliente necessitava di una
@@ -65,6 +49,7 @@ items:
       - title: Foto 1
       - title: Foto 2
       - title: Foto 3
+    image: /uploads/urbani.jpg
   - title: "  Après-ski Montiluna - Produzione Merchandising"
     galleryItems:
       - title: Foto 1
@@ -79,7 +64,7 @@ items:
         image: ""
       - title: Foto 6
         image: ""
-    image: ""
+    image: /uploads/montiluna.jpg
     clientText: >
       Montiluna, il primo après-ski ai piedi dei Monti della Luna, voleva
       sviluppare un merchandising dedicato capace di rappresentare l’identità
