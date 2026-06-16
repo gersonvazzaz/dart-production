@@ -16,19 +16,19 @@ items:
       l'estetica del brand e del drop.
     galleryItems:
       - title: Foto 1
-        image: /uploads/svv.jpg
+        image: ""
       - title: Foto 2
-        image: /uploads/kappa-pullover-4-.jpg
+        image: ""
       - title: Foto 3
-        image: /uploads/kappa-pullover-5-.jpg
+        image: ""
       - title: Foto 4
-        image: /uploads/kappa-pullover.jpg
+        image: ""
       - title: Foto 5
-        image: /uploads/kappa-pullover-3-.jpg
+        image: ""
       - title: Foto 6
         description: ""
-        image: /uploads/kappa-pullover-6-.jpg
-    image: /uploads/kappa-robbe.jpg
+        image: ""
+    image: ""
   - title: Fresh Cut - Merchandising e Gadget
     imagePlaceholder: Foto progetto 6
     clientText: Fresh Cut aveva la necessità di sviluppare merchandising coordinato,
@@ -39,18 +39,18 @@ items:
       l'immagine del brand e curando la resa grafica su diversi supporti.
     galleryItems:
       - title: Foto 1
-        image: /uploads/fresh-cut-3-.jpg
+        image: ""
       - title: Foto 2
-        image: /uploads/fresh-cut-2-.jpg
+        image: ""
       - title: Foto 3
-        image: /uploads/fresh-cut-6-.jpg
+        image: ""
       - title: Foto 4
-        image: /uploads/fresh-cut-4-.jpg
+        image: ""
       - title: Foto 5
-        image: /uploads/fresh-cut-5-.jpg
+        image: ""
       - title: Foto 6
-        image: /uploads/fresh-cut.jpg
-    image: /uploads/orizz-frsh.jpg
+        image: ""
+    image: ""
   - title: ZK - Stampa e Gadget
     imagePlaceholder: Foto progetto 11
     clientText: Il brand, in fase di lancio, necessitava della produzione delle
@@ -77,17 +77,24 @@ items:
       - title: Foto 3
   - title: Robe di Kappa - Authentic SS25
     galleryItems:
-      - image: /uploads/1.jpg
+      - image: ""
         title: Kappa Authentic 1
-      - image: /uploads/2.jpg
+      - image: ""
         title: Kappa Authentic 2
-      - image: /uploads/3.jpg
+      - image: ""
         title: Kappa Authentic 3
-      - image: /uploads/4.jpg
+      - image: ""
         title: Kappa Authentic 4
-      - image: /uploads/5.jpg
+      - image: ""
         title: Kappa Authentic 5
-    image: /uploads/foto-orizzaontali-sito.jpg
+    image: ""
+    clientText: >
+      Realizzare una box esclusiva dedicata al lancio della collezione Kappa
+      Authentic SS25, pensata per raccontare l'identità della linea attraverso
+      un'esperienza di unboxing curata nei minimi dettagli.
+    workText: Produzione e assemblaggio della box, personalizzazione degli elementi
+      interni e preparazione finale del packaging, trasformando l'unboxing in
+      un'estensione dell'identità del progetto e della collezione.
 cta:
   title: Non trovi quello che cerchi?
   text: Ogni progetto è diverso. Raccontaci la tua idea e troviamo insieme la
