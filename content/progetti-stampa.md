@@ -40,8 +40,17 @@ items:
       del collettivo e rendere più unita la community durante l'evento. "
     galleryItems:
       - title: Foto 1
+        image: /uploads/react-merch.jpg
       - title: Foto 2
+        image: /uploads/react-merch-2-.jpg
       - title: Foto 3
+        image: /uploads/react-merch-3-.jpg
+      - title: foto 4
+        image: /uploads/react-merch-4-.jpg
+      - title: foto 5
+        image: /uploads/react-merch-5-.jpg
+      - title: foto 6
+        image: /uploads/react-merch-6-.jpg
   - title: Urbani pasticceria - Stampa e Ricamo
     imagePlaceholder: Foto progetto 9
     clientText: In vista della nuova apertura, il cliente necessitava di una
