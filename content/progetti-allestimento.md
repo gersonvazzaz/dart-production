@@ -18,6 +18,7 @@ items:
       - title: Foto 1
       - title: Foto 2
       - title: Foto 3
+    image: /uploads/rositano.jpg
   - title: "SKASSAPANZA - Murales "
     imagePlaceholder: Foto progetto 10
     clientText: Il cliente aveva la necessità di realizzare un murales decorativo
@@ -30,6 +31,7 @@ items:
       - title: Foto 1
       - title: Foto 2
       - title: Foto 3
+    image: /uploads/skassapanza.jpg
   - title: Stampè - Applicazione Vetrofanie
     imagePlaceholder: Foto progetto 14
     clientText: >-
@@ -42,6 +44,7 @@ items:
       - title: Foto 1
       - title: Foto 2
       - title: Foto 3
+    image: /uploads/stampe.jpg
 cta:
   title: Non trovi quello che cerchi?
   text: Ogni progetto è diverso. Raccontaci la tua idea e troviamo insieme la
