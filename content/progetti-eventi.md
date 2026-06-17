@@ -15,7 +15,7 @@ items:
       in un'esperienza interattiva e visiva per i visitatori.
     galleryItems:
       - title: Foto 1
-        image: /uploads/antesh-evento-4-.jpg
+        image: /uploads/antesh-evento.jpg
       - title: Foto 2
         image: /uploads/antesh-evento-6-.jpg
       - title: Foto 3
