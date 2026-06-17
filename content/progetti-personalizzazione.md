@@ -16,18 +16,18 @@ items:
       l'estetica del brand e del drop.
     galleryItems:
       - title: Foto 1
-        image: ""
+        image: /uploads/kappa-pullover.jpg
       - title: Foto 2
-        image: ""
+        image: /uploads/kappa-pullover-5-.jpg
       - title: Foto 3
-        image: ""
+        image: /uploads/kappa-pullover-4-.jpg
       - title: Foto 4
-        image: ""
+        image: /uploads/kappa-pullover-3-.jpg
       - title: Foto 5
-        image: ""
+        image: /uploads/kappa-pullover-2-.jpg
       - title: Foto 6
         description: ""
-        image: ""
+        image: /uploads/kappa-pullover-6-.jpg
     image: ""
   - title: Fresh Cut - Merchandising e Gadget
     imagePlaceholder: Foto progetto 6
