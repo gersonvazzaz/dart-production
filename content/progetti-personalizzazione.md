@@ -39,17 +39,17 @@ items:
       l'immagine del brand e curando la resa grafica su diversi supporti.
     galleryItems:
       - title: Foto 1
-        image: ""
+        image: /uploads/fresh-cut.jpg
       - title: Foto 2
-        image: ""
+        image: /uploads/fresh-cut-6-.jpg
       - title: Foto 3
-        image: ""
+        image: /uploads/fresh-cut-5-.jpg
       - title: Foto 4
-        image: ""
+        image: /uploads/fresh-cut-4-.jpg
       - title: Foto 5
-        image: ""
+        image: /uploads/fresh-cut-2-.jpg
       - title: Foto 6
-        image: ""
+        image: /uploads/fresh-cut-3-.jpg
     image: ""
   - title: ZK - Stampa e Gadget
     imagePlaceholder: Foto progetto 11
