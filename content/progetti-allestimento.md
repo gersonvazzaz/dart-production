@@ -32,8 +32,11 @@ items:
       locale, dalla fase creativa fino alla realizzazione finale.
     galleryItems:
       - title: Foto 1
+        image: /uploads/skassapnaza-murales.jpg
       - title: Foto 2
+        image: /uploads/skassa-murales-5-.jpg
       - title: Foto 3
+        image: /uploads/skassa-murales.jpg
     image: /uploads/skassapanza.jpg
   - title: Stampè - Applicazione Vetrofanie
     imagePlaceholder: Foto progetto 14
