@@ -70,9 +70,9 @@ items:
       - title: Foto 4
         image: /uploads/montiluna-2-.jpg
       - title: Foto 5
-        image: ""
+        image: /uploads/montiluna.jpg
       - title: Foto 6
-        image: ""
+        image: /uploads/montiluna-4-.jpg
     image: /uploads/montiluna.jpg
     clientText: >
       Montiluna, il primo après-ski ai piedi dei Monti della Luna, voleva
