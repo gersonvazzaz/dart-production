@@ -15,18 +15,18 @@ items:
       in un'esperienza interattiva e visiva per i visitatori.
     galleryItems:
       - title: Foto 1
-        image: /uploads/antesh-evento-2-.jpg
-      - title: Foto 2
-        image: /uploads/antesh-evento-3-.jpg
-      - title: Foto 3
         image: /uploads/antesh-evento-4-.jpg
-      - title: Foto 4
-        image: /uploads/antesh-evento-5-.jpg
-      - title: Foto 5
+      - title: Foto 2
         image: /uploads/antesh-evento-6-.jpg
+      - title: Foto 3
+        image: /uploads/antesh-evento-3-.jpg
+      - title: Foto 4
+        image: /uploads/antesh-evento-2-.jpg
+      - title: Foto 5
+        image: /uploads/antesh-evento-5-.jpg
       - title: Foto 6
         image: /uploads/antesh-evento.jpg
-    image: /uploads/nn.jpg
+    image: /uploads/antesh-evento.jpg
   - title: Brich - Live Printing Tote Bag
     imagePlaceholder: Foto progetto 5
     clientText: Brich ci ha contattati per realizzare una sessione di live printing
