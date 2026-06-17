@@ -16,8 +16,11 @@ items:
       mercato.
     galleryItems:
       - title: Foto 1
+        image: /uploads/rositano-allestimenti-3-.jpg
       - title: Foto 2
+        image: /uploads/rositano-allestimenti-2-.jpg
       - title: Foto 3
+        image: /uploads/rositano-allestimenti.jpg
     image: /uploads/rositano.jpg
   - title: "SKASSAPANZA - Murales "
     imagePlaceholder: Foto progetto 10
