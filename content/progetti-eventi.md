@@ -25,7 +25,7 @@ items:
       - title: Foto 5
         image: /uploads/errr.jpg
       - title: Foto 6
-        image: ""
+        image: /uploads/ers.jpg
     image: /uploads/antesh-evento.jpg
   - title: Brich - Live Printing Tote Bag
     imagePlaceholder: Foto progetto 5
