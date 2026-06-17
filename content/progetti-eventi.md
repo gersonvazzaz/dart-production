@@ -87,18 +87,18 @@ items:
       interamente devoluta alla causa.
     galleryItems:
       - title: Foto 1
-        image: /uploads/simpol-2022.jpg
+        image: /uploads/siiiii21.jpg
       - title: Foto 2
-        image: /uploads/simpol-2022-2-.jpg
+        image: /uploads/siiiii2q.jpg
       - title: Foto 3
-        image: /uploads/simpol-2022-5-.jpg
+        image: /uploads/ssiiii2.jpg
       - title: Foto 4
-        image: /uploads/simpol-2022-3-.jpg
+        image: /uploads/sskskks.jpg
       - title: Foto 5
-        image: /uploads/simpol-2022-6-.jpg
+        image: /uploads/sssssi.jpg
       - title: Foto 6
-        image: /uploads/simpol-2022-4-.jpg
-    image: /uploads/simpol-2022-orizz.jpg
+        image: /uploads/woosoa.jpg
+    image: /uploads/simpol-2022.jpg
   - title: 8NOLIEU - Live Printing Event
     imagePlaceholder: 8NOLIEU - Live Printing Event
     clientText: Per l'evento TELLURICA, 8nolieu aveva la necessità di offrire
