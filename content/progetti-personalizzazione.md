@@ -80,17 +80,17 @@ items:
       - title: Foto 3
   - title: Robe di Kappa - Authentic SS25
     galleryItems:
-      - image: ""
+      - image: /uploads/kappa-authentic-2-.jpg
         title: Kappa Authentic 1
-      - image: ""
+      - image: /uploads/kaps2.jpg
         title: Kappa Authentic 2
-      - image: ""
+      - image: /uploads/kaps32.jpg
         title: Kappa Authentic 3
-      - image: ""
+      - image: /uploads/kaps23.jpg
         title: Kappa Authentic 4
-      - image: ""
+      - image: /uploads/kaps4.jpg
         title: Kappa Authentic 5
-    image: ""
+    image: /uploads/authentic-kappa.jpg
     clientText: >
       Realizzare una box esclusiva dedicata al lancio della collezione Kappa
       Authentic SS25, pensata per raccontare l'identità della linea attraverso
