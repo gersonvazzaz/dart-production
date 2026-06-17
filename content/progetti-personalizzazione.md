@@ -61,8 +61,11 @@ items:
       e gadget personalizzati, seguendo l'intero processo produttivo.
     galleryItems:
       - title: Foto 1
+        image: /uploads/zzk-2-.jpg
       - title: Foto 2
+        image: /uploads/zzk-3-.jpg
       - title: Foto 3
+        image: /uploads/zzk.jpg
   - title: Kappa - Box Custom 433
     imagePlaceholder: Foto progetto 13
     clientText: Il cliente aveva la necessità di realizzare delle box personalizzate
