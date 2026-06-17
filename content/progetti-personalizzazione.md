@@ -28,7 +28,7 @@ items:
       - title: Foto 6
         description: ""
         image: /uploads/kappa-pullover-6-.jpg
-    image: ""
+    image: /uploads/kapppaw.jpg
   - title: Fresh Cut - Merchandising e Gadget
     imagePlaceholder: Foto progetto 6
     clientText: Fresh Cut aveva la necessità di sviluppare merchandising coordinato,
@@ -50,7 +50,7 @@ items:
         image: /uploads/fresh-cut-2-.jpg
       - title: Foto 6
         image: /uploads/fresh-cut-3-.jpg
-    image: ""
+    image: /uploads/skskss.jpg
   - title: ZK - Stampa e Gadget
     imagePlaceholder: Foto progetto 11
     clientText: Il brand, in fase di lancio, necessitava della produzione delle
@@ -90,7 +90,7 @@ items:
         title: Kappa Authentic 4
       - image: /uploads/kaps4.jpg
         title: Kappa Authentic 5
-    image: /uploads/authentic-kappa.jpg
+    image: /uploads/djjd2d2d2.jpg
     clientText: >
       Realizzare una box esclusiva dedicata al lancio della collezione Kappa
       Authentic SS25, pensata per raccontare l'identità della linea attraverso
