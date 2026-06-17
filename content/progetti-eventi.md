@@ -19,7 +19,7 @@ items:
       - title: Foto 2
         image: /uploads/antesh-evento-6-.jpg
       - title: Foto 3
-        image: /uploads/antesh-evento-3-.jpg
+        image: /uploads/antesh-evento.jpg
       - title: Foto 4
         image: /uploads/antesh-evento-2-.jpg
       - title: Foto 5
