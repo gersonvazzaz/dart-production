@@ -62,13 +62,13 @@ items:
   - title: "  Après-ski Montiluna - Produzione Merchandising"
     galleryItems:
       - title: Foto 1
-        image: ""
+        image: /uploads/montiluna-6-.jpg
       - title: "Foto 2 "
-        image: ""
+        image: /uploads/montiluna-3-.jpg
       - title: Foto 3
-        image: ""
+        image: /uploads/montiluna-5-.jpg
       - title: Foto 4
-        image: ""
+        image: /uploads/montiluna-2-.jpg
       - title: Foto 5
         image: ""
       - title: Foto 6
