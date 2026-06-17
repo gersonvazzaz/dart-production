@@ -53,8 +53,11 @@ items:
       coerenza visiva e qualità esecutiva.
     galleryItems:
       - title: Foto 1
+        image: /uploads/urbani-pasticceria.jpg
       - title: Foto 2
+        image: /uploads/urbani-pasticceria-3-.jpg
       - title: Foto 3
+        image: /uploads/urbani-pasticceria-2-.jpg
     image: /uploads/urbani.jpg
   - title: "  Après-ski Montiluna - Produzione Merchandising"
     galleryItems:
