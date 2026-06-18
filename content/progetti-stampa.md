@@ -81,6 +81,24 @@ items:
     workText: Produzione di felpe personalizzate per il merchandising del brand,
       curando stampa e dettagli per tradurre l’estetica e l’atmosfera di
       Montiluna in un capo da indossare dentro e fuori dall’evento.
+  - title: ENDORPHIN - Merchandising
+    galleryItems:
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+      - title: Foto 4
+      - title: Foto 5
+      - title: Foto 6
+    clientText: >
+      Endorphin aveva la necessità di sviluppare un ecosistema di merchandising
+      coerente con la crescita del progetto, capace di accompagnare eventi,
+      collaborazioni e attività della community attraverso prodotti tecnici e
+      lifestyle che rispecchiassero l'identità del brand.
+    workText: Gestione della produzione del merchandising a 360°, seguendo il
+      progetto fin dalle sue prime fasi. Dall'abbigliamento tecnico ai prodotti
+      lifestyle, fino alle capsule realizzate per collaborazioni ed eventi
+      speciali, curando materiali, personalizzazioni e qualità produttiva per
+      garantire continuità e coerenza all'universo Endorphin.
 cta:
   title: Non trovi quello che cerchi?
   text: Ogni progetto è diverso. Raccontaci la tua idea e troviamo insieme la
