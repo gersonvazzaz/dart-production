@@ -145,6 +145,20 @@ items:
       - title: Foto 1
       - title: Foto 2
       - title: Foto 3
+  - title: Antioch - Box Personalizzate
+    clientText: >
+      Antesch, desiderava sviluppare un packaging capace di accompagnare il
+      lancio della sua prima collezione, valorizzando l'identità del progetto
+      attraverso un'esperienza coerente con i valori di artigianalità, ricerca e
+      cura del dettaglio.
+    workText: Progettazione, produzione e assemblaggio delle box personalizzate
+      dedicate alla prima collezione del brand. Ogni elemento è stato sviluppato
+      per trasformare il packaging in un'estensione naturale del prodotto,
+      contribuendo a raccontare l'universo estetico e la visione di Antesch.
+    galleryItems:
+      - title: Foto 1
+      - title: "Foto 2 "
+      - title: Foto 3
 cta:
   title: Non trovi quello che cerchi?
   text: Ogni progetto è diverso. Raccontaci la tua idea e troviamo insieme la
