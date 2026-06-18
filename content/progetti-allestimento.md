@@ -51,6 +51,36 @@ items:
       - title: Foto 2
       - title: Foto 3
     image: /uploads/stampe.jpg
+  - title: Nexis - Applicazione Vetrofanie
+    clientText: >
+      Nexis è uno spazio multidisciplinare a Vinovo che riunisce professionisti
+      specializzati in pilates, fisioterapia, psicoterapia, logopedia e
+      benessere della persona. L'obiettivo era valorizzare gli ambienti e
+      rendere più chiara e riconoscibile l'identità dello studio attraverso una
+      comunicazione visiva coordinata.
+    workText: Produzione e applicazione delle vetrofanie personalizzate, progettate
+      per integrare estetica e funzionalità. Un intervento pensato per rendere
+      gli spazi più riconoscibili, accoglienti e coerenti con l'immagine
+      professionale dello studio.
+    galleryItems:
+      - {}
+      - {}
+      - {}
+  - title: Samuele il giardiniere -  Personalizzazione Furgone di lavoro
+    clientText: >
+      Personalizzare il furgone di lavoro di Samuele il Giardiniere,
+      trasformandolo in uno strumento di comunicazione capace di rendere
+      immediatamente riconoscibile l'attività durante gli spostamenti e gli
+      interventi sul territorio.
+    workText: >
+      Progettazione grafica, produzione e applicazione delle grafiche adesive
+      sul veicolo. Un intervento studiato per valorizzare l'identità
+      professionale del cliente e aumentare la visibilità del brand direttamente
+      su strada.
+    galleryItems:
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
 cta:
   title: Non trovi quello che cerchi?
   text: Ogni progetto è diverso. Raccontaci la tua idea e troviamo insieme la
