@@ -114,6 +114,19 @@ items:
       - title: Foto 4
       - title: Foto 5
       - title: Foto 6
+  - title: SkassaSmash - Merch per l'anniversario
+    clientText: >
+      Per celebrare l'anniversario di Skassasmash, il locale desiderava
+      realizzare una maglietta commemorativa in edizione limitata, pensata come
+      ricordo di un traguardo importante e come simbolo del legame costruito
+      negli anni con la propria community.
+    workText: Ci siamo occupati della produzione delle t-shirt celebrative, curando
+      le lavorazioni e la qualità del prodotto finale per trasformare un
+      semplice capo in un ricordo tangibile dell'anniversario.
+    galleryItems:
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
 cta:
   title: Non trovi quello che cerchi?
   text: Ogni progetto è diverso. Raccontaci la tua idea e troviamo insieme la
