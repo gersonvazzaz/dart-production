@@ -51,21 +51,6 @@ items:
       - title: Foto 6
         image: /uploads/fresh-cut-3-.jpg
     image: /uploads/skskss.jpg
-  - title: ZK - Stampa e Gadget
-    imagePlaceholder: Foto progetto 11
-    clientText: Il brand, in fase di lancio, necessitava della produzione delle
-      prime magliette ufficiali per la collezione iniziale, con l'obiettivo di
-      definire una base solida per le future uscite.
-    workText: Abbiamo realizzato le prime stampe e avviato una collaborazione
-      continuativa per la produzione dei drop successivi, occupandoci di stampa
-      e gadget personalizzati, seguendo l'intero processo produttivo.
-    galleryItems:
-      - title: Foto 1
-        image: /uploads/zzk-2-.jpg
-      - title: Foto 2
-        image: /uploads/zzk-3-.jpg
-      - title: Foto 3
-        image: /uploads/zzk.jpg
   - title: Kappa - Box Custom 433
     imagePlaceholder: Foto progetto 13
     clientText: Il cliente aveva la necessità di realizzare delle box personalizzate
@@ -109,12 +94,12 @@ items:
       garantire visibilità, riconoscibilità e coerenza con l'immagine
       dell'evento, dal momento della corsa fino al party finale.
     galleryItems:
-      - {}
-      - {}
-      - {}
-      - {}
-      - {}
-      - {}
+      - title: foto
+      - title: foto
+      - title: foto
+      - title: foto
+      - title: foto
+      - title: foto
   - title: Campari - Marsupio (Milano Design Week 2026)
     clientText: Realizzare una pouch termica personalizzata per la Design Week 2026,
       capace di unire funzionalità e identità di brand. Un accessorio pratico,
@@ -126,12 +111,12 @@ items:
       Design Week, trasformando un'esigenza pratica in un elemento distintivo
       dell'esperienza di brand.
     galleryItems:
-      - {}
-      - {}
-      - {}
-      - {}
-      - {}
-      - {}
+      - title: foto
+      - title: foto
+      - title: foto
+      - title: foto
+      - title: foto
+      - title: foto
   - title: Scout - Evento L/C 2026
     clientText: Realizzare una serie di simboli della pace in 3D da distribuire
       durante l’evento L/C 2026, trasformando un elemento iconico del mondo
