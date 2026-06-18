@@ -98,6 +98,53 @@ items:
     workText: Produzione e assemblaggio della box, personalizzazione degli elementi
       interni e preparazione finale del packaging, trasformando l'unboxing in
       un'estensione dell'identità del progetto e della collezione.
+  - title: "Kappa - Bandiere "
+    clientText: >-
+      Realizzare una serie di bandiere personalizzate per accompagnare la
+      special run organizzata da Kappa ed EST Bar, contribuendo a rafforzare
+      l'identità visiva dell'evento lungo tutto il percorso.
+
+      Che cosa abbiamo fatto?
+    workText: Produzione delle bandiere personalizzate, curate nei dettagli per
+      garantire visibilità, riconoscibilità e coerenza con l'immagine
+      dell'evento, dal momento della corsa fino al party finale.
+    galleryItems:
+      - {}
+      - {}
+      - {}
+      - {}
+      - {}
+      - {}
+  - title: Campari - Marsupio (Milano Design Week 2026)
+    clientText: Realizzare una pouch termica personalizzata per la Design Week 2026,
+      capace di unire funzionalità e identità di brand. Un accessorio pratico,
+      pensato per trasportare i Campari Soda mantenendoli freschi durante gli
+      eventi, senza rinunciare all'estetica e alla riconoscibilità del progetto.
+    workText: Produzione delle pouch termiche brandizzate, curate in ogni dettaglio
+      per garantire qualità, resistenza e coerenza con l'immagine di Campari
+      Soda. Un gadget pensato per accompagnare il pubblico durante tutta la
+      Design Week, trasformando un'esigenza pratica in un elemento distintivo
+      dell'esperienza di brand.
+    galleryItems:
+      - {}
+      - {}
+      - {}
+      - {}
+      - {}
+      - {}
+  - title: Scout - Evento L/C 2026
+    clientText: Realizzare una serie di simboli della pace in 3D da distribuire
+      durante l’evento L/C 2026, trasformando un elemento iconico del mondo
+      scout in un oggetto tangibile, riconoscibile e portatore di un messaggio
+      condiviso.
+    workText: Produzione di 850 simboli della pace realizzati in stampa 3D, curando
+      ogni fase del processo per garantire uniformità, qualità e attenzione ai
+      dettagli. Un progetto pensato per dare forma a un simbolo semplice,
+      rendendolo protagonista dell’esperienza dell’evento.
+    galleryItems:
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
 cta:
   title: Non trovi quello che cerchi?
   text: Ogni progetto è diverso. Raccontaci la tua idea e troviamo insieme la
