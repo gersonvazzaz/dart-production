@@ -81,6 +81,18 @@ items:
       - title: Foto 1
       - title: Foto 2
       - title: Foto 3
+  - title: "Autoarancio - Murales "
+    clientText: Autoarancio voleva rinnovare gli spazi del concessionario attraverso
+      un intervento visivo capace di dare nuova personalità all'ambiente,
+      rendendolo più moderno, accogliente e in linea con l'evoluzione del brand.
+    workText: Progettazione e realizzazione di un murale personalizzato, pensato per
+      valorizzare gli spazi e contribuire al nuovo look del concessionario. Un
+      intervento che ha trasformato una semplice parete in un elemento
+      distintivo dell'ambiente.
+    galleryItems:
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
 cta:
   title: Non trovi quello che cerchi?
   text: Ogni progetto è diverso. Raccontaci la tua idea e troviamo insieme la
