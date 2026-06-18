@@ -99,6 +99,21 @@ items:
       lifestyle, fino alle capsule realizzate per collaborazioni ed eventi
       speciali, curando materiali, personalizzazioni e qualità produttiva per
       garantire continuità e coerenza all'universo Endorphin.
+  - title: Urbaphonia - Merchandising
+    clientText: >
+      Realizzare il merch ufficiale di URBAPHONIA 2026, una collezione di
+      prodotti pensata per accompagnare e raccontare l'esperienza dell'evento
+      attraverso capi e accessori dedicati.
+    workText: Ci siamo occupati della produzione dell'intera collezione ufficiale,
+      curando le diverse lavorazioni e garantendo qualità, attenzione ai
+      dettagli e fedeltà al progetto sviluppato da URBAPHONIA e Italia90®.
+    galleryItems:
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+      - title: Foto 4
+      - title: Foto 5
+      - title: Foto 6
 cta:
   title: Non trovi quello che cerchi?
   text: Ogni progetto è diverso. Raccontaci la tua idea e troviamo insieme la
