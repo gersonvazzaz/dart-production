@@ -103,6 +103,7 @@ clients:
     - title: Cliente 5
       image: /uploads/logo-merlo.png
     - title: Cliente 6
+      image: /uploads/logo-cìone.png
     - title: cliente 7
     - title: cliente 8
 partner:
