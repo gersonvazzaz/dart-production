@@ -1,5 +1,4 @@
 ---
-# last-updated: 2026-05-20
 hero:
   tag: Laboratorio di produzione creativa
   titleLine1: DART
@@ -94,6 +93,7 @@ clients:
   eyebrow: Si sono affidati a noi
   logos:
     - title: Cliente 1
+      image: /uploads/logo-kappa.png
     - title: Cliente 2
     - title: Cliente 3
     - title: Cliente 4
