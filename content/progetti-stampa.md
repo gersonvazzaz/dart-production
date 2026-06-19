@@ -162,14 +162,13 @@ items:
       - title: Foto 5
       - title: Foto 6
   - title: MUNCAMP 2025
-    imagePlaceholder: MUN Camp desiderava sviluppare un merchandising coordinato per
+    imagePlaceholder: ""
+    clientText: >-
+      MUN Camp desiderava sviluppare un merchandising coordinato per
       partecipanti e staff, capace di accompagnare l'evento con prodotti
       funzionali, riconoscibili e coerenti con l'identità del progetto.
-    clientText: Ci siamo occupati della produzione dell'intero merchandising
-      ufficiale, realizzando t-shirt, tote bag e capi dedicati allo staff. Un
-      lavoro sviluppato a 360°, dalla scelta dei materiali alle lavorazioni, per
-      garantire qualità, praticità e coerenza visiva durante tutte le giornate
-      dell'evento.
+
+      Che cosa abbiamo fatto?
     galleryItems:
       - title: Foto 1
       - title: Foto 2
@@ -177,6 +176,11 @@ items:
       - title: Foto 4
       - title: Foto 5
       - title: Foto 6
+    workText: Ci siamo occupati della produzione dell'intero merchandising
+      ufficiale, realizzando t-shirt, tote bag e capi dedicati allo staff. Un
+      lavoro sviluppato a 360°, dalla scelta dei materiali alle lavorazioni, per
+      garantire qualità, praticità e coerenza visiva durante tutte le giornate
+      dell'evento.
 cta:
   title: Non trovi quello che cerchi?
   text: Ogni progetto è diverso. Raccontaci la tua idea e troviamo insieme la
