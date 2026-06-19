@@ -204,7 +204,7 @@ items:
       attenzione ai dettagli e alla qualità finale. Un rapporto costruito sulla
       fiducia e sulla volontà condivisa di valorizzare ogni prodotto attraverso
       una produzione accurata e coerente con la visione di ZK Design.
-    image: /uploads/zzk.jpg
+    image: /uploads/zk-orizzontale.jpg
 cta:
   title: Non trovi quello che cerchi?
   text: Ogni progetto è diverso. Raccontaci la tua idea e troviamo insieme la
