@@ -95,6 +95,7 @@ clients:
     - title: Cliente 1
       image: /uploads/logo-kappa.png
     - title: Cliente 2
+      image: /uploads/logo-adver-team.png
     - title: Cliente 3
     - title: Cliente 4
     - title: Cliente 5
