@@ -99,6 +99,7 @@ clients:
     - title: Cliente 3
       image: /uploads/campari-soda-logo.png
     - title: Cliente 4
+      image: /uploads/logo-club-silencio.png
     - title: Cliente 5
     - title: Cliente 6
     - title: cliente 7
