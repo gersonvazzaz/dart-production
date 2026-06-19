@@ -125,8 +125,12 @@ items:
       semplice capo in un ricordo tangibile dell'anniversario.
     galleryItems:
       - title: Foto 1
+        image: /uploads/skassasmash.jpg
       - title: Foto 2
+        image: /uploads/skassasmash-3-.jpg
       - title: Foto 3
+        image: /uploads/skassasmash-2-.jpg
+    image: /uploads/skassa.jpg
   - title: Flow Running Club - Merchandising
     clientText: >
       Flow Running Club aveva l'esigenza di sviluppare un sistema di
