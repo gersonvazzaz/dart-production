@@ -190,9 +190,13 @@ items:
       e di ogni drop.
     galleryItems:
       - title: Foto 1
+        image: /uploads/zzk-2-.jpg
       - title: Foto 2
+        image: /uploads/zzk.jpg
       - title: Foto 3
+        image: /uploads/zk-campo-2.jpg
       - title: Foto 4
+        image: /uploads/zk-design-maglia-catene-9.jpg
       - title: Foto 5
       - title: Foto 6
     workText: Ci siamo occupati della produzione di diversi capi e collezioni del
