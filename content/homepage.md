@@ -101,6 +101,7 @@ clients:
     - title: Cliente 4
       image: /uploads/logo-club-silencio.png
     - title: Cliente 5
+      image: /uploads/logo-merlo.png
     - title: Cliente 6
     - title: cliente 7
     - title: cliente 8
