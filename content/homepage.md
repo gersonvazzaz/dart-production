@@ -105,6 +105,7 @@ clients:
     - title: Cliente 6
       image: /uploads/logo-cìone.png
     - title: cliente 7
+      image: /uploads/logo-urbani-pasticceria.png
     - title: cliente 8
 partner:
   badge: Official Dealer
