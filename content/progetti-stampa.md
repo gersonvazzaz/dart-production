@@ -198,7 +198,7 @@ items:
       - title: Foto 4
         image: /uploads/zk-design-maglia-catene-9.jpg
       - title: Foto 5
-        image: /uploads/zk-design-milano-29.jpg
+        image: /uploads/zk-quadrto.jpg
       - title: Foto 6
         image: /uploads/zk-design-tute-street-activity-2026-17-.jpg
     workText: Ci siamo occupati della produzione di diversi capi e collezioni del
