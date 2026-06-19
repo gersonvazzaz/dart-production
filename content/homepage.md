@@ -97,6 +97,7 @@ clients:
     - title: Cliente 2
       image: /uploads/logo-adver-team.png
     - title: Cliente 3
+      image: /uploads/campari-soda-logo.png
     - title: Cliente 4
     - title: Cliente 5
     - title: Cliente 6
