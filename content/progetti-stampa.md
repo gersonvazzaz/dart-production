@@ -127,6 +127,24 @@ items:
       - title: Foto 1
       - title: Foto 2
       - title: Foto 3
+  - title: Flow Running Club - Merchandising
+    clientText: >
+      Flow Running Club aveva l'esigenza di sviluppare un sistema di
+      merchandising completo, capace di rafforzare l'identità del club e
+      accompagnarne la crescita attraverso prodotti riconoscibili, funzionali e
+      coerenti con la community.
+    workText: Ci siamo occupati della produzione del merchandising a 360°,
+      realizzando nel tempo t-shirt, cappelli, gadget e prodotti dedicati agli
+      eventi e alle attività del club. Un lavoro continuativo che ha contribuito
+      a trasformare l'identità di Flow in una presenza concreta, riconoscibile
+      dentro e fuori dalla corsa.
+    galleryItems:
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+      - title: Foto 4
+      - title: Foto 5
+      - title: Foto 6
 cta:
   title: Non trovi quello che cerchi?
   text: Ogni progetto è diverso. Raccontaci la tua idea e troviamo insieme la
