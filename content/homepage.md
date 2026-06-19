@@ -107,6 +107,7 @@ clients:
     - title: cliente 7
       image: /uploads/logo-utrbani-pasticceria.png
     - title: cliente 8
+      image: /uploads/logo-cus-torino.png
 partner:
   badge: Official Dealer
   title: Stanley/Stella
