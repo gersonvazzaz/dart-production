@@ -181,6 +181,23 @@ items:
       lavoro sviluppato a 360°, dalla scelta dei materiali alle lavorazioni, per
       garantire qualità, praticità e coerenza visiva durante tutte le giornate
       dell'evento.
+  - title: ZK - Stampa Collezioni
+    imagePlaceholder: ZK Design, brand 100% Made in Italy, aveva la necessità di
+      affidare la produzione dei propri capi a un partner in grado di garantire
+      qualità, precisione e continuità, mantenendo intatta l'identità di ogni
+      collezione e di ogni drop.
+    clientText: Ci siamo occupati della produzione di diversi capi e collezioni del
+      brand, curando le lavorazioni di stampa e seguendo ogni progetto con
+      attenzione ai dettagli e alla qualità finale. Un rapporto costruito sulla
+      fiducia e sulla volontà condivisa di valorizzare ogni prodotto attraverso
+      una produzione accurata e coerente con la visione di ZK Design.
+    galleryItems:
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+      - title: Foto 4
+      - title: Foto 5
+      - title: Foto 6
 cta:
   title: Non trovi quello che cerchi?
   text: Ogni progetto è diverso. Raccontaci la tua idea e troviamo insieme la
