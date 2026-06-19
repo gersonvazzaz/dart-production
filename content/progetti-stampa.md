@@ -99,7 +99,7 @@ items:
       lifestyle, fino alle capsule realizzate per collaborazioni ed eventi
       speciali, curando materiali, personalizzazioni e qualità produttiva per
       garantire continuità e coerenza all'universo Endorphin.
-  - title: Urbaphonia - Merchandising
+  - title: Urbaphonia - Stampa e Ricamo
     clientText: >
       Realizzare il merch ufficiale di URBAPHONIA 2026, una collezione di
       prodotti pensata per accompagnare e raccontare l'esperienza dell'evento
@@ -138,6 +138,22 @@ items:
       eventi e alle attività del club. Un lavoro continuativo che ha contribuito
       a trasformare l'identità di Flow in una presenza concreta, riconoscibile
       dentro e fuori dalla corsa.
+    galleryItems:
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
+      - title: Foto 4
+      - title: Foto 5
+      - title: Foto 6
+  - title: Italia 90 - Merchandising
+    clientText: Italia90® desiderava realizzare una t-shirt che rappresentasse la
+      propria identità attraverso un prodotto essenziale, curato nei dettagli e
+      coerente con l'estetica del brand.
+    workText: Ci siamo occupati della produzione della t-shirt, seguendo le
+      lavorazioni necessarie per trasformare il concept creativo in un prodotto
+      finito. Un progetto nato dalla collaborazione tra due realtà torinesi,
+      dove qualità produttiva e attenzione ai dettagli hanno avuto un ruolo
+      centrale nel risultato finale.
     galleryItems:
       - title: Foto 1
       - title: Foto 2
