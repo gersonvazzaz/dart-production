@@ -109,11 +109,17 @@ items:
       dettagli e fedeltà al progetto sviluppato da URBAPHONIA e Italia90®.
     galleryItems:
       - title: Foto 1
+        image: /uploads/113.jpg
       - title: Foto 2
+        image: /uploads/114.jpg
       - title: Foto 3
+        image: /uploads/115.jpg
       - title: Foto 4
+        image: /uploads/116.jpg
       - title: Foto 5
+        image: /uploads/118.jpg
       - title: Foto 6
+        image: /uploads/117.jpg
     image: /uploads/urbaph-orizz.jpg
   - title: SkassaSmash - Merch per l'anniversario
     clientText: >
