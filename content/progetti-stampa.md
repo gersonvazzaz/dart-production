@@ -149,6 +149,7 @@ items:
       - title: Foto 4
       - title: Foto 5
       - title: Foto 6
+    image: /uploads/flow-orizz.jpg
   - title: Italia 90 - Merchandising
     clientText: Italia90® desiderava realizzare una t-shirt che rappresentasse la
       propria identità attraverso un prodotto essenziale, curato nei dettagli e
