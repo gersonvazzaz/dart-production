@@ -114,6 +114,7 @@ items:
       - title: Foto 4
       - title: Foto 5
       - title: Foto 6
+    image: /uploads/urbaph-orizz.jpg
   - title: SkassaSmash - Merch per l'anniversario
     clientText: >
       Per celebrare l'anniversario di Skassasmash, il locale desiderava
