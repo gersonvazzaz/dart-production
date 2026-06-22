@@ -144,11 +144,17 @@ items:
       dentro e fuori dalla corsa.
     galleryItems:
       - title: Foto 1
+        image: /uploads/107.jpg
       - title: Foto 2
+        image: /uploads/108.jpg
       - title: Foto 3
+        image: /uploads/109.jpg
       - title: Foto 4
+        image: /uploads/110.jpg
       - title: Foto 5
+        image: /uploads/111.jpg
       - title: Foto 6
+        image: /uploads/112.jpg
     image: /uploads/flow-orizz.jpg
   - title: Italia 90 - Merchandising
     clientText: Italia90® desiderava realizzare una t-shirt che rappresentasse la
