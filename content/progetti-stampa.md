@@ -199,6 +199,7 @@ items:
       lavoro sviluppato a 360°, dalla scelta dei materiali alle lavorazioni, per
       garantire qualità, praticità e coerenza visiva durante tutte le giornate
       dell'evento.
+    image: /uploads/muncamp-orizzz.jpg
   - title: ZK - Stampa Collezioni
     imagePlaceholder: ""
     clientText: >
