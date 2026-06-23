@@ -174,11 +174,18 @@ items:
       centrale nel risultato finale.
     galleryItems:
       - title: Foto 1
+        image: /uploads/125.jpg
       - title: Foto 2
+        image: /uploads/126.jpg
       - title: Foto 3
+        image: /uploads/127.jpg
       - title: Foto 4
+        image: /uploads/128.jpg
       - title: Foto 5
+        image: /uploads/129.jpg
       - title: Foto 6
+        image: /uploads/130.jpg
+    image: /uploads/ita-90-orizz.jpg
   - title: MUNCAMP 2025
     imagePlaceholder: ""
     clientText: >-
