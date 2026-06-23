@@ -189,11 +189,17 @@ items:
       Che cosa abbiamo fatto?
     galleryItems:
       - title: Foto 1
+        image: /uploads/119.jpg
       - title: Foto 2
+        image: /uploads/120.jpg
       - title: Foto 3
+        image: /uploads/121.jpg
       - title: Foto 4
+        image: /uploads/122.jpg
       - title: Foto 5
+        image: /uploads/123.jpg
       - title: Foto 6
+        image: /uploads/124.jpg
     workText: Ci siamo occupati della produzione dell'intero merchandising
       ufficiale, realizzando t-shirt, tote bag e capi dedicati allo staff. Un
       lavoro sviluppato a 360°, dalla scelta dei materiali alle lavorazioni, per
