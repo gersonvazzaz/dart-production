@@ -84,11 +84,17 @@ items:
   - title: ENDORPHIN - Merchandising
     galleryItems:
       - title: Foto 1
+        image: /uploads/131.jpg
       - title: Foto 2
+        image: /uploads/132.jpg
       - title: Foto 3
+        image: /uploads/134.jpg
       - title: Foto 4
+        image: /uploads/135.jpg
       - title: Foto 5
+        image: /uploads/136.jpg
       - title: Foto 6
+        image: /uploads/133.jpg
     clientText: >
       Endorphin aveva la necessità di sviluppare un ecosistema di merchandising
       coerente con la crescita del progetto, capace di accompagnare eventi,
@@ -99,6 +105,7 @@ items:
       lifestyle, fino alle capsule realizzate per collaborazioni ed eventi
       speciali, curando materiali, personalizzazioni e qualità produttiva per
       garantire continuità e coerenza all'universo Endorphin.
+    image: /uploads/endorph-orizzz.jpg
   - title: Urbaphonia - Stampa e Ricamo
     clientText: >
       Realizzare il merch ufficiale di URBAPHONIA 2026, una collezione di
