@@ -48,8 +48,11 @@ items:
       architettura per valorizzare il nuovo hub sociale e culturale.
     galleryItems:
       - title: Foto 1
+        image: /uploads/stampa-3.jpg
       - title: Foto 2
+        image: /uploads/stampa-2.jpg
       - title: Foto 3
+        image: /uploads/stampa-1.jpg
     image: /uploads/stampe.jpg
   - title: Nexis - Applicazione Vetrofanie
     clientText: >
@@ -63,9 +66,9 @@ items:
       gli spazi più riconoscibili, accoglienti e coerenti con l'immagine
       professionale dello studio.
     galleryItems:
-      - {}
-      - {}
-      - {}
+      - title: Foto 1
+      - title: Foto 2
+      - title: Foto 3
   - title: Samuele il giardiniere -  Personalizzazione Furgone di lavoro
     clientText: >
       Personalizzare il furgone di lavoro di Samuele il Giardiniere,
