@@ -35,6 +35,7 @@ about:
   paragraph2: Utilizziamo tecniche come serigrafia, ricamo, DTF, incisione laser e
     stampa 3D per trasformare le idee in oggetti concreti.
   imagePlaceholder: Foto studio / laboratorio
+  image: /uploads/ufficio-orizz.jpg
 services:
   eyebrow: Cosa facciamo
   title: Idea, progetta, crea.
