@@ -121,7 +121,7 @@ partner:
     Collezioni di abbigliamento sostenibile pensate per unire qualità e attenzione alla produzione.
   paragraph2: Prodotti utilizzati nei nostri lavori.
   imagePlaceholder: Foto Stanley/Stella
-  image: /uploads/stanley-stella-orizz.jpg
+  image: /uploads/stanley-stella-orizzzz.jpg
 cta:
   eyebrow: Hai un'idea?
   titleLine1: Hai un progetto
