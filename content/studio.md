@@ -36,7 +36,7 @@ lab:
     incisione laser.
   galleryItems:
     - title: Panoramica lab
-      image: /uploads/angolo-orizz.jpg
+      image: ""
     - title: Dettaglio macchinari
     - title: Lavorazione
 showroom:
