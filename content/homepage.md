@@ -74,6 +74,7 @@ projectsHighlight:
     - title: Allestimento evento
       category: Allestimento
       imagePlaceholder: Foto progetto
+      image: /uploads/antesh-evento.jpg
     - title: Brand identity
       category: Grafica
       imagePlaceholder: Foto progetto
