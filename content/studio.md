@@ -15,6 +15,7 @@ story:
   paragraph2: |
     Ogni progetto è seguito con cura in tutte le sue fasi, senza distinzioni.
   imagePlaceholder: Foto studio
+  image: /uploads/seigraf.jpg
 team:
   eyebrow: Il team
   title: Le persone dietro Dart
