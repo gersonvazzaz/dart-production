@@ -17,6 +17,7 @@ items:
     imagePlaceholder: Foto stampa
     bg: white
     reverse: false
+    image: /uploads/serografiaa.jpg
   - eyebrow: "02"
     title: Allestimento
     description: Offriamo attività di personalizzazione e soluzioni innovative per
