@@ -78,6 +78,7 @@ projectsHighlight:
     - title: Brand identity
       category: Grafica
       imagePlaceholder: Foto progetto
+      image: /uploads/bythelap-orizz.jpg
 process:
   eyebrow: Il nostro metodo
   title: Dal concept alla consegna.
