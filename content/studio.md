@@ -36,6 +36,7 @@ lab:
     incisione laser.
   galleryItems:
     - title: Panoramica lab
+      image: /uploads/orizzontal-serig.jpg
     - title: Dettaglio macchinari
     - title: Lavorazione
 showroom:
