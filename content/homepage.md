@@ -69,6 +69,7 @@ projectsHighlight:
     title: Progetto in evidenza
     category: Stampa
     imagePlaceholder: Foto progetto featured
+    image: /uploads/stampa-orizz.jpg
   items:
     - title: Allestimento evento
       category: Allestimento
