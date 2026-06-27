@@ -26,7 +26,7 @@ team:
     - name: Nicolò Montani
       role: Co-fondatore
       imagePlaceholder: Foto
-      image: /uploads/nico-monta.jpg
+      image: ""
 lab:
   eyebrow: The Lab
   title: Il laboratorio
