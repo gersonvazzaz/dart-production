@@ -43,6 +43,7 @@ showroom:
   paragraph2: Riceviamo esclusivamente su appuntamento.
   button: Prenota una visita
   imagePlaceholder: Foto showroom
+  image: /uploads/showroom-orizz.jpg
 values:
   eyebrow: Filosofia
   title: I nostri valori
