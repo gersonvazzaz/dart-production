@@ -22,11 +22,11 @@ team:
     - name: Davide Montani
       role: Co-fondatore
       imagePlaceholder: Foto
-      image: /uploads/davide-monta.jpg
+      image: /uploads/david-monta.jpg
     - name: Nicolò Montani
       role: Co-fondatore
       imagePlaceholder: Foto
-      image: /uploads/nicolo-monta.jpg
+      image: ""
 lab:
   eyebrow: The Lab
   title: Il laboratorio
