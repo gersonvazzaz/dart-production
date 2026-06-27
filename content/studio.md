@@ -22,7 +22,7 @@ team:
     - name: Davide Montani
       role: Co-fondatore
       imagePlaceholder: Foto
-      image: /uploads/davide-minta.jpg
+      image: ""
     - name: Nicolò Montani
       role: Co-fondatore
       imagePlaceholder: Foto
