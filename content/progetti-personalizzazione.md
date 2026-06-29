@@ -141,6 +141,7 @@ items:
       - title: Foto 1
       - title: Foto 2
       - title: Foto 3
+    image: /uploads/pace-orizzz.jpg
   - title: Antesch - Box Personalizzate
     clientText: >
       Antesch, desiderava sviluppare un packaging capace di accompagnare il
