@@ -69,6 +69,7 @@ items:
       - title: Foto 1
       - title: Foto 2
       - title: Foto 3
+    image: /uploads/nexxx-orizzz.jpg
   - title: Samuele il giardiniere -  Personalizzazione Furgone di lavoro
     clientText: >
       Personalizzare il furgone di lavoro di Samuele il Giardiniere,
