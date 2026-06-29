@@ -61,6 +61,7 @@ items:
     description: |
       Stampa live agli eventi 
     bg: white
+    image: /uploads/club-silencio-orizzontales.jpg
 cta:
   eyebrow: Consulenza
   titleLine1: Quale tecnica è
