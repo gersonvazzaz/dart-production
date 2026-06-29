@@ -20,6 +20,7 @@ sections:
     imagePlaceholder: Foto allestimento
     buttonLabel: Scopri i nostri lavori di Allestimento
     href: /progetti/allestimento
+    image: /uploads/sale-orizz.jpg
   - eyebrow: "03"
     title: Personalizzazione
     description: Utilizziamo tecniche innovative per creare prodotti unici e su
