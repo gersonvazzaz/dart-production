@@ -54,6 +54,7 @@ items:
     imagePlaceholder: Foto personalizzazione
     bg: light
     reverse: true
+    image: /uploads/fresh-orizzontales.jpg
   - reverse: false
     eyebrow: "05"
     title: Eventi
