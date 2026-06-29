@@ -12,6 +12,7 @@ sections:
     imagePlaceholder: Foto stampa
     buttonLabel: Scopri i nostri lavori di Stampa
     href: /progetti/stampa
+    image: /uploads/stampas-orizz.jpg
   - eyebrow: "02"
     title: Allestimento
     description: Offriamo attività di personalizzazione e soluzioni innovative per
