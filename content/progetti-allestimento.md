@@ -102,8 +102,11 @@ items:
       distintivo dell'ambiente.
     galleryItems:
       - title: Foto 1
+        image: /uploads/151.jpg
       - title: Foto 2
+        image: /uploads/152.jpg
       - title: Foto 3
+        image: /uploads/153.jpg
     image: /uploads/autoarnacio.jpg
 cta:
   title: Non trovi quello che cerchi?
