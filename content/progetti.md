@@ -35,6 +35,7 @@ sections:
     imagePlaceholder: Foto eventi
     buttonLabel: Scopri i nostri lavori di Eventi
     href: /progetti/eventi
+    image: /uploads/event-orizzzz.jpg
 cta:
   title: Non trovi quello che cerchi?
   text: Ogni progetto è diverso. Raccontaci la tua idea e troviamo insieme la
