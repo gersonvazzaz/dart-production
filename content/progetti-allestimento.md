@@ -84,6 +84,7 @@ items:
       - title: Foto 1
       - title: Foto 2
       - title: Foto 3
+    image: /uploads/samuele-il-giaridniere.jpg
   - title: "Autoarancio - Murales "
     clientText: Autoarancio voleva rinnovare gli spazi del concessionario attraverso
       un intervento visivo capace di dare nuova personalità all'ambiente,
