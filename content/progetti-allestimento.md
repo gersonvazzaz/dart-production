@@ -67,8 +67,11 @@ items:
       professionale dello studio.
     galleryItems:
       - title: Foto 1
+        image: /uploads/148.jpg
       - title: Foto 2
+        image: /uploads/149.jpg
       - title: Foto 3
+        image: /uploads/150.jpg
     image: /uploads/nexxx-orizzz.jpg
   - title: Samuele il giardiniere -  Personalizzazione Furgone di lavoro
     clientText: >
