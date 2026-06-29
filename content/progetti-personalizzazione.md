@@ -107,6 +107,7 @@ items:
       - title: foto
         image: /uploads/bandiera-kappa-2-.jpg
       - title: foto
+        image: /uploads/bandiera-kappa.jpg
       - title: foto
     image: /uploads/bandiera-kappa.jpg
   - title: Campari - Marsupio (Milano Design Week 2026)
