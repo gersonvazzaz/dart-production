@@ -28,6 +28,7 @@ sections:
     imagePlaceholder: Foto personalizzazione
     buttonLabel: Scopri i nostri lavori di Personalizzazione
     href: /progetti/personalizzazione
+    image: /uploads/toppe-orizzz.jpg
   - eyebrow: "04"
     title: Eventi
     description: Stampa live agli eventi.
