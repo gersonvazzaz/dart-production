@@ -155,6 +155,7 @@ items:
       - title: Foto 1
       - title: "Foto 2 "
       - title: Foto 3
+    image: /uploads/antesch-boxx.jpg
 cta:
   title: Non trovi quello che cerchi?
   text: Ogni progetto è diverso. Raccontaci la tua idea e troviamo insieme la
