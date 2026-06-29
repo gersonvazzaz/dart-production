@@ -99,9 +99,13 @@ items:
       dell'evento, dal momento della corsa fino al party finale.
     galleryItems:
       - title: foto
+        image: /uploads/bandiera-kappa-3-.jpg
       - title: foto
+        image: /uploads/bandiera-kappa-4-.jpg
       - title: foto
+        image: /uploads/bandiera-kappa-5-.jpg
       - title: foto
+        image: /uploads/bandiera-kappa-2-.jpg
       - title: foto
       - title: foto
     image: /uploads/bandiera-kappa.jpg
