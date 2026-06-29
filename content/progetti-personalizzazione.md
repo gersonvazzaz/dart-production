@@ -104,6 +104,7 @@ items:
       - title: foto
       - title: foto
       - title: foto
+    image: /uploads/bandiera-kappa.jpg
   - title: Campari - Marsupio (Milano Design Week 2026)
     clientText: Realizzare una pouch termica personalizzata per la Design Week 2026,
       capace di unire funzionalità e identità di brand. Un accessorio pratico,
