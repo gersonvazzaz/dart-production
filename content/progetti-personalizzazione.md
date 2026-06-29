@@ -66,7 +66,7 @@ items:
         image: /uploads/433-2.jpg
       - title: Foto 3
         image: /uploads/433-stick.jpg
-    image: /uploads/bandiera-kappa.jpg
+    image: /uploads/433.jpg
   - title: Robe di Kappa - Authentic SS25
     galleryItems:
       - image: /uploads/kappa-authentic-2-.jpg
