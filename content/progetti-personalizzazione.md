@@ -61,8 +61,11 @@ items:
       433.
     galleryItems:
       - title: Foto 1
+        image: /uploads/433-1.jpg
       - title: Foto 2
+        image: /uploads/433-2.jpg
       - title: Foto 3
+        image: /uploads/433-stick.jpg
     image: /uploads/433.jpg
   - title: Robe di Kappa - Authentic SS25
     galleryItems:
