@@ -82,8 +82,11 @@ items:
       su strada.
     galleryItems:
       - title: Foto 1
+        image: /uploads/145.jpg
       - title: Foto 2
+        image: /uploads/146.jpg
       - title: Foto 3
+        image: /uploads/147.jpg
     image: /uploads/samuele-il-giaridniere.jpg
   - title: "Autoarancio - Murales "
     clientText: Autoarancio voleva rinnovare gli spazi del concessionario attraverso
