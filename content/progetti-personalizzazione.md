@@ -153,8 +153,11 @@ items:
       contribuendo a raccontare l'universo estetico e la visione di Antesch.
     galleryItems:
       - title: Foto 1
+        image: /uploads/139.jpg
       - title: "Foto 2 "
+        image: /uploads/140.jpg
       - title: Foto 3
+        image: /uploads/141.jpg
     image: /uploads/antesch-boxx.jpg
 cta:
   title: Non trovi quello che cerchi?
