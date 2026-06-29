@@ -139,8 +139,11 @@ items:
       rendendolo protagonista dell’esperienza dell’evento.
     galleryItems:
       - title: Foto 1
+        image: /uploads/142.jpg
       - title: Foto 2
+        image: /uploads/143.jpg
       - title: Foto 3
+        image: /uploads/144.jpg
     image: /uploads/pace-orizzz.jpg
   - title: Antesch - Box Personalizzate
     clientText: >
