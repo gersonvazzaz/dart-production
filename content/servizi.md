@@ -30,6 +30,7 @@ items:
     imagePlaceholder: Foto allestimento
     bg: light
     reverse: true
+    image: /uploads/allestimento-orizzz.jpg
   - eyebrow: "03"
     title: Grafica
     description: Progettiamo marchi, loghi e illustrazioni personalizzate. Identità
