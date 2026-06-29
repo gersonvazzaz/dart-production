@@ -63,6 +63,7 @@ items:
       - title: Foto 1
       - title: Foto 2
       - title: Foto 3
+    image: /uploads/433.jpg
   - title: Robe di Kappa - Authentic SS25
     galleryItems:
       - image: /uploads/kappa-authentic-2-.jpg
