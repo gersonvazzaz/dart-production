@@ -42,6 +42,7 @@ items:
     imagePlaceholder: Foto processo creativo
     bg: white
     reverse: false
+    image: /uploads/favras-orizz.jpg
   - eyebrow: "04"
     title: Personalizzazione
     description: Utilizziamo tecniche innovative per creare prodotti unici e su
